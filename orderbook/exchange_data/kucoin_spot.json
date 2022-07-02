@@ -1,0 +1,2780 @@
+{
+    "REQ": {
+        "ETH": "REQ-ETH",
+        "BTC": "REQ-BTC",
+        "USDT": "REQ-USDT"
+    },
+    "NULS": {
+        "ETH": "NULS-ETH",
+        "BTC": "NULS-BTC"
+    },
+    "CVC": {
+        "BTC": "CVC-BTC"
+    },
+    "SNT": {
+        "ETH": "SNT-ETH",
+        "BTC": "SNT-BTC"
+    },
+    "PPT": {
+        "ETH": "PPT-ETH",
+        "BTC": "PPT-BTC"
+    },
+    "BSV": {
+        "BTC": "BCHSV-BTC",
+        "USDT": "BCHSV-USDT",
+        "ETH": "BCHSV-ETH",
+        "USDC": "BCHSV-USDC",
+        "KCS": "BCHSV-KCS"
+    },
+    "POWR": {
+        "BTC": "POWR-BTC",
+        "ETH": "POWR-ETH",
+        "USDT": "POWR-USDT"
+    },
+    "BCD": {
+        "BTC": "BCD-BTC",
+        "ETH": "BCD-ETH"
+    },
+    "KNC": {
+        "ETH": "KNC-ETH",
+        "BTC": "KNC-BTC",
+        "USDT": "KNC-USDT"
+    },
+    "OMG": {
+        "ETH": "OMG-ETH",
+        "BTC": "OMG-BTC",
+        "USDT": "OMG-USDT"
+    },
+    "CHSB": {
+        "BTC": "CHSB-BTC",
+        "ETH": "CHSB-ETH"
+    },
+    "MANA": {
+        "BTC": "MANA-BTC",
+        "ETH": "MANA-ETH",
+        "USDT": "MANA-USDT"
+    },
+    "AMB": {
+        "ETH": "AMB-ETH",
+        "BTC": "AMB-BTC"
+    },
+    "ETN": {
+        "BTC": "ETN-BTC",
+        "ETH": "ETN-ETH",
+        "USDT": "ETN-USDT"
+    },
+    "DGB": {
+        "BTC": "DGB-BTC",
+        "ETH": "DGB-ETH",
+        "USDT": "DGB-USDT"
+    },
+    "QTUM": {
+        "BTC": "QTUM-BTC"
+    },
+    "AION": {
+        "ETH": "AION-ETH",
+        "BTC": "AION-BTC"
+    },
+    "ENJ": {
+        "BTC": "ENJ-BTC",
+        "ETH": "ENJ-ETH",
+        "USDT": "ENJ-USDT"
+    },
+    "SNX": {
+        "ETH": "SNX-ETH",
+        "USDT": "SNX-USDT",
+        "BTC": "SNX-BTC"
+    },
+    "TIME": {
+        "ETH": "TIME-ETH",
+        "BTC": "TIME-BTC",
+        "USDT": "TIME-USDT"
+    },
+    "XLM": {
+        "USDT": "XLM-USDT",
+        "ETH": "XLM-ETH",
+        "BTC": "XLM-BTC",
+        "KCS": "XLM-KCS"
+    },
+    "VET": {
+        "USDT": "VET-USDT",
+        "BTC": "VET-BTC",
+        "ETH": "VET-ETH",
+        "KCS": "VET-KCS"
+    },
+    "DASH": {
+        "ETH": "DASH-ETH",
+        "BTC": "DASH-BTC",
+        "USDT": "DASH-USDT",
+        "KCS": "DASH-KCS"
+    },
+    "UTK": {
+        "BTC": "UTK-BTC",
+        "ETH": "UTK-ETH"
+    },
+    "GO": {
+        "USDT": "GO-USDT",
+        "BTC": "GO-BTC",
+        "ETH": "GO-ETH"
+    },
+    "AXPR": {
+        "ETH": "AXPR-ETH",
+        "BTC": "AXPR-BTC"
+    },
+    "EOS": {
+        "KCS": "EOS-KCS",
+        "BTC": "EOS-BTC",
+        "USDT": "EOS-USDT",
+        "ETH": "EOS-ETH",
+        "USDC": "EOS-USDC"
+    },
+    "ETC": {
+        "ETH": "ETC-ETH",
+        "BTC": "ETC-BTC",
+        "USDT": "ETC-USDT"
+    },
+    "PLAY": {
+        "BTC": "PLAY-BTC"
+    },
+    "GAS": {
+        "BTC": "GAS-BTC",
+        "USDT": "GAS-USDT"
+    },
+    "BCH": {
+        "BTC": "BCH-BTC",
+        "USDT": "BCH-USDT",
+        "USDC": "BCH-USDC",
+        "KCS": "BCH-KCS"
+    },
+    "DENT": {
+        "ETH": "DENT-ETH",
+        "BTC": "DENT-BTC"
+    },
+    "DRGN": {
+        "BTC": "DRGN-BTC",
+        "ETH": "DRGN-ETH"
+    },
+    "LTC": {
+        "USDT": "LTC-USDT",
+        "ETH": "LTC-ETH",
+        "BTC": "LTC-BTC",
+        "KCS": "LTC-KCS",
+        "USDC": "LTC-USDC"
+    },
+    "CV": {
+        "BTC": "CV-BTC",
+        "ETH": "CV-ETH"
+    },
+    "KEY": {
+        "BTC": "KEY-BTC",
+        "ETH": "KEY-ETH"
+    },
+    "IOST": {
+        "ETH": "IOST-ETH",
+        "BTC": "IOST-BTC",
+        "USDT": "IOST-USDT"
+    },
+    "ADB": {
+        "ETH": "ADB-ETH",
+        "BTC": "ADB-BTC"
+    },
+    "TEL": {
+        "BTC": "TEL-BTC",
+        "ETH": "TEL-ETH",
+        "USDT": "TEL-USDT"
+    },
+    "WAXP": {
+        "BTC": "WAX-BTC",
+        "ETH": "WAX-ETH",
+        "USDT": "WAX-USDT"
+    },
+    "CAPP": {
+        "ETH": "CAPP-ETH",
+        "BTC": "CAPP-BTC"
+    },
+    "ELF": {
+        "ETH": "ELF-ETH",
+        "BTC": "ELF-BTC"
+    },
+    "COV": {
+        "ETH": "COV-ETH",
+        "BTC": "COV-BTC",
+        "USDT": "COV-USDT"
+    },
+    "ZIL": {
+        "BTC": "ZIL-BTC",
+        "ETH": "ZIL-ETH",
+        "USDT": "ZIL-USDT",
+        "USDC": "ZIL-USDC"
+    },
+    "MAN": {
+        "BTC": "MAN-BTC",
+        "USDT": "MAN-USDT"
+    },
+    "TOMO": {
+        "ETH": "TOMO-ETH",
+        "BTC": "TOMO-BTC",
+        "USDT": "TOMO-USDT"
+    },
+    "ONT": {
+        "BTC": "ONT-BTC",
+        "ETH": "ONT-ETH",
+        "USDT": "ONT-USDT"
+    },
+    "BAX": {
+        "ETH": "BAX-ETH",
+        "BTC": "BAX-BTC",
+        "USDT": "BAX-USDT"
+    },
+    "LYM": {
+        "ETH": "LYM-ETH",
+        "USDT": "LYM-USDT",
+        "BTC": "LYM-BTC"
+    },
+    "TRAC": {
+        "ETH": "TRAC-ETH",
+        "BTC": "TRAC-BTC"
+    },
+    "IOTX": {
+        "ETH": "IOTX-ETH",
+        "BTC": "IOTX-BTC",
+        "USDT": "IOTX-USDT"
+    },
+    "SOUL": {
+        "BTC": "SOUL-BTC",
+        "ETH": "SOUL-ETH",
+        "USDT": "SOUL-USDT"
+    },
+    "LOOM": {
+        "ETH": "LOOM-ETH",
+        "BTC": "LOOM-BTC"
+    },
+    "QKC": {
+        "BTC": "QKC-BTC",
+        "ETH": "QKC-ETH"
+    },
+    "CS": {
+        "BTC": "CS-BTC",
+        "ETH": "CS-ETH"
+    },
+    "WAN": {
+        "ETH": "WAN-ETH",
+        "BTC": "WAN-BTC"
+    },
+    "DOCK": {
+        "BTC": "DOCK-BTC",
+        "ETH": "DOCK-ETH"
+    },
+    "AOA": {
+        "USDT": "AOA-USDT",
+        "BTC": "AOA-BTC"
+    },
+    "DAG": {
+        "ETH": "DAG-ETH",
+        "BTC": "DAG-BTC",
+        "USDT": "DAG-USDT"
+    },
+    "SUSD": {
+        "USDT": "SUSD-USDT",
+        "ETH": "SUSD-ETH",
+        "BTC": "SUSD-BTC"
+    },
+    "ELA": {
+        "BTC": "ELA-BTC",
+        "ETH": "ELA-ETH",
+        "USDT": "ELA-USDT"
+    },
+    "CBC": {
+        "BTC": "CBC-BTC",
+        "USDT": "CBC-USDT"
+    },
+    "TRX": {
+        "BTC": "TRX-BTC",
+        "ETH": "TRX-ETH",
+        "USDT": "TRX-USDT",
+        "KCS": "TRX-KCS",
+        "USDC": "TRX-USDC"
+    },
+    "ZRX": {
+        "BTC": "ZRX-BTC",
+        "ETH": "ZRX-ETH"
+    },
+    "CPC": {
+        "ETH": "CPC-ETH",
+        "BTC": "CPC-BTC"
+    },
+    "MVP": {
+        "BTC": "MVP-BTC",
+        "ETH": "MVP-ETH"
+    },
+    "CRPT": {
+        "ETH": "CRPT-ETH",
+        "BTC": "CRPT-BTC",
+        "USDT": "CRPT-USDT"
+    },
+    "OLT": {
+        "ETH": "OLT-ETH",
+        "BTC": "OLT-BTC"
+    },
+    "DCR": {
+        "ETH": "DCR-ETH",
+        "BTC": "DCR-BTC"
+    },
+    "KCS": {
+        "USDT": "KCS-USDT",
+        "ETH": "KCS-ETH",
+        "BTC": "KCS-BTC",
+        "USDC": "KCS-USDC"
+    },
+    "NEO": {
+        "ETH": "NEO-ETH",
+        "BTC": "NEO-BTC",
+        "USDT": "NEO-USDT",
+        "KCS": "NEO-KCS"
+    },
+    "USDT": {
+        "TUSD": "USDT-TUSD",
+        "USDC": "USDT-USDC",
+        "BRL": "USDT-BRL",
+        "EUR": "USDT-EUR",
+        "DAI": "USDT-DAI"
+    },
+    "ETH": {
+        "USDC": "ETH-USDC",
+        "TUSD": "ETH-TUSD",
+        "USDT": "ETH-USDT",
+        "BTC": "ETH-BTC",
+        "BRL": "ETH-BRL",
+        "EUR": "ETH-EUR",
+        "DAI": "ETH-DAI"
+    },
+    "BTC": {
+        "TUSD": "BTC-TUSD",
+        "USDT": "BTC-USDT",
+        "USDC": "BTC-USDC",
+        "BRL": "BTC-BRL",
+        "EUR": "BTC-EUR",
+        "DAI": "BTC-DAI"
+    },
+    "MHC": {
+        "ETH": "MHC-ETH",
+        "BTC": "MHC-BTC",
+        "USDT": "MHC-USDT"
+    },
+    "CSP": {
+        "BTC": "CSP-BTC",
+        "ETH": "CSP-ETH"
+    },
+    "OXEN": {
+        "BTC": "LOKI-BTC",
+        "ETH": "LOKI-ETH",
+        "USDT": "LOKI-USDT"
+    },
+    "NRG": {
+        "BTC": "NRG-BTC",
+        "ETH": "NRG-ETH"
+    },
+    "AVA": {
+        "USDT": "AVA-USDT",
+        "BTC": "AVA-BTC",
+        "ETH": "AVA-ETH"
+    },
+    "FET": {
+        "BTC": "FET-BTC",
+        "ETH": "FET-ETH"
+    },
+    "ANKR": {
+        "BTC": "ANKR-BTC",
+        "USDT": "ANKR-USDT"
+    },
+    "XMR": {
+        "BTC": "XMR-BTC",
+        "ETH": "XMR-ETH",
+        "USDT": "XMR-USDT"
+    },
+    "RBTC": {
+        "BTC": "RBTC-BTC"
+    },
+    "RIF": {
+        "BTC": "RIF-BTC"
+    },
+    "MTV": {
+        "BTC": "MTV-BTC",
+        "ETH": "MTV-ETH",
+        "USDT": "MTV-USDT"
+    },
+    "CRO": {
+        "BTC": "CRO-BTC",
+        "USDT": "CRO-USDT"
+    },
+    "KMD": {
+        "BTC": "KMD-BTC",
+        "USDT": "KMD-USDT"
+    },
+    "RFOX": {
+        "USDT": "RFOX-USDT"
+    },
+    "AERGO": {
+        "USDT": "AERGO-USDT",
+        "BTC": "AERGO-BTC"
+    },
+    "ATOM": {
+        "BTC": "ATOM-BTC",
+        "ETH": "ATOM-ETH",
+        "USDT": "ATOM-USDT",
+        "KCS": "ATOM-KCS",
+        "USDC": "ATOM-USDC"
+    },
+    "FTM": {
+        "USDT": "FTM-USDT",
+        "USDC": "FTM-USDC",
+        "BTC": "FTM-BTC",
+        "ETH": "FTM-ETH"
+    },
+    "VSYS": {
+        "USDT": "VSYS-USDT",
+        "BTC": "VSYS-BTC"
+    },
+    "OCEAN": {
+        "BTC": "OCEAN-BTC",
+        "ETH": "OCEAN-ETH",
+        "USDT": "OCEAN-USDT"
+    },
+    "CHR": {
+        "BTC": "CHR-BTC",
+        "USDT": "CHR-USDT"
+    },
+    "FX": {
+        "BTC": "FX-BTC",
+        "ETH": "FX-ETH"
+    },
+    "NIM": {
+        "BTC": "NIM-BTC",
+        "ETH": "NIM-ETH",
+        "USDT": "NIM-USDT"
+    },
+    "COTI": {
+        "BTC": "COTI-BTC",
+        "USDT": "COTI-USDT"
+    },
+    "PIVX": {
+        "BTC": "PIVX-BTC",
+        "ETH": "PIVX-ETH",
+        "USDT": "PIVX-USDT"
+    },
+    "BNB": {
+        "BTC": "BNB-BTC",
+        "USDT": "BNB-USDT",
+        "KCS": "BNB-KCS",
+        "USDC": "BNB-USDC"
+    },
+    "JAR": {
+        "BTC": "JAR-BTC",
+        "USDT": "JAR-USDT"
+    },
+    "ALGO": {
+        "BTC": "ALGO-BTC",
+        "ETH": "ALGO-ETH",
+        "USDT": "ALGO-USDT",
+        "KCS": "ALGO-KCS",
+        "USDC": "ALGO-USDC"
+    },
+    "XEM": {
+        "BTC": "XEM-BTC",
+        "USDT": "XEM-USDT"
+    },
+    "CIX100": {
+        "USDT": "CIX100-USDT"
+    },
+    "XTZ": {
+        "BTC": "XTZ-BTC",
+        "USDT": "XTZ-USDT",
+        "KCS": "XTZ-KCS"
+    },
+    "ZEC": {
+        "BTC": "ZEC-BTC",
+        "USDT": "ZEC-USDT",
+        "KCS": "ZEC-KCS"
+    },
+    "ADA": {
+        "BTC": "ADA-BTC",
+        "USDT": "ADA-USDT",
+        "USDC": "ADA-USDC",
+        "KCS": "ADA-KCS"
+    },
+    "REV": {
+        "USDT": "R-USDT"
+    },
+    "WXT": {
+        "BTC": "WXT-BTC",
+        "USDT": "WXT-USDT"
+    },
+    "FORESTPLUS": {
+        "BTC": "FORESTPLUS-BTC",
+        "USDT": "FORESTPLUS-USDT"
+    },
+    "BOLT": {
+        "BTC": "BOLT-BTC",
+        "USDT": "BOLT-USDT"
+    },
+    "ARPA": {
+        "USDT": "ARPA-USDT"
+    },
+    "CHZ": {
+        "BTC": "CHZ-BTC",
+        "USDT": "CHZ-USDT"
+    },
+    "DAPPT": {
+        "BTC": "DAPPT-BTC",
+        "USDT": "DAPPT-USDT"
+    },
+    "NOIA": {
+        "BTC": "NOIA-BTC",
+        "USDT": "NOIA-USDT"
+    },
+    "WIN": {
+        "BTC": "WIN-BTC",
+        "USDT": "WIN-USDT",
+        "TRX": "WIN-TRX"
+    },
+    "DERO": {
+        "BTC": "DERO-BTC",
+        "USDT": "DERO-USDT"
+    },
+    "BTT": {
+        "USDT": "BTT-USDT"
+    },
+    "EOSC": {
+        "USDT": "EOSC-USDT"
+    },
+    "FKX": {
+        "BTC": "FKX-BTC",
+        "ETH": "FKX-ETH",
+        "USDT": "FKX-USDT"
+    },
+    "ENQ": {
+        "BTC": "ENQ-BTC",
+        "USDT": "ENQ-USDT"
+    },
+    "ONE": {
+        "BTC": "ONE-BTC",
+        "USDT": "ONE-USDT"
+    },
+    "TOKO": {
+        "BTC": "TOKO-BTC",
+        "USDT": "TOKO-USDT",
+        "KCS": "TOKO-KCS"
+    },
+    "VID": {
+        "BTC": "VID-BTC",
+        "USDT": "VID-USDT"
+    },
+    "LUNA": {
+        "USDT": "LUNA-USDT",
+        "USDC": "LUNA-USDC"
+    },
+    "MXW": {
+        "USDT": "MXW-USDT"
+    },
+    "SXP": {
+        "BTC": "SXP-BTC",
+        "USDT": "SXP-USDT"
+    },
+    "VIDT": {
+        "BTC": "VIDT-BTC",
+        "USDT": "VIDT-USDT"
+    },
+    "AKRO": {
+        "BTC": "AKRO-BTC",
+        "USDT": "AKRO-USDT"
+    },
+    "ROOBEE": {
+        "BTC": "ROOBEE-BTC"
+    },
+    "MAP": {
+        "BTC": "MAP-BTC",
+        "USDT": "MAP-USDT"
+    },
+    "AMPL": {
+        "BTC": "AMPL-BTC",
+        "USDT": "AMPL-USDT",
+        "ETH": "AMPL-ETH"
+    },
+    "POL": {
+        "USDT": "POL-USDT"
+    },
+    "ARX": {
+        "USDT": "ARX-USDT"
+    },
+    "NWC": {
+        "BTC": "NWC-BTC",
+        "USDT": "NWC-USDT"
+    },
+    "BEPRO": {
+        "BTC": "BEPRO-BTC",
+        "USDT": "BEPRO-USDT"
+    },
+    "VRA": {
+        "BTC": "VRA-BTC",
+        "USDT": "VRA-USDT",
+        "USDC": "VRA-USDC"
+    },
+    "KSM": {
+        "BTC": "KSM-BTC",
+        "USDT": "KSM-USDT"
+    },
+    "SUTER": {
+        "USDT": "SUTER-USDT",
+        "BTC": "SUTER-BTC"
+    },
+    "ACOIN": {
+        "USDT": "ACOIN-USDT"
+    },
+    "SENSO": {
+        "USDT": "SENSO-USDT",
+        "BTC": "SENSO-BTC"
+    },
+    "PRE": {
+        "BTC": "PRE-BTC",
+        "USDT": "PRE-USDT"
+    },
+    "XDB": {
+        "USDT": "XDB-USDT",
+        "BTC": "XDB-BTC"
+    },
+    "SYLO": {
+        "USDT": "SYLO-USDT"
+    },
+    "WOM": {
+        "USDT": "WOM-USDT"
+    },
+    "LYXe": {
+        "USDT": "LYXE-USDT",
+        "ETH": "LYXE-ETH"
+    },
+    "STX": {
+        "BTC": "STX-BTC",
+        "USDT": "STX-USDT"
+    },
+    "USDN": {
+        "USDT": "USDN-USDT"
+    },
+    "XSR": {
+        "USDT": "XSR-USDT"
+    },
+    "COMP": {
+        "USDT": "COMP-USDT"
+    },
+    "KAI": {
+        "USDT": "KAI-USDT",
+        "BTC": "KAI-BTC",
+        "ETH": "KAI-ETH"
+    },
+    "WEST": {
+        "BTC": "WEST-BTC",
+        "USDT": "WEST-USDT"
+    },
+    "EWT": {
+        "BTC": "EWT-BTC",
+        "USDT": "EWT-USDT",
+        "KCS": "EWT-KCS"
+    },
+    "WAVES": {
+        "USDT": "WAVES-USDT",
+        "BTC": "WAVES-BTC"
+    },
+    "ORN": {
+        "USDT": "ORN-USDT"
+    },
+    "BNS": {
+        "USDT": "BNS-USDT",
+        "BTC": "BNS-BTC"
+    },
+    "MKR": {
+        "USDT": "MKR-USDT",
+        "BTC": "MKR-BTC",
+        "ETH": "MKR-ETH",
+        "DAI": "MKR-DAI"
+    },
+    "SUKU": {
+        "BTC": "SUKU-BTC",
+        "USDT": "SUKU-USDT"
+    },
+    "MLK": {
+        "BTC": "MLK-BTC",
+        "USDT": "MLK-USDT"
+    },
+    "JST": {
+        "USDT": "JST-USDT"
+    },
+    "DIA": {
+        "USDT": "DIA-USDT",
+        "BTC": "DIA-BTC"
+    },
+    "LINK": {
+        "BTC": "LINK-BTC",
+        "USDT": "LINK-USDT",
+        "USDC": "LINK-USDC",
+        "KCS": "LINK-KCS"
+    },
+    "DOT": {
+        "USDT": "DOT-USDT",
+        "BTC": "DOT-BTC",
+        "KCS": "DOT-KCS",
+        "USDC": "DOT-USDC"
+    },
+    "SHA": {
+        "BTC": "SHA-BTC",
+        "USDT": "SHA-USDT"
+    },
+    "USDJ": {
+        "USDT": "USDJ-USDT"
+    },
+    "EFX": {
+        "BTC": "EFX-BTC",
+        "USDT": "EFX-USDT"
+    },
+    "CKB": {
+        "BTC": "CKB-BTC",
+        "USDT": "CKB-USDT"
+    },
+    "UMA": {
+        "USDT": "UMA-USDT"
+    },
+    "ALEPH": {
+        "USDT": "ALEPH-USDT"
+    },
+    "VELO": {
+        "USDT": "VELO-USDT"
+    },
+    "SUN": {
+        "USDT": "SUN-USDT"
+    },
+    "BUY": {
+        "USDT": "BUY-USDT",
+        "BTC": "BUY-BTC"
+    },
+    "YFI": {
+        "USDT": "YFI-USDT"
+    },
+    "UNI": {
+        "USDT": "UNI-USDT",
+        "KCS": "UNI-KCS"
+    },
+    "SNTVT": {
+        "BTC": "SNTVT-BTC",
+        "ETH": "SNTVT-ETH"
+    },
+    "UOS": {
+        "USDT": "UOS-USDT",
+        "BTC": "UOS-BTC"
+    },
+    "DEGO": {
+        "USDT": "DEGO-USDT",
+        "ETH": "DEGO-ETH"
+    },
+    "UDOO": {
+        "ETH": "UDOO-ETH"
+    },
+    "RFUEL": {
+        "USDT": "RFUEL-USDT"
+    },
+    "FIL": {
+        "USDT": "FIL-USDT"
+    },
+    "UBX": {
+        "ETH": "UBX-ETH",
+        "USDT": "UBX-USDT"
+    },
+    "REAP": {
+        "USDT": "REAP-USDT"
+    },
+    "AAVE": {
+        "USDT": "AAVE-USDT",
+        "BTC": "AAVE-BTC",
+        "KCS": "AAVE-KCS"
+    },
+    "TONE": {
+        "BTC": "TONE-BTC",
+        "ETH": "TONE-ETH",
+        "USDT": "TONE-USDT"
+    },
+    "UQC": {
+        "BTC": "UQC-BTC",
+        "ETH": "UQC-ETH"
+    },
+    "OPCT": {
+        "BTC": "OPCT-BTC",
+        "ETH": "OPCT-ETH",
+        "USDT": "OPCT-USDT"
+    },
+    "COMB": {
+        "USDT": "COMB-USDT"
+    },
+    "SHR": {
+        "BTC": "SHR-BTC",
+        "USDT": "SHR-USDT"
+    },
+    "UBXT": {
+        "USDT": "UBXT-USDT"
+    },
+    "ROSE": {
+        "USDT": "ROSE-USDT"
+    },
+    "USDC": {
+        "USDT": "USDC-USDT"
+    },
+    "CTI": {
+        "USDT": "CTI-USDT",
+        "ETH": "CTI-ETH"
+    },
+    "ETH2": {
+        "ETH": "ETH2-ETH"
+    },
+    "BUX": {
+        "BTC": "BUX-BTC",
+        "USDT": "BUX-USDT"
+    },
+    "XHV": {
+        "USDT": "XHV-USDT",
+        "BTC": "XHV-BTC"
+    },
+    "PLU": {
+        "USDT": "PLU-USDT"
+    },
+    "GRT": {
+        "USDT": "GRT-USDT",
+        "KCS": "GRT-KCS"
+    },
+    "CAS": {
+        "BTC": "CAS-BTC",
+        "USDT": "CAS-USDT"
+    },
+    "MSWAP": {
+        "BTC": "MSWAP-BTC",
+        "USDT": "MSWAP-USDT"
+    },
+    "GOM2": {
+        "BTC": "GOM2-BTC",
+        "USDT": "GOM2-USDT"
+    },
+    "REVV": {
+        "BTC": "REVV-BTC",
+        "USDT": "REVV-USDT"
+    },
+    "LON": {
+        "USDT": "LON-USDT"
+    },
+    "1INCH": {
+        "USDT": "1INCH-USDT"
+    },
+    "LOC": {
+        "USDT": "LOC-USDT"
+    },
+    "API3": {
+        "USDT": "API3-USDT"
+    },
+    "UNFI": {
+        "USDT": "UNFI-USDT"
+    },
+    "HTR": {
+        "USDT": "HTR-USDT",
+        "BTC": "HTR-BTC"
+    },
+    "FRONT": {
+        "USDT": "FRONT-USDT",
+        "BTC": "FRONT-BTC"
+    },
+    "WBTC": {
+        "BTC": "WBTC-BTC",
+        "ETH": "WBTC-ETH"
+    },
+    "MIR": {
+        "USDT": "MIR-USDT",
+        "KCS": "MIR-KCS"
+    },
+    "HYDRA": {
+        "USDT": "HYDRA-USDT"
+    },
+    "DFI": {
+        "USDT": "DFI-USDT",
+        "BTC": "DFI-BTC"
+    },
+    "CRV": {
+        "USDT": "CRV-USDT"
+    },
+    "SUSHI": {
+        "USDT": "SUSHI-USDT"
+    },
+    "FRM": {
+        "USDT": "FRM-USDT"
+    },
+    "ZEN": {
+        "USDT": "ZEN-USDT"
+    },
+    "CUDOS": {
+        "USDT": "CUDOS-USDT",
+        "BTC": "CUDOS-BTC"
+    },
+    "REN": {
+        "USDT": "REN-USDT"
+    },
+    "LRC": {
+        "USDT": "LRC-USDT",
+        "BTC": "LRC-BTC",
+        "ETH": "LRC-ETH"
+    },
+    "KLV": {
+        "USDT": "KLV-USDT",
+        "BTC": "KLV-BTC",
+        "TRX": "KLV-TRX"
+    },
+    "BOA": {
+        "USDT": "BOA-USDT"
+    },
+    "THETA": {
+        "USDT": "THETA-USDT"
+    },
+    "QNT": {
+        "USDT": "QNT-USDT"
+    },
+    "BAT": {
+        "USDT": "BAT-USDT"
+    },
+    "DOGE": {
+        "USDT": "DOGE-USDT",
+        "USDC": "DOGE-USDC",
+        "BTC": "DOGE-BTC",
+        "KCS": "DOGE-KCS"
+    },
+    "DAO": {
+        "USDT": "DAO-USDT"
+    },
+    "STRONG": {
+        "USDT": "STRONG-USDT"
+    },
+    "TRIAS": {
+        "USDT": "TRIAS-USDT",
+        "BTC": "TRIAS-BTC"
+    },
+    "MITX": {
+        "BTC": "MITX-BTC",
+        "USDT": "MITX-USDT"
+    },
+    "CAKE": {
+        "USDT": "CAKE-USDT"
+    },
+    "ORAI": {
+        "USDT": "ORAI-USDT"
+    },
+    "ZEE": {
+        "USDT": "ZEE-USDT"
+    },
+    "LTX": {
+        "USDT": "LTX-USDT",
+        "BTC": "LTX-BTC"
+    },
+    "MASK": {
+        "USDT": "MASK-USDT"
+    },
+    "IDEA": {
+        "USDT": "IDEA-USDT"
+    },
+    "PHA": {
+        "USDT": "PHA-USDT",
+        "ETH": "PHA-ETH"
+    },
+    "SRK": {
+        "USDT": "SRK-USDT",
+        "BTC": "SRK-BTC"
+    },
+    "SWINGBY": {
+        "USDT": "SWINGBY-USDT",
+        "BTC": "SWINGBY-BTC"
+    },
+    "AVAX": {
+        "USDT": "AVAX-USDT",
+        "BTC": "AVAX-BTC",
+        "USDC": "AVAX-USDC"
+    },
+    "KRL": {
+        "BTC": "KRL-BTC",
+        "USDT": "KRL-USDT"
+    },
+    "POLK": {
+        "USDT": "POLK-USDT",
+        "BTC": "POLK-BTC"
+    },
+    "RNDR": {
+        "USDT": "RNDR-USDT",
+        "BTC": "RNDR-BTC"
+    },
+    "RLY": {
+        "USDT": "RLY-USDT"
+    },
+    "ANC": {
+        "USDT": "ANC-USDT"
+    },
+    "SKEY": {
+        "USDT": "SKEY-USDT"
+    },
+    "LAYER": {
+        "USDT": "LAYER-USDT",
+        "BTC": "LAYER-BTC"
+    },
+    "TARA": {
+        "USDT": "TARA-USDT",
+        "ETH": "TARA-ETH"
+    },
+    "DYP": {
+        "USDT": "DYP-USDT",
+        "ETH": "DYP-ETH"
+    },
+    "XYM": {
+        "USDT": "XYM-USDT",
+        "BTC": "XYM-BTC"
+    },
+    "PCX": {
+        "USDT": "PCX-USDT",
+        "BTC": "PCX-BTC"
+    },
+    "ORBS": {
+        "USDT": "ORBS-USDT",
+        "BTC": "ORBS-BTC"
+    },
+    "BTC3L": {
+        "USDT": "BTC3L-USDT"
+    },
+    "BTC3S": {
+        "USDT": "BTC3S-USDT"
+    },
+    "ETH3L": {
+        "USDT": "ETH3L-USDT"
+    },
+    "ETH3S": {
+        "USDT": "ETH3S-USDT"
+    },
+    "DSLA": {
+        "USDT": "DSLA-USDT",
+        "BTC": "DSLA-BTC"
+    },
+    "SPI": {
+        "USDT": "SPI-USDT"
+    },
+    "SAND": {
+        "USDT": "SAND-USDT"
+    },
+    "VAI": {
+        "USDT": "VAI-USDT"
+    },
+    "XCUR": {
+        "USDT": "XCUR-USDT",
+        "BTC": "XCUR-BTC"
+    },
+    "FLUX": {
+        "USDT": "FLUX-USDT",
+        "BTC": "FLUX-BTC"
+    },
+    "DODO": {
+        "USDT": "DODO-USDT"
+    },
+    "BOSON": {
+        "USDT": "BOSON-USDT",
+        "ETH": "BOSON-ETH"
+    },
+    "PUNDIX": {
+        "USDT": "PUNDIX-USDT",
+        "BTC": "PUNDIX-BTC"
+    },
+    "HT": {
+        "USDT": "HT-USDT"
+    },
+    "PDEX": {
+        "USDT": "PDEX-USDT",
+        "BTC": "PDEX-BTC"
+    },
+    "LABS": {
+        "USDT": "LABS-USDT",
+        "ETH": "LABS-ETH"
+    },
+    "GMB": {
+        "USDT": "GMB-USDT",
+        "ETH": "GMB-ETH",
+        "BTC": "GMB-BTC"
+    },
+    "PHNX": {
+        "USDT": "PHNX-USDT",
+        "BTC": "PHNX-BTC"
+    },
+    "HAI": {
+        "USDT": "HAI-USDT",
+        "BTC": "HAI-BTC"
+    },
+    "EQZ": {
+        "USDT": "EQZ-USDT"
+    },
+    "FORTH": {
+        "USDT": "FORTH-USDT"
+    },
+    "CARR": {
+        "USDT": "CARR-USDT",
+        "BTC": "CARR-BTC"
+    },
+    "HORD": {
+        "USDT": "HORD-USDT"
+    },
+    "CGG": {
+        "USDT": "CGG-USDT"
+    },
+    "GHX": {
+        "USDT": "GHX-USDT"
+    },
+    "TCP": {
+        "USDT": "TCP-USDT"
+    },
+    "STND": {
+        "USDT": "STND-USDT",
+        "ETH": "STND-ETH"
+    },
+    "TOWER": {
+        "USDT": "TOWER-USDT",
+        "BTC": "TOWER-BTC"
+    },
+    "ACE": {
+        "USDT": "ACE-USDT"
+    },
+    "LOCG": {
+        "USDT": "LOCG-USDT"
+    },
+    "CARD": {
+        "USDT": "CARD-USDT"
+    },
+    "FLy": {
+        "USDT": "FLY-USDT"
+    },
+    "CWS": {
+        "USDT": "CWS-USDT"
+    },
+    "XDC": {
+        "USDT": "XDC-USDT",
+        "ETH": "XDC-ETH",
+        "BTC": "XDC-BTC"
+    },
+    "STRK": {
+        "BTC": "STRK-BTC",
+        "ETH": "STRK-ETH"
+    },
+    "SHIB": {
+        "USDT": "SHIB-USDT",
+        "DOGE": "SHIB-DOGE",
+        "USDC": "SHIB-USDC"
+    },
+    "POLX": {
+        "USDT": "POLX-USDT"
+    },
+    "KDA": {
+        "USDT": "KDA-USDT",
+        "BTC": "KDA-BTC",
+        "USDC": "KDA-USDC"
+    },
+    "ICP": {
+        "USDT": "ICP-USDT",
+        "BTC": "ICP-BTC"
+    },
+    "STC": {
+        "USDT": "STC-USDT",
+        "BTC": "STC-BTC"
+    },
+    "GOVI": {
+        "USDT": "GOVI-USDT",
+        "BTC": "GOVI-BTC"
+    },
+    "CELO": {
+        "USDT": "CELO-USDT",
+        "BTC": "CELO-BTC"
+    },
+    "cUSD": {
+        "USDT": "CUSD-USDT",
+        "BTC": "CUSD-BTC"
+    },
+    "FCL": {
+        "USDT": "FCL-USDT",
+        "ETH": "FCL-ETH"
+    },
+    "MATIC": {
+        "USDT": "MATIC-USDT",
+        "BTC": "MATIC-BTC",
+        "USDC": "MATIC-USDC"
+    },
+    "OGN": {
+        "USDT": "OGN-USDT",
+        "BTC": "OGN-BTC"
+    },
+    "OUSD": {
+        "USDT": "OUSD-USDT",
+        "BTC": "OUSD-BTC"
+    },
+    "TLOS": {
+        "USDT": "TLOS-USDT",
+        "BTC": "TLOS-BTC"
+    },
+    "YOP": {
+        "USDT": "YOP-USDT",
+        "ETH": "YOP-ETH"
+    },
+    "GLQ": {
+        "USDT": "GLQ-USDT",
+        "BTC": "GLQ-BTC"
+    },
+    "NIF": {
+        "USDT": "NIF-USDT"
+    },
+    "MXC": {
+        "USDT": "MXC-USDT"
+    },
+    "ERSDL": {
+        "USDT": "ERSDL-USDT"
+    },
+    "HOTCROSS": {
+        "USDT": "HOTCROSS-USDT"
+    },
+    "ADA3L": {
+        "USDT": "ADA3L-USDT"
+    },
+    "ADA3S": {
+        "USDT": "ADA3S-USDT"
+    },
+    "HYVE": {
+        "USDT": "HYVE-USDT",
+        "BTC": "HYVE-BTC"
+    },
+    "DAPPX": {
+        "USDT": "DAPPX-USDT"
+    },
+    "KONO": {
+        "USDT": "KONO-USDT"
+    },
+    "PRQ": {
+        "USDT": "PRQ-USDT"
+    },
+    "MAHA": {
+        "USDT": "MAHA-USDT",
+        "BTC": "MAHA-BTC"
+    },
+    "FEAR": {
+        "USDT": "FEAR-USDT"
+    },
+    "PYR": {
+        "USDT": "PYR-USDT",
+        "BTC": "PYR-BTC"
+    },
+    "PROM": {
+        "USDT": "PROM-USDT",
+        "BTC": "PROM-BTC"
+    },
+    "GLCH": {
+        "USDT": "GLCH-USDT"
+    },
+    "UNO": {
+        "USDT": "UNO-USDT",
+        "BTC": "UNO-BTC"
+    },
+    "ALBT": {
+        "USDT": "ALBT-USDT",
+        "ETH": "ALBT-ETH"
+    },
+    "XCAD": {
+        "USDT": "XCAD-USDT"
+    },
+    "EOS3L": {
+        "USDT": "EOS3L-USDT"
+    },
+    "EOS3S": {
+        "USDT": "EOS3S-USDT"
+    },
+    "BCH3L": {
+        "USDT": "BCH3L-USDT"
+    },
+    "BCH3S": {
+        "USDT": "BCH3S-USDT"
+    },
+    "ELON": {
+        "USDT": "ELON-USDT"
+    },
+    "APL": {
+        "USDT": "APL-USDT",
+        "BTC": "APL-BTC"
+    },
+    "VEED": {
+        "USDT": "VEED-USDT",
+        "BTC": "VEED-BTC"
+    },
+    "DIVI": {
+        "USDT": "DIVI-USDT"
+    },
+    "JUP": {
+        "USDT": "JUP-USDT",
+        "ETH": "JUP-ETH"
+    },
+    "POLS": {
+        "USDT": "POLS-USDT",
+        "BTC": "POLS-BTC"
+    },
+    "LPOOL": {
+        "USDT": "LPOOL-USDT",
+        "BTC": "LPOOL-BTC"
+    },
+    "LSS": {
+        "USDT": "LSS-USDT"
+    },
+    "VET3L": {
+        "USDT": "VET3L-USDT"
+    },
+    "VET3S": {
+        "USDT": "VET3S-USDT"
+    },
+    "LTC3L": {
+        "USDT": "LTC3L-USDT"
+    },
+    "LTC3S": {
+        "USDT": "LTC3S-USDT"
+    },
+    "ETHO": {
+        "USDT": "ETHO-USDT",
+        "BTC": "ETHO-BTC"
+    },
+    "ABBC": {
+        "USDT": "ABBC-USDT",
+        "BTC": "ABBC-BTC"
+    },
+    "KOK": {
+        "USDT": "KOK-USDT"
+    },
+    "ROSN": {
+        "USDT": "ROSN-USDT"
+    },
+    "DORA": {
+        "USDT": "DORA-USDT",
+        "BTC": "DORA-BTC"
+    },
+    "ZCX": {
+        "USDT": "ZCX-USDT",
+        "BTC": "ZCX-BTC"
+    },
+    "NORD": {
+        "USDT": "NORD-USDT",
+        "BTC": "NORD-BTC"
+    },
+    "GMEE": {
+        "USDT": "GMEE-USDT"
+    },
+    "SFUND": {
+        "USDT": "SFUND-USDT"
+    },
+    "XAVA": {
+        "USDT": "XAVA-USDT"
+    },
+    "AI": {
+        "USDT": "AI-USDT"
+    },
+    "ALPACA": {
+        "USDT": "ALPACA-USDT"
+    },
+    "IOI": {
+        "USDT": "IOI-USDT"
+    },
+    "NFT": {
+        "USDT": "NFT-USDT",
+        "TRX": "NFT-TRX"
+    },
+    "MNST": {
+        "USDT": "MNST-USDT"
+    },
+    "MEM": {
+        "USDT": "MEM-USDT"
+    },
+    "AGIX": {
+        "USDT": "AGIX-USDT",
+        "BTC": "AGIX-BTC",
+        "ETH": "AGIX-ETH"
+    },
+    "CQT": {
+        "USDT": "CQT-USDT"
+    },
+    "AIOZ": {
+        "USDT": "AIOZ-USDT"
+    },
+    "MARSH": {
+        "USDT": "MARSH-USDT"
+    },
+    "HAPI": {
+        "USDT": "HAPI-USDT"
+    },
+    "MODEFI": {
+        "USDT": "MODEFI-USDT",
+        "BTC": "MODEFI-BTC"
+    },
+    "YFDAI": {
+        "USDT": "YFDAI-USDT",
+        "BTC": "YFDAI-BTC"
+    },
+    "GENS": {
+        "USDT": "GENS-USDT"
+    },
+    "FORM": {
+        "USDT": "FORM-USDT",
+        "ETH": "FORM-ETH"
+    },
+    "ARRR": {
+        "USDT": "ARRR-USDT",
+        "BTC": "ARRR-BTC"
+    },
+    "CEUR": {
+        "USDT": "CEUR-USDT",
+        "BTC": "CEUR-BTC"
+    },
+    "EXRD": {
+        "USDT": "EXRD-USDT"
+    },
+    "NGM": {
+        "USDT": "NGM-USDT"
+    },
+    "LPT": {
+        "USDT": "LPT-USDT"
+    },
+    "STMX": {
+        "USDT": "STMX-USDT"
+    },
+    "ASD": {
+        "USDT": "ASD-USDT"
+    },
+    "BOND": {
+        "USDT": "BOND-USDT"
+    },
+    "2CRZ": {
+        "USDT": "2CRZ-USDT"
+    },
+    "NEAR": {
+        "USDT": "NEAR-USDT",
+        "BTC": "NEAR-BTC",
+        "USDC": "NEAR-USDC"
+    },
+    "DFYN": {
+        "USDT": "DFYN-USDT"
+    },
+    "OOE": {
+        "USDT": "OOE-USDT"
+    },
+    "CFG": {
+        "USDT": "CFG-USDT",
+        "BTC": "CFG-BTC"
+    },
+    "AXS": {
+        "USDT": "AXS-USDT"
+    },
+    "CLV": {
+        "USDT": "CLV-USDT"
+    },
+    "ROUTE": {
+        "USDT": "ROUTE-USDT"
+    },
+    "KAR": {
+        "USDT": "KAR-USDT"
+    },
+    "BURP": {
+        "USDT": "BURP-USDT"
+    },
+    "SHFT": {
+        "USDT": "SHFT-USDT",
+        "BTC": "SHFT-BTC"
+    },
+    "PMON": {
+        "USDT": "PMON-USDT"
+    },
+    "DPET": {
+        "USDT": "DPET-USDT"
+    },
+    "ERG": {
+        "USDT": "ERG-USDT",
+        "BTC": "ERG-BTC"
+    },
+    "SOL": {
+        "USDT": "SOL-USDT",
+        "USDC": "SOL-USDC"
+    },
+    "SLP": {
+        "USDT": "SLP-USDT"
+    },
+    "LITH": {
+        "USDT": "LITH-USDT",
+        "ETH": "LITH-ETH"
+    },
+    "XCH": {
+        "USDT": "XCH-USDT"
+    },
+    "HAKA": {
+        "USDT": "HAKA-USDT"
+    },
+    "MTL": {
+        "USDT": "MTL-USDT",
+        "BTC": "MTL-BTC"
+    },
+    "GALA": {
+        "USDT": "GALAX-USDT"
+    },
+    "TXA": {
+        "USDT": "TXA-USDT",
+        "USDC": "TXA-USDC"
+    },
+    "CIRUS": {
+        "USDT": "CIRUS-USDT",
+        "ETH": "CIRUS-ETH"
+    },
+    "QI": {
+        "USDT": "QI-USDT",
+        "BTC": "QI-BTC"
+    },
+    "ODDZ": {
+        "USDT": "ODDZ-USDT"
+    },
+    "PNT": {
+        "USDT": "PNT-USDT",
+        "BTC": "PNT-BTC"
+    },
+    "XPR": {
+        "USDT": "XPR-USDT",
+        "BTC": "XPR-BTC"
+    },
+    "TRIBE": {
+        "USDT": "TRIBE-USDT"
+    },
+    "MOVR": {
+        "USDT": "MOVR-USDT",
+        "ETH": "MOVR-ETH"
+    },
+    "WOO": {
+        "USDT": "WOO-USDT"
+    },
+    "WILD": {
+        "USDT": "WILD-USDT"
+    },
+    "QRDO": {
+        "USDT": "QRDO-USDT",
+        "ETH": "QRDO-ETH"
+    },
+    "SDN": {
+        "USDT": "SDN-USDT",
+        "ETH": "SDN-ETH"
+    },
+    "MAKI": {
+        "USDT": "MAKI-USDT",
+        "BTC": "MAKI-BTC"
+    },
+    "REP": {
+        "USDT": "REP-USDT",
+        "BTC": "REP-BTC",
+        "ETH": "REP-ETH"
+    },
+    "BNT": {
+        "USDT": "BNT-USDT",
+        "BTC": "BNT-BTC",
+        "ETH": "BNT-ETH"
+    },
+    "OXT": {
+        "USDT": "OXT-USDT",
+        "BTC": "OXT-BTC",
+        "ETH": "OXT-ETH"
+    },
+    "BAL": {
+        "USDT": "BAL-USDT",
+        "BTC": "BAL-BTC",
+        "ETH": "BAL-ETH"
+    },
+    "STORJ": {
+        "USDT": "STORJ-USDT",
+        "BTC": "STORJ-BTC",
+        "ETH": "STORJ-ETH"
+    },
+    "YGG": {
+        "USDT": "YGG-USDT"
+    },
+    "NDAU": {
+        "USDT": "NDAU-USDT"
+    },
+    "SDAO": {
+        "USDT": "SDAO-USDT",
+        "ETH": "SDAO-ETH"
+    },
+    "XRP3L": {
+        "USDT": "XRP3L-USDT"
+    },
+    "XRP3S": {
+        "USDT": "XRP3S-USDT"
+    },
+    "SKL": {
+        "USDT": "SKL-USDT",
+        "BTC": "SKL-BTC"
+    },
+    "NMR": {
+        "USDT": "NMR-USDT",
+        "BTC": "NMR-BTC"
+    },
+    "IXS": {
+        "USDT": "IXS-USDT"
+    },
+    "TRB": {
+        "USDT": "TRB-USDT",
+        "BTC": "TRB-BTC"
+    },
+    "DYDX": {
+        "USDT": "DYDX-USDT"
+    },
+    "XYO": {
+        "USDT": "XYO-USDT",
+        "ETH": "XYO-ETH",
+        "BTC": "XYO-BTC"
+    },
+    "GTC": {
+        "USDT": "GTC-USDT",
+        "BTC": "GTC-BTC"
+    },
+    "EQX": {
+        "USDT": "EQX-USDT",
+        "BTC": "EQX-BTC"
+    },
+    "RLC": {
+        "USDT": "RLC-USDT",
+        "BTC": "RLC-BTC"
+    },
+    "XPRT": {
+        "USDT": "XPRT-USDT"
+    },
+    "EGLD": {
+        "USDT": "EGLD-USDT",
+        "BTC": "EGLD-BTC"
+    },
+    "HBAR": {
+        "USDT": "HBAR-USDT",
+        "BTC": "HBAR-BTC"
+    },
+    "DOGE3L": {
+        "USDT": "DOGE3L-USDT"
+    },
+    "DOGE3S": {
+        "USDT": "DOGE3S-USDT"
+    },
+    "FLOW": {
+        "USDT": "FLOW-USDT",
+        "BTC": "FLOW-BTC"
+    },
+    "NKN": {
+        "USDT": "NKN-USDT",
+        "BTC": "NKN-BTC"
+    },
+    "PBX": {
+        "USDT": "PBX-USDT"
+    },
+    "SOL3L": {
+        "USDT": "SOL3L-USDT"
+    },
+    "SOL3S": {
+        "USDT": "SOL3S-USDT"
+    },
+    "MLN": {
+        "USDT": "MLN-USDT",
+        "BTC": "MLN-BTC"
+    },
+    "XNL": {
+        "USDT": "XNL-USDT"
+    },
+    "SOLVE": {
+        "USDT": "SOLVE-USDT",
+        "BTC": "SOLVE-BTC"
+    },
+    "WNCG": {
+        "USDT": "WNCG-USDT",
+        "BTC": "WNCG-BTC"
+    },
+    "DMTR": {
+        "USDT": "DMTR-USDT"
+    },
+    "LINK3L": {
+        "USDT": "LINK3L-USDT"
+    },
+    "LINK3S": {
+        "USDT": "LINK3S-USDT"
+    },
+    "DOT3L": {
+        "USDT": "DOT3L-USDT"
+    },
+    "DOT3S": {
+        "USDT": "DOT3S-USDT"
+    },
+    "UMB": {
+        "USDT": "UMB-USDT"
+    },
+    "CTSI": {
+        "USDT": "CTSI-USDT",
+        "BTC": "CTSI-BTC"
+    },
+    "ALICE": {
+        "USDT": "ALICE-USDT",
+        "BTC": "ALICE-BTC",
+        "ETH": "ALICE-ETH"
+    },
+    "OPUL": {
+        "USDT": "OPUL-USDT"
+    },
+    "ILV": {
+        "USDT": "ILV-USDT"
+    },
+    "BAND": {
+        "USDT": "BAND-USDT",
+        "BTC": "BAND-BTC"
+    },
+    "FTT": {
+        "USDT": "FTT-USDT",
+        "BTC": "FTT-BTC"
+    },
+    "DVPN": {
+        "USDT": "DVPN-USDT"
+    },
+    "SKU": {
+        "USDT": "SKU-USDT",
+        "BTC": "SKU-BTC"
+    },
+    "EDG": {
+        "USDT": "EDG-USDT",
+        "BTC": "EDG-BTC"
+    },
+    "SLIM": {
+        "USDT": "SLIM-USDT"
+    },
+    "TLM": {
+        "USDT": "TLM-USDT",
+        "BTC": "TLM-BTC",
+        "ETH": "TLM-ETH"
+    },
+    "DEXE": {
+        "USDT": "DEXE-USDT",
+        "BTC": "DEXE-BTC",
+        "ETH": "DEXE-ETH"
+    },
+    "MATTER": {
+        "USDT": "MATTER-USDT"
+    },
+    "RUNE": {
+        "USDT": "RUNE-USDT",
+        "BTC": "RUNE-BTC",
+        "USDC": "RUNE-USDC"
+    },
+    "RMRK": {
+        "USDT": "RMRK-USDT"
+    },
+    "SOV": {
+        "USDT": "SOV-USDT"
+    },
+    "BMON": {
+        "USDT": "BMON-USDT"
+    },
+    "C98": {
+        "USDT": "C98-USDT"
+    },
+    "BLOK": {
+        "USDT": "BLOK-USDT"
+    },
+    "SOLR": {
+        "USDT": "SOLR-USDT"
+    },
+    "ATOM3L": {
+        "USDT": "ATOM3L-USDT"
+    },
+    "ATOM3S": {
+        "USDT": "ATOM3S-USDT"
+    },
+    "UNI3L": {
+        "USDT": "UNI3L-USDT"
+    },
+    "UNI3S": {
+        "USDT": "UNI3S-USDT"
+    },
+    "WSIENNA": {
+        "USDT": "WSIENNA-USDT"
+    },
+    "PUSH": {
+        "USDT": "PUSH-USDT",
+        "BTC": "PUSH-BTC"
+    },
+    "NTVRK": {
+        "USDT": "NTVRK-USDT",
+        "USDC": "NTVRK-USDC"
+    },
+    "AXS3L": {
+        "USDT": "AXS3L-USDT"
+    },
+    "AXS3S": {
+        "USDT": "AXS3S-USDT"
+    },
+    "FTM3L": {
+        "USDT": "FTM3L-USDT"
+    },
+    "FTM3S": {
+        "USDT": "FTM3S-USDT"
+    },
+    "FLAME": {
+        "USDT": "FLAME-USDT"
+    },
+    "AGLD": {
+        "USDT": "AGLD-USDT"
+    },
+    "NAKA": {
+        "USDT": "NAKA-USDT"
+    },
+    "YLD": {
+        "USDT": "YLD-USDT"
+    },
+    "REEF": {
+        "USDT": "REEF-USDT",
+        "BTC": "REEF-BTC"
+    },
+    "TIDAL": {
+        "USDT": "TIDAL-USDT"
+    },
+    "TVK": {
+        "USDT": "TVK-USDT",
+        "BTC": "TVK-BTC"
+    },
+    "INJ": {
+        "USDT": "INJ-USDT",
+        "BTC": "INJ-BTC"
+    },
+    "BNB3L": {
+        "USDT": "BNB3L-USDT"
+    },
+    "BNB3S": {
+        "USDT": "BNB3S-USDT"
+    },
+    "MATIC3L": {
+        "USDT": "MATIC3L-USDT"
+    },
+    "MATIC3S": {
+        "USDT": "MATIC3S-USDT"
+    },
+    "NFTB": {
+        "USDT": "NFTB-USDT"
+    },
+    "VEGA": {
+        "USDT": "VEGA-USDT",
+        "ETH": "VEGA-ETH"
+    },
+    "ALPHA": {
+        "USDT": "ALPHA-USDT",
+        "BTC": "ALPHA-BTC"
+    },
+    "BADGER": {
+        "USDT": "BADGER-USDT",
+        "BTC": "BADGER-BTC"
+    },
+    "ZKT": {
+        "USDT": "ZKT-USDT"
+    },
+    "AR": {
+        "USDT": "AR-USDT",
+        "BTC": "AR-BTC"
+    },
+    "XVS": {
+        "USDT": "XVS-USDT",
+        "BTC": "XVS-BTC"
+    },
+    "JASMY": {
+        "USDT": "JASMY-USDT",
+        "USDC": "JASMY-USDC"
+    },
+    "PERP": {
+        "USDT": "PERP-USDT",
+        "BTC": "PERP-BTC"
+    },
+    "GHST": {
+        "USDT": "GHST-USDT",
+        "BTC": "GHST-BTC"
+    },
+    "SCLP": {
+        "USDT": "SCLP-USDT",
+        "BTC": "SCLP-BTC"
+    },
+    "SUPER": {
+        "USDT": "SUPER-USDT",
+        "BTC": "SUPER-BTC"
+    },
+    "CPOOL": {
+        "USDT": "CPOOL-USDT"
+    },
+    "HERO": {
+        "USDT": "HERO-USDT"
+    },
+    "BASIC": {
+        "USDT": "BASIC-USDT"
+    },
+    "XED": {
+        "USDT": "XED-USDT",
+        "BTC": "XED-BTC"
+    },
+    "AURY": {
+        "USDT": "AURY-USDT"
+    },
+    "SWASH": {
+        "USDT": "SWASH-USDT"
+    },
+    "LTO": {
+        "USDT": "LTO-USDT",
+        "BTC": "LTO-BTC"
+    },
+    "MTRG": {
+        "USDT": "MTRG-USDT"
+    },
+    "DREAMS": {
+        "USDT": "DREAMS-USDT"
+    },
+    "QUICK": {
+        "USDT": "QUICK-USDT",
+        "BTC": "QUICK-BTC"
+    },
+    "TRU": {
+        "USDT": "TRU-USDT",
+        "BTC": "TRU-BTC"
+    },
+    "WRX": {
+        "USDT": "WRX-USDT",
+        "BTC": "WRX-BTC"
+    },
+    "TKO": {
+        "USDT": "TKO-USDT",
+        "BTC": "TKO-BTC"
+    },
+    "SUSHI3L": {
+        "USDT": "SUSHI3L-USDT"
+    },
+    "SUSHI3S": {
+        "USDT": "SUSHI3S-USDT"
+    },
+    "NEAR3L": {
+        "USDT": "NEAR3L-USDT"
+    },
+    "NEAR3S": {
+        "USDT": "NEAR3S-USDT"
+    },
+    "DATA": {
+        "USDT": "DATA-USDT",
+        "BTC": "DATA-BTC"
+    },
+    "ISP": {
+        "USDT": "ISP-USDT"
+    },
+    "CERE": {
+        "USDT": "CERE-USDT"
+    },
+    "SHILL": {
+        "USDT": "SHILL-USDT"
+    },
+    "HEGIC": {
+        "USDT": "HEGIC-USDT",
+        "BTC": "HEGIC-BTC"
+    },
+    "ERN": {
+        "USDT": "ERN-USDT",
+        "BTC": "ERN-BTC"
+    },
+    "FTG": {
+        "USDT": "FTG-USDT"
+    },
+    "PAXG": {
+        "USDT": "PAXG-USDT",
+        "BTC": "PAXG-BTC"
+    },
+    "AUDIO": {
+        "USDT": "AUDIO-USDT",
+        "BTC": "AUDIO-BTC"
+    },
+    "ENS": {
+        "USDT": "ENS-USDT"
+    },
+    "AAVE3L": {
+        "USDT": "AAVE3L-USDT"
+    },
+    "AAVE3S": {
+        "USDT": "AAVE3S-USDT"
+    },
+    "SAND3L": {
+        "USDT": "SAND3L-USDT"
+    },
+    "SAND3S": {
+        "USDT": "SAND3S-USDT"
+    },
+    "XTM": {
+        "USDT": "XTM-USDT"
+    },
+    "MNW": {
+        "USDT": "MNW-USDT"
+    },
+    "FXS": {
+        "USDT": "FXS-USDT",
+        "BTC": "FXS-BTC"
+    },
+    "ATA": {
+        "USDT": "ATA-USDT",
+        "BTC": "ATA-BTC"
+    },
+    "VXV": {
+        "USDT": "VXV-USDT"
+    },
+    "DPR": {
+        "USDT": "DPR-USDT"
+    },
+    "CWAR": {
+        "USDT": "CWAR-USDT",
+        "BTC": "CWAR-BTC"
+    },
+    "PBR": {
+        "USDT": "PBR-USDT"
+    },
+    "WNXM": {
+        "USDT": "WNXM-USDT",
+        "BTC": "WNXM-BTC"
+    },
+    "ANT": {
+        "USDT": "ANT-USDT",
+        "BTC": "ANT-BTC"
+    },
+    "SWP": {
+        "USDT": "SWP-USDT"
+    },
+    "TWT": {
+        "USDT": "TWT-USDT",
+        "BTC": "TWT-BTC"
+    },
+    "OM": {
+        "USDT": "OM-USDT",
+        "BTC": "OM-BTC"
+    },
+    "ADX": {
+        "USDT": "ADX-USDT"
+    },
+    "AVAX3L": {
+        "USDT": "AVAX3L-USDT"
+    },
+    "AVAX3S": {
+        "USDT": "AVAX3S-USDT"
+    },
+    "MANA3L": {
+        "USDT": "MANA3L-USDT"
+    },
+    "MANA3S": {
+        "USDT": "MANA3S-USDT"
+    },
+    "GLM": {
+        "USDT": "GLM-USDT",
+        "BTC": "GLM-BTC"
+    },
+    "BAKE": {
+        "USDT": "BAKE-USDT",
+        "BTC": "BAKE-BTC",
+        "ETH": "BAKE-ETH"
+    },
+    "NUM": {
+        "USDT": "NUM-USDT"
+    },
+    "VLX": {
+        "USDT": "VLX-USDT",
+        "BTC": "VLX-BTC"
+    },
+    "TRADE": {
+        "USDT": "TRADE-USDT",
+        "BTC": "TRADE-BTC"
+    },
+    "1EARTH": {
+        "USDT": "1EARTH-USDT"
+    },
+    "MONI": {
+        "USDT": "MONI-USDT"
+    },
+    "LIKE": {
+        "USDT": "LIKE-USDT"
+    },
+    "MFT": {
+        "USDT": "MFT-USDT",
+        "BTC": "MFT-BTC"
+    },
+    "LIT": {
+        "USDT": "LIT-USDT",
+        "BTC": "LIT-BTC"
+    },
+    "KAVA": {
+        "USDT": "KAVA-USDT"
+    },
+    "SFP": {
+        "USDT": "SFP-USDT",
+        "BTC": "SFP-BTC"
+    },
+    "BURGER": {
+        "USDT": "BURGER-USDT",
+        "BTC": "BURGER-BTC"
+    },
+    "ILA": {
+        "USDT": "ILA-USDT"
+    },
+    "CREAM": {
+        "USDT": "CREAM-USDT",
+        "BTC": "CREAM-BTC"
+    },
+    "RSR": {
+        "USDT": "RSR-USDT",
+        "BTC": "RSR-BTC"
+    },
+    "IMX": {
+        "USDT": "IMX-USDT"
+    },
+    "GODS": {
+        "USDT": "GODS-USDT"
+    },
+    "KMA": {
+        "USDT": "KMA-USDT"
+    },
+    "SRM": {
+        "USDT": "SRM-USDT",
+        "BTC": "SRM-BTC"
+    },
+    "POLC": {
+        "USDT": "POLC-USDT"
+    },
+    "XTAG": {
+        "USDT": "XTAG-USDT"
+    },
+    "MNET": {
+        "USDT": "MNET-USDT"
+    },
+    "NGC": {
+        "USDT": "NGC-USDT"
+    },
+    "HARD": {
+        "USDT": "HARD-USDT"
+    },
+    "GALAX3L": {
+        "USDT": "GALAX3L-USDT"
+    },
+    "GALAX3S": {
+        "USDT": "GALAX3S-USDT"
+    },
+    "UNIC": {
+        "USDT": "UNIC-USDT"
+    },
+    "POND": {
+        "USDT": "POND-USDT",
+        "BTC": "POND-BTC"
+    },
+    "VR": {
+        "USDT": "VR-USDT"
+    },
+    "EPIK": {
+        "USDT": "EPIK-USDT"
+    },
+    "NGL": {
+        "USDT": "NGL-USDT",
+        "BTC": "NGL-BTC"
+    },
+    "KDON": {
+        "USDT": "KDON-USDT"
+    },
+    "PEL": {
+        "USDT": "PEL-USDT"
+    },
+    "LINA": {
+        "USDT": "LINA-USDT",
+        "BTC": "LINA-BTC"
+    },
+    "KLAY": {
+        "USDT": "KLAY-USDT",
+        "BTC": "KLAY-BTC"
+    },
+    "CREDI": {
+        "USDT": "CREDI-USDT"
+    },
+    "TRVL": {
+        "USDT": "TRVL-USDT",
+        "BTC": "TRVL-BTC"
+    },
+    "LACE": {
+        "USDT": "LACE-USDT",
+        "ETH": "LACE-ETH"
+    },
+    "ARKER": {
+        "USDT": "ARKER-USDT"
+    },
+    "BONDLY": {
+        "USDT": "BONDLY-USDT",
+        "ETH": "BONDLY-ETH"
+    },
+    "XEC": {
+        "USDT": "XEC-USDT"
+    },
+    "HEART": {
+        "USDT": "HEART-USDT",
+        "BTC": "HEART-BTC"
+    },
+    "UNB": {
+        "USDT": "UNB-USDT"
+    },
+    "GAFI": {
+        "USDT": "GAFI-USDT"
+    },
+    "KOL": {
+        "USDT": "KOL-USDT",
+        "ETH": "KOL-ETH"
+    },
+    "H3RO3S": {
+        "USDT": "H3RO3S-USDT"
+    },
+    "FALCONS": {
+        "USDT": "FALCONS-USDT"
+    },
+    "UFO": {
+        "USDT": "UFO-USDT"
+    },
+    "CHMB": {
+        "USDT": "CHMB-USDT"
+    },
+    "GEEQ": {
+        "USDT": "GEEQ-USDT"
+    },
+    "ORC": {
+        "USDT": "ORC-USDT"
+    },
+    "RACEFI": {
+        "USDT": "RACEFI-USDT"
+    },
+    "PEOPLE": {
+        "USDT": "PEOPLE-USDT"
+    },
+    "ADS": {
+        "USDT": "ADS-USDT",
+        "BTC": "ADS-BTC"
+    },
+    "SOS": {
+        "USDT": "SOS-USDT"
+    },
+    "WHALE": {
+        "USDT": "WHALE-USDT"
+    },
+    "CWEB": {
+        "USDT": "CWEB-USDT"
+    },
+    "IOTA": {
+        "USDT": "IOTA-USDT",
+        "BTC": "IOTA-BTC"
+    },
+    "OOKI": {
+        "USDT": "OOKI-USDT",
+        "BTC": "OOKI-BTC"
+    },
+    "HNT": {
+        "USDT": "HNT-USDT",
+        "BTC": "HNT-BTC"
+    },
+    "GGG": {
+        "USDT": "GGG-USDT"
+    },
+    "REVU": {
+        "USDT": "REVU-USDT"
+    },
+    "CLH": {
+        "USDT": "CLH-USDT"
+    },
+    "PLGR": {
+        "USDT": "PLGR-USDT"
+    },
+    "GLMR": {
+        "USDT": "GLMR-USDT",
+        "BTC": "GLMR-BTC"
+    },
+    "LOVE": {
+        "USDT": "LOVE-USDT"
+    },
+    "CTC": {
+        "USDT": "CTC-USDT",
+        "BTC": "CTC-BTC"
+    },
+    "GARI": {
+        "USDT": "GARI-USDT"
+    },
+    "FRR": {
+        "USDT": "FRR-USDT"
+    },
+    "ASTR": {
+        "USDT": "ASTR-USDT",
+        "BTC": "ASTR-BTC"
+    },
+    "ERTHA": {
+        "USDT": "ERTHA-USDT"
+    },
+    "FCON": {
+        "USDT": "FCON-USDT"
+    },
+    "ACA": {
+        "USDT": "ACA-USDT",
+        "BTC": "ACA-BTC"
+    },
+    "MTS": {
+        "USDT": "MTS-USDT"
+    },
+    "ROAR": {
+        "USDT": "ROAR-USDT"
+    },
+    "HBB": {
+        "USDT": "HBB-USDT"
+    },
+    "SURV": {
+        "USDT": "SURV-USDT"
+    },
+    "CVX": {
+        "USDT": "CVX-USDT"
+    },
+    "AMP": {
+        "USDT": "AMP-USDT"
+    },
+    "ACT": {
+        "USDT": "ACT-USDT"
+    },
+    "MJT": {
+        "USDT": "MJT-USDT",
+        "KCS": "MJT-KCS"
+    },
+    "SHX": {
+        "USDT": "SHX-USDT",
+        "BTC": "SHX-BTC"
+    },
+    "STARLY": {
+        "USDT": "STARLY-USDT"
+    },
+    "ONSTON": {
+        "USDT": "ONSTON-USDT"
+    },
+    "RANKER": {
+        "USDT": "RANKER-USDT"
+    },
+    "WMT": {
+        "USDT": "WMT-USDT"
+    },
+    "XNO": {
+        "USDT": "XNO-USDT",
+        "BTC": "XNO-BTC"
+    },
+    "MARS4": {
+        "USDT": "MARS4-USDT"
+    },
+    "TFUEL": {
+        "USDT": "TFUEL-USDT",
+        "BTC": "TFUEL-BTC"
+    },
+    "METIS": {
+        "USDT": "METIS-USDT"
+    },
+    "LAVAX": {
+        "USDT": "LAVAX-USDT"
+    },
+    "WAL": {
+        "USDT": "WAL-USDT"
+    },
+    "BULL": {
+        "USDT": "BULL-USDT"
+    },
+    "SON": {
+        "USDT": "SON-USDT"
+    },
+    "MELOS": {
+        "USDT": "MELOS-USDT"
+    },
+    "APE": {
+        "USDT": "APE-USDT",
+        "USDC": "APE-USDC"
+    },
+    "GMT": {
+        "USDT": "GMT-USDT",
+        "USDC": "GMT-USDC"
+    },
+    "BICO": {
+        "USDT": "BICO-USDT"
+    },
+    "STG": {
+        "USDT": "STG-USDT"
+    },
+    "LMR": {
+        "USDT": "LMR-USDT",
+        "BTC": "LMR-BTC"
+    },
+    "LOKA": {
+        "USDT": "LOKA-USDT"
+    },
+    "URUS": {
+        "USDT": "URUS-USDT"
+    },
+    "JAM": {
+        "USDT": "JAM-USDT",
+        "ETH": "JAM-ETH"
+    },
+    "BNC": {
+        "USDT": "BNC-USDT"
+    },
+    "LBP": {
+        "USDT": "LBP-USDT"
+    },
+    "CFX": {
+        "USDT": "CFX-USDT"
+    },
+    "LOOKS": {
+        "USDT": "LOOKS-USDT"
+    },
+    "XCN": {
+        "USDT": "XCN-USDT",
+        "BTC": "XCN-BTC",
+        "USDC": "XCN-USDC"
+    },
+    "KP3R": {
+        "USDT": "KP3R-USDT"
+    },
+    "TITAN": {
+        "USDT": "TITAN-USDT"
+    },
+    "INDI": {
+        "USDT": "INDI-USDT"
+    },
+    "UPO": {
+        "USDT": "UPO-USDT"
+    },
+    "SPELL": {
+        "USDT": "SPELL-USDT"
+    },
+    "SLCL": {
+        "USDT": "SLCL-USDT"
+    },
+    "RPC": {
+        "USDT": "RPC-USDT",
+        "ETH": "RPC-ETH"
+    },
+    "CEEK": {
+        "USDT": "CEEK-USDT"
+    },
+    "VEMP": {
+        "USDT": "VEMP-USDT"
+    },
+    "BETA": {
+        "USDT": "BETA-USDT"
+    },
+    "NHCT": {
+        "USDT": "NHCT-USDT"
+    },
+    "ARNM": {
+        "USDT": "ARNM-USDT"
+    },
+    "FRA": {
+        "USDT": "FRA-USDT"
+    },
+    "VISION": {
+        "USDT": "VISION-USDT"
+    },
+    "COCOS": {
+        "USDT": "COCOS-USDT"
+    },
+    "ALPINE": {
+        "USDT": "ALPINE-USDT"
+    },
+    "BNX": {
+        "USDT": "BNX-USDT"
+    },
+    "ZBC": {
+        "USDT": "ZBC-USDT"
+    },
+    "WOOP": {
+        "USDT": "WOOP-USDT"
+    },
+    "T": {
+        "USDT": "T-USDT"
+    },
+    "NYM": {
+        "USDT": "NYM-USDT"
+    },
+    "VOXEL": {
+        "USDT": "VOXEL-USDT",
+        "ETH": "VOXEL-ETH"
+    },
+    "PSTAKE": {
+        "USDT": "PSTAKE-USDT"
+    },
+    "SPA": {
+        "USDT": "SPA-USDT",
+        "ETH": "SPA-ETH"
+    },
+    "SYNR": {
+        "USDT": "SYNR-USDT"
+    },
+    "DAR": {
+        "USDT": "DAR-USDT",
+        "BTC": "DAR-BTC"
+    },
+    "MV": {
+        "USDT": "MV-USDT"
+    },
+    "XDEFI": {
+        "USDT": "XDEFI-USDT"
+    },
+    "RACA": {
+        "USDT": "RACA-USDT"
+    },
+    "XWG": {
+        "USDT": "XWG-USDT"
+    },
+    "HAWK": {
+        "USDT": "HAWK-USDT"
+    },
+    "SWFTC": {
+        "USDT": "SWFTC-USDT"
+    },
+    "IDEX": {
+        "USDT": "IDEX-USDT"
+    },
+    "BRWL": {
+        "USDT": "BRWL-USDT"
+    },
+    "PLATO": {
+        "USDT": "PLATO-USDT"
+    },
+    "TAUM": {
+        "USDT": "TAUM-USDT"
+    },
+    "CELR": {
+        "USDT": "CELR-USDT"
+    },
+    "AURORA": {
+        "USDT": "AURORA-USDT"
+    },
+    "ITAMCUBE": {
+        "USDT": "ITAMCUBE-USDT"
+    },
+    "POSI": {
+        "USDT": "POSI-USDT"
+    },
+    "COOHA": {
+        "USDT": "COOHA-USDT"
+    },
+    "EPK": {
+        "USDT": "EPK-USDT"
+    },
+    "PLD": {
+        "USDT": "PLD-USDT"
+    },
+    "PSL": {
+        "USDT": "PSL-USDT"
+    },
+    "PKF": {
+        "USDT": "PKF-USDT"
+    },
+    "OVR": {
+        "USDT": "OVR-USDT"
+    },
+    "SYS": {
+        "USDT": "SYS-USDT",
+        "BTC": "SYS-BTC"
+    },
+    "BRISE": {
+        "USDT": "BRISE-USDT"
+    },
+    "DG": {
+        "USDT": "DG-USDT"
+    },
+    "EPX": {
+        "USDT": "EPX-USDT"
+    },
+    "GST": {
+        "USDT": "GST-USDT"
+    },
+    "PLY": {
+        "USDT": "PLY-USDT"
+    },
+    "GAL": {
+        "USDT": "GAL-USDT"
+    },
+    "BSW": {
+        "USDT": "BSW-USDT"
+    },
+    "FITFI": {
+        "USDT": "FITFI-USDT",
+        "USDC": "FITFI-USDC"
+    },
+    "FSN": {
+        "USDT": "FSN-USDT"
+    },
+    "H2O": {
+        "USDT": "H2O-USDT"
+    },
+    "GMM": {
+        "USDT": "GMM-USDT"
+    },
+    "AKT": {
+        "USDT": "AKT-USDT"
+    },
+    "SIN": {
+        "USDT": "SIN-USDT"
+    },
+    "aUSD": {
+        "USDT": "AUSD-USDT"
+    },
+    "BOBA": {
+        "USDT": "BOBA-USDT"
+    },
+    "KARA": {
+        "USDT": "KARA-USDT"
+    },
+    "BFC": {
+        "USDT": "BFC-USDT"
+    },
+    "BIFI": {
+        "USDT": "BIFI-USDT"
+    },
+    "DFA": {
+        "USDT": "DFA-USDT"
+    },
+    "KYL": {
+        "USDT": "KYL-USDT"
+    },
+    "FCD": {
+        "USDT": "FCD-USDT"
+    },
+    "MBL": {
+        "USDT": "MBL-USDT"
+    },
+    "CELT": {
+        "USDT": "CELT-USDT"
+    },
+    "DUSK": {
+        "USDT": "DUSK-USDT"
+    },
+    "USDD": {
+        "USDT": "USDD-USDT",
+        "USDC": "USDD-USDC",
+        "TRX": "USDD-TRX"
+    },
+    "MBOX": {
+        "USDT": "MBOX-USDT",
+        "BTC": "MBOX-BTC"
+    },
+    "MLS": {
+        "USDT": "MLS-USDT"
+    },
+    "AFK": {
+        "USDT": "AFK-USDT",
+        "USDC": "AFK-USDC"
+    },
+    "ACH": {
+        "USDT": "ACH-USDT"
+    },
+    "SCRT": {
+        "USDT": "SCRT-USDT",
+        "BTC": "SCRT-BTC"
+    },
+    "APE3L": {
+        "USDT": "APE3L-USDT"
+    },
+    "APE3S": {
+        "USDT": "APE3S-USDT"
+    },
+    "STORE": {
+        "USDT": "STORE-USDT",
+        "ETH": "STORE-ETH"
+    },
+    "GMT3L": {
+        "USDT": "GMT3L-USDT"
+    },
+    "GMT3S": {
+        "USDT": "GMT3S-USDT"
+    },
+    "CCD": {
+        "USDT": "CCD-USDT"
+    },
+    "DOSE": {
+        "USDC": "DOSE-USDC"
+    },
+    "LUNC": {
+        "USDT": "LUNC-USDT",
+        "USDC": "LUNC-USDC"
+    },
+    "USTC": {
+        "USDT": "USTC-USDT",
+        "USDC": "USTC-USDC"
+    },
+    "RBS": {
+        "USDT": "RBS-USDT"
+    },
+    "SRBS": {
+        "USDT": "SRBS-USDT"
+    },
+    "OP": {
+        "USDT": "OP-USDT",
+        "USDC": "OP-USDC"
+    },
+    "JASMY3L": {
+        "USDT": "JASMY3L-USDT"
+    },
+    "JASMY3S": {
+        "USDT": "JASMY3S-USDT"
+    },
+    "EVER": {
+        "USDT": "EVER-USDT"
+    },
+    "MOOV": {
+        "USDT": "MOOV-USDT"
+    },
+    "IHC": {
+        "USDT": "IHC-USDT"
+    },
+    "ICX": {
+        "USDT": "ICX-USDT",
+        "ETH": "ICX-ETH"
+    },
+    "WELL": {
+        "USDT": "WELL-USDT"
+    },
+    "FORT": {
+        "USDT": "FORT-USDT"
+    },
+    "USDP": {
+        "USDT": "USDP-USDT"
+    },
+    "CSPR": {
+        "USDT": "CSPR-USDT",
+        "ETH": "CSPR-ETH"
+    },
+    "WEMIX": {
+        "USDT": "WEMIX-USDT"
+    },
+    "REV3L": {
+        "USDT": "REV3L-USDT"
+    },
+    "XRP": {
+        "TUSD": "XRP-TUSD",
+        "USDC": "XRP-USDC",
+        "BTC": "XRP-BTC",
+        "KCS": "XRP-KCS",
+        "USDT": "XRP-USDT",
+        "ETH": "XRP-ETH"
+    },
+    "LSK": {
+        "BTC": "LSK-BTC",
+        "ETH": "LSK-ETH"
+    },
+    "KAT": {
+        "USDT": "KAT-USDT",
+        "BTC": "KAT-BTC"
+    },
+    "GRIN": {
+        "BTC": "GRIN-BTC",
+        "USDT": "GRIN-USDT"
+    }
+}

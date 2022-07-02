@@ -8,6 +8,7 @@ import time
 import asyncio
 import threading
 import nest_asyncio
+from .symbol_translator import symboltranslator
 
 
 class SpotOrderbooks(Orderbooks):
@@ -33,9 +34,12 @@ class SpotOrderbooks(Orderbooks):
 
 class SpotOrderbookManager(BaseOrderbookManager):
     def __init__(self, api_key, api_secret, 
-                            api_passphrase ,symbols, depth=5):
-        if len(symbols) > 30:
+                            api_passphrase ,pairs, depth=5):
+        if len(pairs) > 30:
             print('Too many symbols, it might not work correctly')
+        symbols = []
+        for pair in pairs:
+            symbols.append(symboltranslator('kucoin', pair[0], pair[1], 'spot'))
         self.symbols = symbols
         self.depth = depth
         self.client = Client(api_key, api_secret, api_passphrase)
@@ -105,9 +109,12 @@ class FuturesOrderbooks(Orderbooks):
 
 class FuturesOrderbookManager(BaseOrderbookManager):
     def __init__(self, api_key, api_secret, 
-                            api_passphrase ,symbols, depth=5):
-        if len(symbols) > 30:
+                            api_passphrase ,pairs, depth=5):
+        if len(pairs) > 30:
             print('Too many symbols, it might not work correctly')
+        symbols = []
+        for pair in pairs:
+            symbols.append(symboltranslator('kucoin', pair[0], pair[1], 'perp'))
         self.symbols = symbols
         self.depth = depth
         self.client = Market(url='https://api-futures.kucoin.com')

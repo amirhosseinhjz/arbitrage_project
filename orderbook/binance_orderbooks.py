@@ -4,6 +4,7 @@ import time
 from binance import ThreadedWebsocketManager
 import threading
 import asyncio
+from .symbol_translator import symboltranslator
 
 class SpotOrderbooks(Orderbooks):
     def __init__(self, symbol, depth, client):
@@ -14,9 +15,10 @@ class SpotOrderbooks(Orderbooks):
         self.initialed = False
         self.in_snapshot_process = False
         self.first_socket_done = False
+        self.tries = 0
 
     def _get_snapshot(self, client, depth):
-        self.in_snapshot_process = True
+        self.tries += 1
         orderbooks = client.get_order_book(symbol=self.symbol, limit=depth)
         self.lastUpdateId = orderbooks['lastUpdateId']
         t_ = int(time.time())
@@ -31,6 +33,7 @@ class SpotOrderbooks(Orderbooks):
     def get_snapshot(self, client, depth):
         if self.in_snapshot_process:
             return
+        self.in_snapshot_process = True
         thrd = threading.Thread(target=self._get_snapshot, args=(client, depth))
         thrd.start()
 
@@ -43,7 +46,9 @@ class SpotOrderbooks(Orderbooks):
         U = msg['U']
         if not self.first_socket_done:
             if U > self.lastUpdateId or u < self.lastUpdateId:
-                print(self.symbol + ': Start data is not valid')
+                print(self.symbol + ': Start data is not valid for time: ' + str(self.tries))
+                self.initialed = True
+                self.get_snapshot(self.client, self.depth)
                 return
             else:
                 print(self.symbol + ': Started with valid data')
@@ -57,12 +62,14 @@ class SpotOrderbooks(Orderbooks):
             self.create_orderbook(event_time, float(bid[0]), float(bid[1]), BID)
         self.u = msg['u']
 
-
 class SpotOrderbookManager(BaseOrderbookManager):
-    def __init__(self, key, secret, symbols, depth=5):
-        if len(symbols) >30:
-            print('Too many symbols, it might not work correctly')
-        self.symbols = list(map(lambda x: x.replace('-', ''), symbols))
+    def __init__(self, key, secret, pairs, depth=5):
+        if len(pairs) >30:
+            print('Too many pairs, it might not work correctly')
+        symbols = []
+        for pair in pairs:
+            symbols.append(symboltranslator('binance', pair[0], pair[1], 'spot'))
+        self.symbols = symbols
         self.depth = depth
         self.key = key
         self.secret = secret
@@ -113,9 +120,10 @@ class FuturesOrderbooks(Orderbooks):
         self.initialed = False
         self.in_snapshot_process = False
         self.first_socket_done = False
+        self.tries = 0
 
     def _get_snapshot(self, client, depth):
-        self.in_snapshot_process = True
+        self.tries += 1
         orderbooks = client.futures_order_book(symbol=self.symbol)
         self.lastUpdateId = orderbooks['lastUpdateId']
         t_ = int(time.time())
@@ -129,6 +137,7 @@ class FuturesOrderbooks(Orderbooks):
     def get_snapshot(self, client, depth):
         if self.in_snapshot_process:
             return
+        self.in_snapshot_process = True
         thrd = threading.Thread(target=self._get_snapshot, args=(client, depth))
         thrd.start()
 
@@ -142,7 +151,8 @@ class FuturesOrderbooks(Orderbooks):
         pu = msg['pu']
         if not self.first_socket_done:
             if U > self.lastUpdateId or u < self.lastUpdateId:
-                print(self.symbol + ': Start data is not valid')
+                print(self.symbol + ': Start data is not valid for time: ' + str(self.tries))
+                self.get_snapshot(self.client, self.depth)
                 return
             else:
                 print(self.symbol + ': Started with valid data')
@@ -157,13 +167,16 @@ class FuturesOrderbooks(Orderbooks):
         self.u = u
 
 class FuturesOrderbookManager(BaseOrderbookManager):
-    def __init__(self, symbols, depth=5):
-        if len(symbols) >30:
+    def __init__(self, pairs, depth=5):
+        if len(pairs) >30:
             print('Too many symbols, it might not work correctly')
-        self.symbols = list(map(lambda x: x.replace('-', ''), symbols))
+        symbols = []
+        for pair in pairs:
+            symbols.append(symboltranslator('binance', pair[0], pair[1], 'perp'))
+        self.symbols = symbols
         self.depth = depth
         self.client = Client()
-
+        
     def _init_orderbooks(self):
         self.orderbooks = {}
         for symbol in self.symbols:

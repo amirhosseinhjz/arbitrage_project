@@ -1,0 +1,94 @@
+{
+    "XBT": {
+        "USD": "pi_xbtusd",
+        "USD1": "fi_xbtusd_220729"
+    },
+    "ETH": {
+        "USD": "pi_ethusd",
+        "USD1": "fi_ethusd_220729"
+    },
+    "LTC": {
+        "USD": "pi_ltcusd",
+        "USD1": "fi_ltcusd_220729"
+    },
+    "BCH": {
+        "USD": "pi_bchusd",
+        "USD1": "fi_bchusd_220729"
+    },
+    "XRP": {
+        "USD": "pi_xrpusd",
+        "USD1": "fi_xrpusd_220729"
+    },
+    "ADA": {
+        "USD": "pf_adausd"
+    },
+    "SOL": {
+        "USD": "pf_solusd"
+    },
+    "UNI": {
+        "USD": "pf_uniusd"
+    },
+    "ATOM": {
+        "USD": "pf_atomusd"
+    },
+    "DOT": {
+        "USD": "pf_dotusd"
+    },
+    "EOS": {
+        "USD": "pf_eosusd"
+    },
+    "FIL": {
+        "USD": "pf_filusd"
+    },
+    "LINK": {
+        "USD": "pf_linkusd"
+    },
+    "MATIC": {
+        "USD": "pf_maticusd"
+    },
+    "DEFI": {
+        "USD": "pf_defiusd"
+    },
+    "AVAX": {
+        "USD": "pf_avaxusd"
+    },
+    "XMR": {
+        "USD": "pf_xmrusd"
+    },
+    "GMT": {
+        "USD": "pf_gmtusd"
+    },
+    "LUNA2": {
+        "USD": "pf_luna2usd"
+    },
+    "OP": {
+        "USD": "pf_opusd"
+    },
+    "NEAR": {
+        "USD": "pf_nearusd"
+    },
+    "APE": {
+        "USD": "pf_apeusd"
+    },
+    "WAVES": {
+        "USD": "pf_wavesusd"
+    },
+    "DOGE": {
+        "USD": "pf_dogeusd"
+    },
+    "FTM": {
+        "USD": "pf_ftmusd"
+    },
+    "TRX": {
+        "USD": "pf_trxusd"
+    },
+    "MANA": {
+        "USD": "pf_manausd"
+    },
+    "CRV": {
+        "USD": "pf_crvusd"
+    },
+    "AAVE": {
+        "USD": "pf_aaveusd"
+    }
+}

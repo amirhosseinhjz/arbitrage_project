@@ -1,0 +1,1379 @@
+{
+    "1INCH": {
+        "USD": "1INCH/USD"
+    },
+    "AAPL": {
+        "USD": "AAPL/USD"
+    },
+    "AAVE": {
+        "USD": "AAVE/USD",
+        "USDT": "AAVE/USDT"
+    },
+    "ABNB": {
+        "USD": "ABNB/USD"
+    },
+    "ACB": {
+        "USD": "ACB/USD"
+    },
+    "AGLD": {
+        "USD": "AGLD/USD"
+    },
+    "AKRO": {
+        "USD": "AKRO/USD",
+        "USDT": "AKRO/USDT"
+    },
+    "ALCX": {
+        "USD": "ALCX/USD"
+    },
+    "ALEPH": {
+        "USD": "ALEPH/USD"
+    },
+    "ALGO": {
+        "USD": "ALGO/USD",
+        "USDT": "ALGO/USDT"
+    },
+    "ALICE": {
+        "USD": "ALICE/USD"
+    },
+    "ALPHA": {
+        "USD": "ALPHA/USD"
+    },
+    "AMC": {
+        "USD": "AMC/USD"
+    },
+    "AMD": {
+        "USD": "AMD/USD"
+    },
+    "AMPL": {
+        "USD": "AMPL/USD",
+        "USDT": "AMPL/USDT"
+    },
+    "AMZN": {
+        "USD": "AMZN/USD"
+    },
+    "ANC": {
+        "USD": "ANC/USD"
+    },
+    "APE": {
+        "USD": "APE/USD"
+    },
+    "APHA": {
+        "USD": "APHA/USD"
+    },
+    "ARKK": {
+        "USD": "ARKK/USD"
+    },
+    "ASD": {
+        "USD": "ASD/USD"
+    },
+    "ATLAS": {
+        "USD": "ATLAS/USD"
+    },
+    "ATOM": {
+        "USD": "ATOM/USD",
+        "USDT": "ATOM/USDT"
+    },
+    "AUDIO": {
+        "USD": "AUDIO/USD",
+        "USDT": "AUDIO/USDT"
+    },
+    "AURY": {
+        "USD": "AURY/USD"
+    },
+    "AVAX": {
+        "BTC": "AVAX/BTC",
+        "USD": "AVAX/USD",
+        "USDT": "AVAX/USDT"
+    },
+    "AXS": {
+        "USD": "AXS/USD"
+    },
+    "BABA": {
+        "USD": "BABA/USD"
+    },
+    "BADGER": {
+        "USD": "BADGER/USD"
+    },
+    "BAL": {
+        "USD": "BAL/USD",
+        "USDT": "BAL/USDT"
+    },
+    "BAND": {
+        "USD": "BAND/USD"
+    },
+    "BAO": {
+        "USD": "BAO/USD"
+    },
+    "BAR": {
+        "USD": "BAR/USD"
+    },
+    "BAT": {
+        "JPY": "BAT/JPY",
+        "USD": "BAT/USD"
+    },
+    "BB": {
+        "USD": "BB/USD"
+    },
+    "BCH": {
+        "BTC": "BCH/BTC",
+        "JPY": "BCH/JPY",
+        "USD": "BCH/USD",
+        "USDT": "BCH/USDT"
+    },
+    "BICO": {
+        "USD": "BICO/USD"
+    },
+    "BILI": {
+        "USD": "BILI/USD"
+    },
+    "BIT": {
+        "USD": "BIT/USD"
+    },
+    "BITO": {
+        "USD": "BITO/USD"
+    },
+    "BITW": {
+        "USD": "BITW/USD"
+    },
+    "BLT": {
+        "USD": "BLT/USD"
+    },
+    "BNB": {
+        "BTC": "BNB/BTC",
+        "USD": "BNB/USD",
+        "USDT": "BNB/USDT"
+    },
+    "BNT": {
+        "USD": "BNT/USD"
+    },
+    "BNTX": {
+        "USD": "BNTX/USD"
+    },
+    "BOBA": {
+        "USD": "BOBA/USD"
+    },
+    "BRZ": {
+        "USD": "BRZ/USD",
+        "USDT": "BRZ/USDT"
+    },
+    "BTC": {
+        "AUD": "BTC/AUD",
+        "BRZ": "BTC/BRZ",
+        "EUR": "BTC/EUR",
+        "JPY": "BTC/JPY",
+        "TRYB": "BTC/TRYB",
+        "USD": "BTC/USD",
+        "USDT": "BTC/USDT"
+    },
+    "BTT": {
+        "USD": "BTT/USD"
+    },
+    "BYND": {
+        "USD": "BYND/USD"
+    },
+    "C98": {
+        "USD": "C98/USD"
+    },
+    "CAD": {
+        "USD": "CAD/USD"
+    },
+    "CEL": {
+        "BTC": "CEL/BTC",
+        "USD": "CEL/USD"
+    },
+    "CGC": {
+        "USD": "CGC/USD"
+    },
+    "CHR": {
+        "USD": "CHR/USD"
+    },
+    "CHZ": {
+        "USD": "CHZ/USD",
+        "USDT": "CHZ/USDT"
+    },
+    "CITY": {
+        "USD": "CITY/USD"
+    },
+    "CLV": {
+        "USD": "CLV/USD"
+    },
+    "COIN": {
+        "USD": "COIN/USD"
+    },
+    "COMP": {
+        "USD": "COMP/USD",
+        "USDT": "COMP/USDT"
+    },
+    "CONV": {
+        "USD": "CONV/USD"
+    },
+    "COPE": {
+        "USD": "COPE/USD"
+    },
+    "CQT": {
+        "USD": "CQT/USD"
+    },
+    "CREAM": {
+        "USD": "CREAM/USD",
+        "USDT": "CREAM/USDT"
+    },
+    "CRO": {
+        "USD": "CRO/USD"
+    },
+    "CRON": {
+        "USD": "CRON/USD"
+    },
+    "CRV": {
+        "USD": "CRV/USD"
+    },
+    "CTX": {
+        "USD": "CTX/USD",
+        "USDT": "CTX/USDT"
+    },
+    "CUSDT": {
+        "USD": "CUSDT/USD",
+        "USDT": "CUSDT/USDT"
+    },
+    "CVC": {
+        "USD": "CVC/USD"
+    },
+    "CVX": {
+        "USD": "CVX/USD"
+    },
+    "DAI": {
+        "USD": "DAI/USD",
+        "USDT": "DAI/USDT"
+    },
+    "DAWN": {
+        "USD": "DAWN/USD"
+    },
+    "DENT": {
+        "USD": "DENT/USD"
+    },
+    "DFL": {
+        "USD": "DFL/USD"
+    },
+    "DKNG": {
+        "USD": "DKNG/USD"
+    },
+    "DMG": {
+        "USD": "DMG/USD",
+        "USDT": "DMG/USDT"
+    },
+    "DODO": {
+        "USD": "DODO/USD"
+    },
+    "DOGE": {
+        "BTC": "DOGE/BTC",
+        "USD": "DOGE/USD",
+        "USDT": "DOGE/USDT"
+    },
+    "DOT": {
+        "BTC": "DOT/BTC",
+        "JPY": "DOT/JPY",
+        "USD": "DOT/USD",
+        "USDT": "DOT/USDT"
+    },
+    "DYDX": {
+        "USD": "DYDX/USD"
+    },
+    "EDEN": {
+        "USD": "EDEN/USD"
+    },
+    "EMB": {
+        "USD": "EMB/USD"
+    },
+    "ENJ": {
+        "JPY": "ENJ/JPY",
+        "USD": "ENJ/USD"
+    },
+    "ENS": {
+        "USD": "ENS/USD"
+    },
+    "ETH": {
+        "AUD": "ETH/AUD",
+        "BRZ": "ETH/BRZ",
+        "BTC": "ETH/BTC",
+        "EUR": "ETH/EUR",
+        "JPY": "ETH/JPY",
+        "USD": "ETH/USD",
+        "USDT": "ETH/USDT"
+    },
+    "ETHE": {
+        "USD": "ETHE/USD"
+    },
+    "EUR": {
+        "USD": "EUR/USD"
+    },
+    "EURT": {
+        "EUR": "EURT/EUR",
+        "USD": "EURT/USD",
+        "USDT": "EURT/USDT"
+    },
+    "FB": {
+        "USD": "FB/USD"
+    },
+    "FIDA": {
+        "USD": "FIDA/USD",
+        "USDT": "FIDA/USDT"
+    },
+    "FRONT": {
+        "USD": "FRONT/USD",
+        "USDT": "FRONT/USDT"
+    },
+    "FTM": {
+        "USD": "FTM/USD"
+    },
+    "FTT": {
+        "BTC": "FTT/BTC",
+        "JPY": "FTT/JPY",
+        "USD": "FTT/USD",
+        "USDT": "FTT/USDT"
+    },
+    "FXS": {
+        "USD": "FXS/USD"
+    },
+    "GAL": {
+        "USD": "GAL/USD"
+    },
+    "GALA": {
+        "USD": "GALA/USD"
+    },
+    "GALFAN": {
+        "USD": "GALFAN/USD"
+    },
+    "GARI": {
+        "USD": "GARI/USD"
+    },
+    "GBP": {
+        "USD": "GBP/USD"
+    },
+    "GBTC": {
+        "USD": "GBTC/USD"
+    },
+    "GDX": {
+        "USD": "GDX/USD"
+    },
+    "GDXJ": {
+        "USD": "GDXJ/USD"
+    },
+    "GENE": {
+        "USD": "GENE/USD"
+    },
+    "GLD": {
+        "USD": "GLD/USD"
+    },
+    "GLXY": {
+        "USD": "GLXY/USD"
+    },
+    "GME": {
+        "USD": "GME/USD"
+    },
+    "GMT": {
+        "USD": "GMT/USD"
+    },
+    "GODS": {
+        "USD": "GODS/USD"
+    },
+    "GOG": {
+        "USD": "GOG/USD"
+    },
+    "GOOGL": {
+        "USD": "GOOGL/USD"
+    },
+    "GRT": {
+        "USD": "GRT/USD"
+    },
+    "GST": {
+        "USD": "GST/USD",
+        "USDT": "GST/USDT"
+    },
+    "GT": {
+        "USD": "GT/USD"
+    },
+    "HGET": {
+        "USD": "HGET/USD",
+        "USDT": "HGET/USDT"
+    },
+    "HMT": {
+        "USD": "HMT/USD"
+    },
+    "HNT": {
+        "USD": "HNT/USD",
+        "USDT": "HNT/USDT"
+    },
+    "HOLY": {
+        "USD": "HOLY/USD"
+    },
+    "HOOD": {
+        "USD": "HOOD/USD"
+    },
+    "HT": {
+        "USD": "HT/USD"
+    },
+    "HUM": {
+        "USD": "HUM/USD"
+    },
+    "HXRO": {
+        "USD": "HXRO/USD",
+        "USDT": "HXRO/USDT"
+    },
+    "IMX": {
+        "USD": "IMX/USD"
+    },
+    "INDI": {
+        "USD": "INDI/USD"
+    },
+    "INTER": {
+        "USD": "INTER/USD"
+    },
+    "JET": {
+        "USD": "JET/USD"
+    },
+    "JOE": {
+        "USD": "JOE/USD"
+    },
+    "JST": {
+        "USD": "JST/USD"
+    },
+    "KBTT": {
+        "USD": "KBTT/USD"
+    },
+    "KIN": {
+        "USD": "KIN/USD"
+    },
+    "KNC": {
+        "USD": "KNC/USD",
+        "USDT": "KNC/USDT"
+    },
+    "KSHIB": {
+        "USD": "KSHIB/USD"
+    },
+    "KSOS": {
+        "USD": "KSOS/USD"
+    },
+    "LEO": {
+        "USD": "LEO/USD"
+    },
+    "LINA": {
+        "USD": "LINA/USD"
+    },
+    "LINK": {
+        "BTC": "LINK/BTC",
+        "USD": "LINK/USD",
+        "USDT": "LINK/USDT"
+    },
+    "LOOKS": {
+        "USD": "LOOKS/USD"
+    },
+    "LRC": {
+        "USD": "LRC/USD"
+    },
+    "LTC": {
+        "BTC": "LTC/BTC",
+        "JPY": "LTC/JPY",
+        "USD": "LTC/USD",
+        "USDT": "LTC/USDT"
+    },
+    "LUA": {
+        "USD": "LUA/USD",
+        "USDT": "LUA/USDT"
+    },
+    "MANA": {
+        "USD": "MANA/USD"
+    },
+    "MAPS": {
+        "USD": "MAPS/USD",
+        "USDT": "MAPS/USDT"
+    },
+    "MATH": {
+        "USD": "MATH/USD",
+        "USDT": "MATH/USDT"
+    },
+    "MATIC": {
+        "BTC": "MATIC/BTC",
+        "USD": "MATIC/USD"
+    },
+    "MBS": {
+        "USD": "MBS/USD"
+    },
+    "MCB": {
+        "USD": "MCB/USD"
+    },
+    "MEDIA": {
+        "USD": "MEDIA/USD"
+    },
+    "MER": {
+        "USD": "MER/USD"
+    },
+    "MKR": {
+        "USD": "MKR/USD",
+        "USDT": "MKR/USDT"
+    },
+    "MNGO": {
+        "USD": "MNGO/USD"
+    },
+    "MOB": {
+        "USD": "MOB/USD",
+        "USDT": "MOB/USDT"
+    },
+    "MRNA": {
+        "USD": "MRNA/USD"
+    },
+    "MSOL": {
+        "USD": "MSOL/USD"
+    },
+    "MSTR": {
+        "USD": "MSTR/USD"
+    },
+    "MTA": {
+        "USD": "MTA/USD",
+        "USDT": "MTA/USDT"
+    },
+    "MTL": {
+        "USD": "MTL/USD"
+    },
+    "NEAR": {
+        "USD": "NEAR/USD",
+        "USDT": "NEAR/USDT"
+    },
+    "NEXO": {
+        "USD": "NEXO/USD"
+    },
+    "NFLX": {
+        "USD": "NFLX/USD"
+    },
+    "NIO": {
+        "USD": "NIO/USD"
+    },
+    "NOK": {
+        "USD": "NOK/USD"
+    },
+    "NVDA": {
+        "USD": "NVDA/USD"
+    },
+    "OKB": {
+        "USD": "OKB/USD"
+    },
+    "OMG": {
+        "JPY": "OMG/JPY",
+        "USD": "OMG/USD"
+    },
+    "ORBS": {
+        "USD": "ORBS/USD"
+    },
+    "OXY": {
+        "USD": "OXY/USD",
+        "USDT": "OXY/USDT"
+    },
+    "PAXG": {
+        "USD": "PAXG/USD",
+        "USDT": "PAXG/USDT"
+    },
+    "PENN": {
+        "USD": "PENN/USD"
+    },
+    "PEOPLE": {
+        "USD": "PEOPLE/USD"
+    },
+    "PERP": {
+        "USD": "PERP/USD"
+    },
+    "PFE": {
+        "USD": "PFE/USD"
+    },
+    "POLIS": {
+        "USD": "POLIS/USD"
+    },
+    "PORT": {
+        "USD": "PORT/USD"
+    },
+    "PRISM": {
+        "USD": "PRISM/USD"
+    },
+    "PROM": {
+        "USD": "PROM/USD"
+    },
+    "PSG": {
+        "USD": "PSG/USD"
+    },
+    "PSY": {
+        "USD": "PSY/USD"
+    },
+    "PTU": {
+        "USD": "PTU/USD"
+    },
+    "PUNDIX": {
+        "USD": "PUNDIX/USD"
+    },
+    "PYPL": {
+        "USD": "PYPL/USD"
+    },
+    "QI": {
+        "USD": "QI/USD"
+    },
+    "RAMP": {
+        "USD": "RAMP/USD"
+    },
+    "RAY": {
+        "USD": "RAY/USD"
+    },
+    "REAL": {
+        "USD": "REAL/USD"
+    },
+    "REEF": {
+        "USD": "REEF/USD"
+    },
+    "REN": {
+        "USD": "REN/USD"
+    },
+    "RNDR": {
+        "USD": "RNDR/USD"
+    },
+    "ROOK": {
+        "USD": "ROOK/USD",
+        "USDT": "ROOK/USDT"
+    },
+    "RSR": {
+        "USD": "RSR/USD"
+    },
+    "SAND": {
+        "USD": "SAND/USD"
+    },
+    "SECO": {
+        "USD": "SECO/USD"
+    },
+    "SHIB": {
+        "USD": "SHIB/USD"
+    },
+    "SKL": {
+        "USD": "SKL/USD"
+    },
+    "SLND": {
+        "USD": "SLND/USD"
+    },
+    "SLP": {
+        "USD": "SLP/USD"
+    },
+    "SLRS": {
+        "USD": "SLRS/USD"
+    },
+    "SLV": {
+        "USD": "SLV/USD"
+    },
+    "SNX": {
+        "USD": "SNX/USD"
+    },
+    "SNY": {
+        "USD": "SNY/USD"
+    },
+    "SOL": {
+        "BTC": "SOL/BTC",
+        "JPY": "SOL/JPY",
+        "USD": "SOL/USD",
+        "USDT": "SOL/USDT"
+    },
+    "SOS": {
+        "USD": "SOS/USD"
+    },
+    "SPA": {
+        "USD": "SPA/USD"
+    },
+    "SPELL": {
+        "USD": "SPELL/USD"
+    },
+    "SPY": {
+        "USD": "SPY/USD"
+    },
+    "SQ": {
+        "USD": "SQ/USD"
+    },
+    "SRM": {
+        "USD": "SRM/USD",
+        "USDT": "SRM/USDT"
+    },
+    "STARS": {
+        "USD": "STARS/USD"
+    },
+    "STEP": {
+        "USD": "STEP/USD"
+    },
+    "STETH": {
+        "USD": "STETH/USD"
+    },
+    "STG": {
+        "USD": "STG/USD"
+    },
+    "STMX": {
+        "USD": "STMX/USD"
+    },
+    "STORJ": {
+        "USD": "STORJ/USD"
+    },
+    "STSOL": {
+        "USD": "STSOL/USD"
+    },
+    "SUN": {
+        "USD": "SUN/USD"
+    },
+    "SUSHI": {
+        "BTC": "SUSHI/BTC",
+        "USD": "SUSHI/USD",
+        "USDT": "SUSHI/USDT"
+    },
+    "SXP": {
+        "BTC": "SXP/BTC",
+        "USD": "SXP/USD",
+        "USDT": "SXP/USDT"
+    },
+    "TLM": {
+        "USD": "TLM/USD"
+    },
+    "TLRY": {
+        "USD": "TLRY/USD"
+    },
+    "TOMO": {
+        "USD": "TOMO/USD",
+        "USDT": "TOMO/USDT"
+    },
+    "TONCOIN": {
+        "USD": "TONCOIN/USD"
+    },
+    "TRU": {
+        "USD": "TRU/USD",
+        "USDT": "TRU/USDT"
+    },
+    "TRX": {
+        "BTC": "TRX/BTC",
+        "USD": "TRX/USD",
+        "USDT": "TRX/USDT"
+    },
+    "TRYB": {
+        "USD": "TRYB/USD"
+    },
+    "TSLA": {
+        "BTC": "TSLA/BTC",
+        "DOGE": "TSLA/DOGE",
+        "USD": "TSLA/USD"
+    },
+    "TSM": {
+        "USD": "TSM/USD"
+    },
+    "TULIP": {
+        "USD": "TULIP/USD"
+    },
+    "TWTR": {
+        "USD": "TWTR/USD"
+    },
+    "UBER": {
+        "USD": "UBER/USD"
+    },
+    "UBXT": {
+        "USD": "UBXT/USD",
+        "USDT": "UBXT/USDT"
+    },
+    "UMEE": {
+        "USD": "UMEE/USD"
+    },
+    "UNI": {
+        "BTC": "UNI/BTC",
+        "USD": "UNI/USD",
+        "USDT": "UNI/USDT"
+    },
+    "USD": {
+        "JPY": "USD/JPY"
+    },
+    "USDT": {
+        "USD": "USDT/USD"
+    },
+    "USO": {
+        "USD": "USO/USD"
+    },
+    "VGX": {
+        "USD": "VGX/USD"
+    },
+    "WAVES": {
+        "USD": "WAVES/USD"
+    },
+    "WBTC": {
+        "BTC": "WBTC/BTC",
+        "USD": "WBTC/USD"
+    },
+    "WFLOW": {
+        "USD": "WFLOW/USD"
+    },
+    "WNDR": {
+        "USD": "WNDR/USD"
+    },
+    "WRX": {
+        "USD": "WRX/USD",
+        "USDT": "WRX/USDT"
+    },
+    "XAUT": {
+        "USD": "XAUT/USD",
+        "USDT": "XAUT/USDT"
+    },
+    "XRP": {
+        "BTC": "XRP/BTC",
+        "JPY": "XRP/JPY",
+        "USD": "XRP/USD",
+        "USDT": "XRP/USDT"
+    },
+    "YFI": {
+        "BTC": "YFI/BTC",
+        "USD": "YFI/USD",
+        "USDT": "YFI/USDT"
+    },
+    "YFII": {
+        "USD": "YFII/USD"
+    },
+    "YGG": {
+        "USD": "YGG/USD"
+    },
+    "ZM": {
+        "USD": "ZM/USD"
+    },
+    "ZRX": {
+        "USD": "ZRX/USD"
+    },
+    "ADABEAR": {
+        "USD": "ADABEAR/USD"
+    },
+    "ADABULL": {
+        "USD": "ADABULL/USD"
+    },
+    "ADAHALF": {
+        "USD": "ADAHALF/USD"
+    },
+    "ADAHEDGE": {
+        "USD": "ADAHEDGE/USD"
+    },
+    "ALGOBEAR": {
+        "USD": "ALGOBEAR/USD"
+    },
+    "ALGOBULL": {
+        "USD": "ALGOBULL/USD"
+    },
+    "ALGOHALF": {
+        "USD": "ALGOHALF/USD"
+    },
+    "ALGOHEDGE": {
+        "USD": "ALGOHEDGE/USD"
+    },
+    "ALTBEAR": {
+        "USD": "ALTBEAR/USD"
+    },
+    "ALTBULL": {
+        "USD": "ALTBULL/USD"
+    },
+    "ALTHALF": {
+        "USD": "ALTHALF/USD"
+    },
+    "ALTHEDGE": {
+        "USD": "ALTHEDGE/USD"
+    },
+    "ASDBEAR": {
+        "USD": "ASDBEAR/USD",
+        "USDT": "ASDBEAR/USDT"
+    },
+    "ASDBULL": {
+        "USD": "ASDBULL/USD",
+        "USDT": "ASDBULL/USDT"
+    },
+    "ASDHALF": {
+        "USD": "ASDHALF/USD"
+    },
+    "ASDHEDGE": {
+        "USD": "ASDHEDGE/USD"
+    },
+    "ATOMBEAR": {
+        "USD": "ATOMBEAR/USD"
+    },
+    "ATOMBULL": {
+        "USD": "ATOMBULL/USD"
+    },
+    "ATOMHALF": {
+        "USD": "ATOMHALF/USD"
+    },
+    "ATOMHEDGE": {
+        "USD": "ATOMHEDGE/USD"
+    },
+    "BALBEAR": {
+        "USD": "BALBEAR/USD",
+        "USDT": "BALBEAR/USDT"
+    },
+    "BALBULL": {
+        "USD": "BALBULL/USD",
+        "USDT": "BALBULL/USDT"
+    },
+    "BALHALF": {
+        "USD": "BALHALF/USD"
+    },
+    "BALHEDGE": {
+        "USD": "BALHEDGE/USD"
+    },
+    "BCHBEAR": {
+        "USD": "BCHBEAR/USD",
+        "USDT": "BCHBEAR/USDT"
+    },
+    "BCHBULL": {
+        "USD": "BCHBULL/USD",
+        "USDT": "BCHBULL/USDT"
+    },
+    "BCHHALF": {
+        "USD": "BCHHALF/USD"
+    },
+    "BCHHEDGE": {
+        "USD": "BCHHEDGE/USD"
+    },
+    "BEAR": {
+        "USD": "BEAR/USD",
+        "USDT": "BEAR/USDT"
+    },
+    "BEARSHIT": {
+        "USD": "BEARSHIT/USD"
+    },
+    "BNBBEAR": {
+        "USD": "BNBBEAR/USD",
+        "USDT": "BNBBEAR/USDT"
+    },
+    "BNBBULL": {
+        "USD": "BNBBULL/USD",
+        "USDT": "BNBBULL/USDT"
+    },
+    "BNBHALF": {
+        "USD": "BNBHALF/USD"
+    },
+    "BNBHEDGE": {
+        "USD": "BNBHEDGE/USD"
+    },
+    "BSVBEAR": {
+        "USD": "BSVBEAR/USD",
+        "USDT": "BSVBEAR/USDT"
+    },
+    "BSVBULL": {
+        "USD": "BSVBULL/USD",
+        "USDT": "BSVBULL/USDT"
+    },
+    "BSVHALF": {
+        "USD": "BSVHALF/USD"
+    },
+    "BSVHEDGE": {
+        "USD": "BSVHEDGE/USD"
+    },
+    "BULL": {
+        "USD": "BULL/USD",
+        "USDT": "BULL/USDT"
+    },
+    "BULLSHIT": {
+        "USD": "BULLSHIT/USD"
+    },
+    "BVOL": {
+        "USD": "BVOL/USD"
+    },
+    "COMPBEAR": {
+        "USD": "COMPBEAR/USD",
+        "USDT": "COMPBEAR/USDT"
+    },
+    "COMPBULL": {
+        "USD": "COMPBULL/USD",
+        "USDT": "COMPBULL/USDT"
+    },
+    "COMPHALF": {
+        "USD": "COMPHALF/USD"
+    },
+    "COMPHEDGE": {
+        "USD": "COMPHEDGE/USD"
+    },
+    "DEFIBEAR": {
+        "USD": "DEFIBEAR/USD",
+        "USDT": "DEFIBEAR/USDT"
+    },
+    "DEFIBULL": {
+        "USD": "DEFIBULL/USD",
+        "USDT": "DEFIBULL/USDT"
+    },
+    "DEFIHALF": {
+        "USD": "DEFIHALF/USD"
+    },
+    "DEFIHEDGE": {
+        "USD": "DEFIHEDGE/USD"
+    },
+    "DOGEBEAR2021": {
+        "USD": "DOGEBEAR2021/USD"
+    },
+    "DOGEBULL": {
+        "USD": "DOGEBULL/USD"
+    },
+    "DOGEHALF": {
+        "USD": "DOGEHALF/USD"
+    },
+    "DOGEHEDGE": {
+        "USD": "DOGEHEDGE/USD"
+    },
+    "DRGNBEAR": {
+        "USD": "DRGNBEAR/USD"
+    },
+    "DRGNBULL": {
+        "USD": "DRGNBULL/USD"
+    },
+    "DRGNHALF": {
+        "USD": "DRGNHALF/USD"
+    },
+    "DRGNHEDGE": {
+        "USD": "DRGNHEDGE/USD"
+    },
+    "EOSBEAR": {
+        "USD": "EOSBEAR/USD",
+        "USDT": "EOSBEAR/USDT"
+    },
+    "EOSBULL": {
+        "USD": "EOSBULL/USD",
+        "USDT": "EOSBULL/USDT"
+    },
+    "EOSHALF": {
+        "USD": "EOSHALF/USD"
+    },
+    "EOSHEDGE": {
+        "USD": "EOSHEDGE/USD"
+    },
+    "ETCBEAR": {
+        "USD": "ETCBEAR/USD"
+    },
+    "ETCBULL": {
+        "USD": "ETCBULL/USD"
+    },
+    "ETCHALF": {
+        "USD": "ETCHALF/USD"
+    },
+    "ETCHEDGE": {
+        "USD": "ETCHEDGE/USD"
+    },
+    "ETHBEAR": {
+        "USD": "ETHBEAR/USD",
+        "USDT": "ETHBEAR/USDT"
+    },
+    "ETHBULL": {
+        "USD": "ETHBULL/USD",
+        "USDT": "ETHBULL/USDT"
+    },
+    "ETHHALF": {
+        "USD": "ETHHALF/USD"
+    },
+    "ETHHEDGE": {
+        "USD": "ETHHEDGE/USD"
+    },
+    "EXCHBEAR": {
+        "USD": "EXCHBEAR/USD"
+    },
+    "EXCHBULL": {
+        "USD": "EXCHBULL/USD"
+    },
+    "EXCHHALF": {
+        "USD": "EXCHHALF/USD"
+    },
+    "EXCHHEDGE": {
+        "USD": "EXCHHEDGE/USD"
+    },
+    "GRTBEAR": {
+        "USD": "GRTBEAR/USD"
+    },
+    "GRTBULL": {
+        "USD": "GRTBULL/USD"
+    },
+    "HALF": {
+        "USD": "HALF/USD"
+    },
+    "HALFSHIT": {
+        "USD": "HALFSHIT/USD"
+    },
+    "HEDGE": {
+        "USD": "HEDGE/USD"
+    },
+    "HEDGESHIT": {
+        "USD": "HEDGESHIT/USD"
+    },
+    "HTBEAR": {
+        "USD": "HTBEAR/USD"
+    },
+    "HTBULL": {
+        "USD": "HTBULL/USD"
+    },
+    "HTHALF": {
+        "USD": "HTHALF/USD"
+    },
+    "HTHEDGE": {
+        "USD": "HTHEDGE/USD"
+    },
+    "IBVOL": {
+        "USD": "IBVOL/USD"
+    },
+    "KNCBEAR": {
+        "USD": "KNCBEAR/USD",
+        "USDT": "KNCBEAR/USDT"
+    },
+    "KNCBULL": {
+        "USD": "KNCBULL/USD",
+        "USDT": "KNCBULL/USDT"
+    },
+    "KNCHALF": {
+        "USD": "KNCHALF/USD"
+    },
+    "KNCHEDGE": {
+        "USD": "KNCHEDGE/USD"
+    },
+    "LEOBEAR": {
+        "USD": "LEOBEAR/USD"
+    },
+    "LEOBULL": {
+        "USD": "LEOBULL/USD"
+    },
+    "LEOHALF": {
+        "USD": "LEOHALF/USD"
+    },
+    "LEOHEDGE": {
+        "USD": "LEOHEDGE/USD"
+    },
+    "LINKBEAR": {
+        "USD": "LINKBEAR/USD",
+        "USDT": "LINKBEAR/USDT"
+    },
+    "LINKBULL": {
+        "USD": "LINKBULL/USD",
+        "USDT": "LINKBULL/USDT"
+    },
+    "LINKHALF": {
+        "USD": "LINKHALF/USD"
+    },
+    "LINKHEDGE": {
+        "USD": "LINKHEDGE/USD"
+    },
+    "LTCBEAR": {
+        "USD": "LTCBEAR/USD",
+        "USDT": "LTCBEAR/USDT"
+    },
+    "LTCBULL": {
+        "USD": "LTCBULL/USD",
+        "USDT": "LTCBULL/USDT"
+    },
+    "LTCHALF": {
+        "USD": "LTCHALF/USD"
+    },
+    "LTCHEDGE": {
+        "USD": "LTCHEDGE/USD"
+    },
+    "MATICBEAR2021": {
+        "USD": "MATICBEAR2021/USD"
+    },
+    "MATICBULL": {
+        "USD": "MATICBULL/USD"
+    },
+    "MATICHALF": {
+        "USD": "MATICHALF/USD"
+    },
+    "MATICHEDGE": {
+        "USD": "MATICHEDGE/USD"
+    },
+    "MIDBEAR": {
+        "USD": "MIDBEAR/USD"
+    },
+    "MIDBULL": {
+        "USD": "MIDBULL/USD"
+    },
+    "MIDHALF": {
+        "USD": "MIDHALF/USD"
+    },
+    "MIDHEDGE": {
+        "USD": "MIDHEDGE/USD"
+    },
+    "MKRBEAR": {
+        "USD": "MKRBEAR/USD"
+    },
+    "MKRBULL": {
+        "USD": "MKRBULL/USD"
+    },
+    "OKBBEAR": {
+        "USD": "OKBBEAR/USD"
+    },
+    "OKBBULL": {
+        "USD": "OKBBULL/USD"
+    },
+    "OKBHALF": {
+        "USD": "OKBHALF/USD"
+    },
+    "OKBHEDGE": {
+        "USD": "OKBHEDGE/USD"
+    },
+    "PAXGBEAR": {
+        "USD": "PAXGBEAR/USD"
+    },
+    "PAXGBULL": {
+        "USD": "PAXGBULL/USD"
+    },
+    "PAXGHALF": {
+        "USD": "PAXGHALF/USD"
+    },
+    "PAXGHEDGE": {
+        "USD": "PAXGHEDGE/USD"
+    },
+    "PRIVBEAR": {
+        "USD": "PRIVBEAR/USD"
+    },
+    "PRIVBULL": {
+        "USD": "PRIVBULL/USD"
+    },
+    "PRIVHALF": {
+        "USD": "PRIVHALF/USD"
+    },
+    "PRIVHEDGE": {
+        "USD": "PRIVHEDGE/USD"
+    },
+    "SUSHIBEAR": {
+        "USD": "SUSHIBEAR/USD"
+    },
+    "SUSHIBULL": {
+        "USD": "SUSHIBULL/USD"
+    },
+    "SXPBEAR": {
+        "USD": "SXPBEAR/USD"
+    },
+    "SXPBULL": {
+        "USD": "SXPBULL/USD"
+    },
+    "SXPHALF": {
+        "USD": "SXPHALF/USD",
+        "USDT": "SXPHALF/USDT"
+    },
+    "SXPHEDGE": {
+        "USD": "SXPHEDGE/USD"
+    },
+    "THETABEAR": {
+        "USD": "THETABEAR/USD"
+    },
+    "THETABULL": {
+        "USD": "THETABULL/USD"
+    },
+    "THETAHALF": {
+        "USD": "THETAHALF/USD"
+    },
+    "THETAHEDGE": {
+        "USD": "THETAHEDGE/USD"
+    },
+    "TOMOBEAR2021": {
+        "USD": "TOMOBEAR2021/USD"
+    },
+    "TOMOBULL": {
+        "USD": "TOMOBULL/USD"
+    },
+    "TOMOHALF": {
+        "USD": "TOMOHALF/USD"
+    },
+    "TOMOHEDGE": {
+        "USD": "TOMOHEDGE/USD"
+    },
+    "TRXBEAR": {
+        "USD": "TRXBEAR/USD"
+    },
+    "TRXBULL": {
+        "USD": "TRXBULL/USD"
+    },
+    "TRXHALF": {
+        "USD": "TRXHALF/USD"
+    },
+    "TRXHEDGE": {
+        "USD": "TRXHEDGE/USD"
+    },
+    "TRYBBEAR": {
+        "USD": "TRYBBEAR/USD"
+    },
+    "TRYBBULL": {
+        "USD": "TRYBBULL/USD"
+    },
+    "TRYBHALF": {
+        "USD": "TRYBHALF/USD"
+    },
+    "TRYBHEDGE": {
+        "USD": "TRYBHEDGE/USD"
+    },
+    "UNISWAPBEAR": {
+        "USD": "UNISWAPBEAR/USD"
+    },
+    "UNISWAPBULL": {
+        "USD": "UNISWAPBULL/USD"
+    },
+    "USDTBEAR": {
+        "USD": "USDTBEAR/USD"
+    },
+    "USDTBULL": {
+        "USD": "USDTBULL/USD"
+    },
+    "USDTHALF": {
+        "USD": "USDTHALF/USD"
+    },
+    "USDTHEDGE": {
+        "USD": "USDTHEDGE/USD"
+    },
+    "VETBEAR": {
+        "USD": "VETBEAR/USD",
+        "USDT": "VETBEAR/USDT"
+    },
+    "VETBULL": {
+        "USD": "VETBULL/USD",
+        "USDT": "VETBULL/USDT"
+    },
+    "VETHEDGE": {
+        "USD": "VETHEDGE/USD"
+    },
+    "XAUTBEAR": {
+        "USD": "XAUTBEAR/USD"
+    },
+    "XAUTBULL": {
+        "USD": "XAUTBULL/USD"
+    },
+    "XAUTHALF": {
+        "USD": "XAUTHALF/USD"
+    },
+    "XAUTHEDGE": {
+        "USD": "XAUTHEDGE/USD"
+    },
+    "XLMBEAR": {
+        "USD": "XLMBEAR/USD"
+    },
+    "XLMBULL": {
+        "USD": "XLMBULL/USD"
+    },
+    "XRPBEAR": {
+        "USD": "XRPBEAR/USD",
+        "USDT": "XRPBEAR/USDT"
+    },
+    "XRPBULL": {
+        "USD": "XRPBULL/USD",
+        "USDT": "XRPBULL/USDT"
+    },
+    "XRPHALF": {
+        "USD": "XRPHALF/USD"
+    },
+    "XRPHEDGE": {
+        "USD": "XRPHEDGE/USD"
+    },
+    "XTZBEAR": {
+        "USD": "XTZBEAR/USD",
+        "USDT": "XTZBEAR/USDT"
+    },
+    "XTZBULL": {
+        "USD": "XTZBULL/USD",
+        "USDT": "XTZBULL/USDT"
+    },
+    "XTZHALF": {
+        "USD": "XTZHALF/USD"
+    },
+    "XTZHEDGE": {
+        "USD": "XTZHEDGE/USD"
+    },
+    "ZECBEAR": {
+        "USD": "ZECBEAR/USD"
+    },
+    "ZECBULL": {
+        "USD": "ZECBULL/USD"
+    }
+}

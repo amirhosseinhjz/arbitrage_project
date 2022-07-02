@@ -50,13 +50,12 @@ class Orderbooks:
     def callback(self, msg):
         pass
 
-    @property
-    def asks(self):
-        return [self.ASK[price].list() for price in sorted(list(self.ASK.keys()))[:5]]
+    def asks(self, len):
+        return [self.ASK[price].list() for price in sorted(list(self.ASK.keys()))[:len]]
 
     @property
-    def bids(self):
-        return [self.BID[price].list() for price in sorted(list(self.BID.keys()))[-5:][::-1]]
+    def bids(self, len):
+        return [self.BID[price].list() for price in sorted(list(self.BID.keys()))[-len][::-1]]
 
 class BaseOrderbookManager:
     pass

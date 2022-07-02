@@ -1,0 +1,2778 @@
+{
+    "1INCH": {
+        "ZEUR": {
+            "symbol": "1INCHEUR",
+            "wsname": "1INCH/EUR"
+        },
+        "ZUSD": {
+            "symbol": "1INCHUSD",
+            "wsname": "1INCH/USD"
+        }
+    },
+    "AAVE": {
+        "ZAUD": {
+            "symbol": "AAVEAUD",
+            "wsname": "AAVE/AUD"
+        },
+        "XETH": {
+            "symbol": "AAVEETH",
+            "wsname": "AAVE/ETH"
+        },
+        "ZEUR": {
+            "symbol": "AAVEEUR",
+            "wsname": "AAVE/EUR"
+        },
+        "ZGBP": {
+            "symbol": "AAVEGBP",
+            "wsname": "AAVE/GBP"
+        },
+        "ZUSD": {
+            "symbol": "AAVEUSD",
+            "wsname": "AAVE/USD"
+        },
+        "XXBT": {
+            "symbol": "AAVEXBT",
+            "wsname": "AAVE/XBT"
+        }
+    },
+    "ACA": {
+        "ZEUR": {
+            "symbol": "ACAEUR",
+            "wsname": "ACA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ACAUSD",
+            "wsname": "ACA/USD"
+        }
+    },
+    "ACH": {
+        "ZEUR": {
+            "symbol": "ACHEUR",
+            "wsname": "ACH/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ACHUSD",
+            "wsname": "ACH/USD"
+        }
+    },
+    "ADA": {
+        "ZAUD": {
+            "symbol": "ADAAUD",
+            "wsname": "ADA/AUD"
+        },
+        "XETH": {
+            "symbol": "ADAETH",
+            "wsname": "ADA/ETH"
+        },
+        "ZEUR": {
+            "symbol": "ADAEUR",
+            "wsname": "ADA/EUR"
+        },
+        "ZGBP": {
+            "symbol": "ADAGBP",
+            "wsname": "ADA/GBP"
+        },
+        "ZUSD": {
+            "symbol": "ADAUSD",
+            "wsname": "ADA/USD"
+        },
+        "USDT": {
+            "symbol": "ADAUSDT",
+            "wsname": "ADA/USDT"
+        },
+        "XXBT": {
+            "symbol": "ADAXBT",
+            "wsname": "ADA/XBT"
+        }
+    },
+    "ADX": {
+        "ZEUR": {
+            "symbol": "ADXEUR",
+            "wsname": "ADX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ADXUSD",
+            "wsname": "ADX/USD"
+        }
+    },
+    "AGLD": {
+        "ZEUR": {
+            "symbol": "AGLDEUR",
+            "wsname": "AGLD/EUR"
+        },
+        "ZUSD": {
+            "symbol": "AGLDUSD",
+            "wsname": "AGLD/USD"
+        }
+    },
+    "AIR": {
+        "ZEUR": {
+            "symbol": "AIREUR",
+            "wsname": "AIR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "AIRUSD",
+            "wsname": "AIR/USD"
+        }
+    },
+    "AKT": {
+        "ZEUR": {
+            "symbol": "AKTEUR",
+            "wsname": "AKT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "AKTUSD",
+            "wsname": "AKT/USD"
+        }
+    },
+    "ALCX": {
+        "ZEUR": {
+            "symbol": "ALCXEUR",
+            "wsname": "ALCX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ALCXUSD",
+            "wsname": "ALCX/USD"
+        }
+    },
+    "ALGO": {
+        "XETH": {
+            "symbol": "ALGOETH",
+            "wsname": "ALGO/ETH"
+        },
+        "ZEUR": {
+            "symbol": "ALGOEUR",
+            "wsname": "ALGO/EUR"
+        },
+        "ZGBP": {
+            "symbol": "ALGOGBP",
+            "wsname": "ALGO/GBP"
+        },
+        "ZUSD": {
+            "symbol": "ALGOUSD",
+            "wsname": "ALGO/USD"
+        },
+        "XXBT": {
+            "symbol": "ALGOXBT",
+            "wsname": "ALGO/XBT"
+        }
+    },
+    "ALICE": {
+        "ZEUR": {
+            "symbol": "ALICEEUR",
+            "wsname": "ALICE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ALICEUSD",
+            "wsname": "ALICE/USD"
+        }
+    },
+    "ANKR": {
+        "ZEUR": {
+            "symbol": "ANKREUR",
+            "wsname": "ANKR/EUR"
+        },
+        "ZGBP": {
+            "symbol": "ANKRGBP",
+            "wsname": "ANKR/GBP"
+        },
+        "ZUSD": {
+            "symbol": "ANKRUSD",
+            "wsname": "ANKR/USD"
+        },
+        "XXBT": {
+            "symbol": "ANKRXBT",
+            "wsname": "ANKR/XBT"
+        }
+    },
+    "ANT": {
+        "XETH": {
+            "symbol": "ANTETH",
+            "wsname": "ANT/ETH"
+        },
+        "ZEUR": {
+            "symbol": "ANTEUR",
+            "wsname": "ANT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ANTUSD",
+            "wsname": "ANT/USD"
+        },
+        "XXBT": {
+            "symbol": "ANTXBT",
+            "wsname": "ANT/XBT"
+        }
+    },
+    "APE": {
+        "ZEUR": {
+            "symbol": "APEEUR",
+            "wsname": "APE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "APEUSD",
+            "wsname": "APE/USD"
+        }
+    },
+    "API3": {
+        "ZEUR": {
+            "symbol": "API3EUR",
+            "wsname": "API3/EUR"
+        },
+        "ZUSD": {
+            "symbol": "API3USD",
+            "wsname": "API3/USD"
+        }
+    },
+    "ASTR": {
+        "ZEUR": {
+            "symbol": "ASTREUR",
+            "wsname": "ASTR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ASTRUSD",
+            "wsname": "ASTR/USD"
+        }
+    },
+    "ATLAS": {
+        "ZEUR": {
+            "symbol": "ATLASEUR",
+            "wsname": "ATLAS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ATLASUSD",
+            "wsname": "ATLAS/USD"
+        }
+    },
+    "ATOM": {
+        "ZAUD": {
+            "symbol": "ATOMAUD",
+            "wsname": "ATOM/AUD"
+        },
+        "XETH": {
+            "symbol": "ATOMETH",
+            "wsname": "ATOM/ETH"
+        },
+        "ZEUR": {
+            "symbol": "ATOMEUR",
+            "wsname": "ATOM/EUR"
+        },
+        "ZGBP": {
+            "symbol": "ATOMGBP",
+            "wsname": "ATOM/GBP"
+        },
+        "ZUSD": {
+            "symbol": "ATOMUSD",
+            "wsname": "ATOM/USD"
+        },
+        "XXBT": {
+            "symbol": "ATOMXBT",
+            "wsname": "ATOM/XBT"
+        }
+    },
+    "AUDIO": {
+        "ZEUR": {
+            "symbol": "AUDIOEUR",
+            "wsname": "AUDIO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "AUDIOUSD",
+            "wsname": "AUDIO/USD"
+        }
+    },
+    "ZAUD": {
+        "ZJPY": {
+            "symbol": "AUDJPY",
+            "wsname": "AUD/JPY"
+        },
+        "ZUSD": {
+            "symbol": "AUDUSD",
+            "wsname": "AUD/USD"
+        }
+    },
+    "AVAX": {
+        "ZEUR": {
+            "symbol": "AVAXEUR",
+            "wsname": "AVAX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "AVAXUSD",
+            "wsname": "AVAX/USD"
+        }
+    },
+    "AXS": {
+        "ZEUR": {
+            "symbol": "AXSEUR",
+            "wsname": "AXS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "AXSUSD",
+            "wsname": "AXS/USD"
+        }
+    },
+    "BADGER": {
+        "ZEUR": {
+            "symbol": "BADGEREUR",
+            "wsname": "BADGER/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BADGERUSD",
+            "wsname": "BADGER/USD"
+        }
+    },
+    "BAL": {
+        "XETH": {
+            "symbol": "BALETH",
+            "wsname": "BAL/ETH"
+        },
+        "ZEUR": {
+            "symbol": "BALEUR",
+            "wsname": "BAL/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BALUSD",
+            "wsname": "BAL/USD"
+        },
+        "XXBT": {
+            "symbol": "BALXBT",
+            "wsname": "BAL/XBT"
+        }
+    },
+    "BAND": {
+        "ZEUR": {
+            "symbol": "BANDEUR",
+            "wsname": "BAND/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BANDUSD",
+            "wsname": "BAND/USD"
+        }
+    },
+    "BAT": {
+        "XETH": {
+            "symbol": "BATETH",
+            "wsname": "BAT/ETH"
+        },
+        "ZEUR": {
+            "symbol": "BATEUR",
+            "wsname": "BAT/EUR"
+        },
+        "ZJPY": {
+            "symbol": "BATJPY",
+            "wsname": "BAT/JPY"
+        },
+        "ZUSD": {
+            "symbol": "BATUSD",
+            "wsname": "BAT/USD"
+        },
+        "XXBT": {
+            "symbol": "BATXBT",
+            "wsname": "BAT/XBT"
+        }
+    },
+    "BCH": {
+        "ZAUD": {
+            "symbol": "BCHAUD",
+            "wsname": "BCH/AUD"
+        },
+        "XETH": {
+            "symbol": "BCHETH",
+            "wsname": "BCH/ETH"
+        },
+        "ZEUR": {
+            "symbol": "BCHEUR",
+            "wsname": "BCH/EUR"
+        },
+        "ZGBP": {
+            "symbol": "BCHGBP",
+            "wsname": "BCH/GBP"
+        },
+        "ZJPY": {
+            "symbol": "BCHJPY",
+            "wsname": "BCH/JPY"
+        },
+        "ZUSD": {
+            "symbol": "BCHUSD",
+            "wsname": "BCH/USD"
+        },
+        "USDT": {
+            "symbol": "BCHUSDT",
+            "wsname": "BCH/USDT"
+        },
+        "XXBT": {
+            "symbol": "BCHXBT",
+            "wsname": "BCH/XBT"
+        }
+    },
+    "BICO": {
+        "ZEUR": {
+            "symbol": "BICOEUR",
+            "wsname": "BICO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BICOUSD",
+            "wsname": "BICO/USD"
+        }
+    },
+    "BIT": {
+        "ZEUR": {
+            "symbol": "BITEUR",
+            "wsname": "BIT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BITUSD",
+            "wsname": "BIT/USD"
+        }
+    },
+    "BNC": {
+        "ZEUR": {
+            "symbol": "BNCEUR",
+            "wsname": "BNC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BNCUSD",
+            "wsname": "BNC/USD"
+        }
+    },
+    "BNT": {
+        "ZEUR": {
+            "symbol": "BNTEUR",
+            "wsname": "BNT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "BNTGBP",
+            "wsname": "BNT/GBP"
+        },
+        "ZUSD": {
+            "symbol": "BNTUSD",
+            "wsname": "BNT/USD"
+        },
+        "XXBT": {
+            "symbol": "BNTXBT",
+            "wsname": "BNT/XBT"
+        }
+    },
+    "BOND": {
+        "ZEUR": {
+            "symbol": "BONDEUR",
+            "wsname": "BOND/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BONDUSD",
+            "wsname": "BOND/USD"
+        }
+    },
+    "BTT": {
+        "ZEUR": {
+            "symbol": "BTTEUR",
+            "wsname": "BTT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "BTTUSD",
+            "wsname": "BTT/USD"
+        }
+    },
+    "CFG": {
+        "ZEUR": {
+            "symbol": "CFGEUR",
+            "wsname": "CFG/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CFGUSD",
+            "wsname": "CFG/USD"
+        }
+    },
+    "CHR": {
+        "ZEUR": {
+            "symbol": "CHREUR",
+            "wsname": "CHR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CHRUSD",
+            "wsname": "CHR/USD"
+        }
+    },
+    "CHZ": {
+        "ZEUR": {
+            "symbol": "CHZEUR",
+            "wsname": "CHZ/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CHZUSD",
+            "wsname": "CHZ/USD"
+        }
+    },
+    "COMP": {
+        "XETH": {
+            "symbol": "COMPETH",
+            "wsname": "COMP/ETH"
+        },
+        "ZEUR": {
+            "symbol": "COMPEUR",
+            "wsname": "COMP/EUR"
+        },
+        "ZUSD": {
+            "symbol": "COMPUSD",
+            "wsname": "COMP/USD"
+        },
+        "XXBT": {
+            "symbol": "COMPXBT",
+            "wsname": "COMP/XBT"
+        }
+    },
+    "COTI": {
+        "ZEUR": {
+            "symbol": "COTIEUR",
+            "wsname": "COTI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "COTIUSD",
+            "wsname": "COTI/USD"
+        }
+    },
+    "CQT": {
+        "ZEUR": {
+            "symbol": "CQTEUR",
+            "wsname": "CQT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CQTUSD",
+            "wsname": "CQT/USD"
+        }
+    },
+    "CRV": {
+        "XETH": {
+            "symbol": "CRVETH",
+            "wsname": "CRV/ETH"
+        },
+        "ZEUR": {
+            "symbol": "CRVEUR",
+            "wsname": "CRV/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CRVUSD",
+            "wsname": "CRV/USD"
+        },
+        "XXBT": {
+            "symbol": "CRVXBT",
+            "wsname": "CRV/XBT"
+        }
+    },
+    "CTSI": {
+        "ZEUR": {
+            "symbol": "CTSIEUR",
+            "wsname": "CTSI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CTSIUSD",
+            "wsname": "CTSI/USD"
+        }
+    },
+    "CVC": {
+        "ZEUR": {
+            "symbol": "CVCEUR",
+            "wsname": "CVC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CVCUSD",
+            "wsname": "CVC/USD"
+        }
+    },
+    "CVX": {
+        "ZEUR": {
+            "symbol": "CVXEUR",
+            "wsname": "CVX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "CVXUSD",
+            "wsname": "CVX/USD"
+        }
+    },
+    "DAI": {
+        "ZEUR": {
+            "symbol": "DAIEUR",
+            "wsname": "DAI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "DAIUSD",
+            "wsname": "DAI/USD"
+        },
+        "USDT": {
+            "symbol": "DAIUSDT",
+            "wsname": "DAI/USDT"
+        }
+    },
+    "DASH": {
+        "ZEUR": {
+            "symbol": "DASHEUR",
+            "wsname": "DASH/EUR"
+        },
+        "ZUSD": {
+            "symbol": "DASHUSD",
+            "wsname": "DASH/USD"
+        },
+        "XXBT": {
+            "symbol": "DASHXBT",
+            "wsname": "DASH/XBT"
+        }
+    },
+    "DENT": {
+        "ZEUR": {
+            "symbol": "DENTEUR",
+            "wsname": "DENT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "DENTUSD",
+            "wsname": "DENT/USD"
+        }
+    },
+    "DOT": {
+        "ZAUD": {
+            "symbol": "DOTAUD",
+            "wsname": "DOT/AUD"
+        },
+        "XETH": {
+            "symbol": "DOTETH",
+            "wsname": "DOT/ETH"
+        },
+        "ZEUR": {
+            "symbol": "DOTEUR",
+            "wsname": "DOT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "DOTGBP",
+            "wsname": "DOT/GBP"
+        },
+        "ZJPY": {
+            "symbol": "DOTJPY",
+            "wsname": "DOT/JPY"
+        },
+        "ZUSD": {
+            "symbol": "DOTUSD",
+            "wsname": "DOT/USD"
+        },
+        "USDT": {
+            "symbol": "DOTUSDT",
+            "wsname": "DOT/USDT"
+        },
+        "XXBT": {
+            "symbol": "DOTXBT",
+            "wsname": "DOT/XBT"
+        }
+    },
+    "DYDX": {
+        "ZEUR": {
+            "symbol": "DYDXEUR",
+            "wsname": "DYDX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "DYDXUSD",
+            "wsname": "DYDX/USD"
+        }
+    },
+    "EGLD": {
+        "ZEUR": {
+            "symbol": "EGLDEUR",
+            "wsname": "EGLD/EUR"
+        },
+        "ZUSD": {
+            "symbol": "EGLDUSD",
+            "wsname": "EGLD/USD"
+        }
+    },
+    "ENJ": {
+        "ZEUR": {
+            "symbol": "ENJEUR",
+            "wsname": "ENJ/EUR"
+        },
+        "ZGBP": {
+            "symbol": "ENJGBP",
+            "wsname": "ENJ/GBP"
+        },
+        "ZJPY": {
+            "symbol": "ENJJPY",
+            "wsname": "ENJ/JPY"
+        },
+        "ZUSD": {
+            "symbol": "ENJUSD",
+            "wsname": "ENJ/USD"
+        },
+        "XXBT": {
+            "symbol": "ENJXBT",
+            "wsname": "ENJ/XBT"
+        }
+    },
+    "ENS": {
+        "ZEUR": {
+            "symbol": "ENSEUR",
+            "wsname": "ENS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ENSUSD",
+            "wsname": "ENS/USD"
+        }
+    },
+    "EOS": {
+        "XETH": {
+            "symbol": "EOSETH",
+            "wsname": "EOS/ETH"
+        },
+        "ZEUR": {
+            "symbol": "EOSEUR",
+            "wsname": "EOS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "EOSUSD",
+            "wsname": "EOS/USD"
+        },
+        "USDT": {
+            "symbol": "EOSUSDT",
+            "wsname": "EOS/USDT"
+        },
+        "XXBT": {
+            "symbol": "EOSXBT",
+            "wsname": "EOS/XBT"
+        }
+    },
+    "ETH2.S": {
+        "XETH": {
+            "symbol": "ETH2.SETH",
+            "wsname": "ETH2.S/ETH"
+        }
+    },
+    "XETH": {
+        "ZAUD": {
+            "symbol": "ETHAUD",
+            "wsname": "ETH/AUD"
+        },
+        "CHF": {
+            "symbol": "ETHCHF",
+            "wsname": "ETH/CHF"
+        },
+        "DAI": {
+            "symbol": "ETHDAI",
+            "wsname": "ETH/DAI"
+        },
+        "USDC": {
+            "symbol": "ETHUSDC",
+            "wsname": "ETH/USDC"
+        },
+        "USDT": {
+            "symbol": "ETHUSDT",
+            "wsname": "ETH/USDT"
+        },
+        "XXBT": {
+            "symbol": "XETHXXBT",
+            "wsname": "ETH/XBT"
+        },
+        "ZCAD": {
+            "symbol": "XETHZCAD",
+            "wsname": "ETH/CAD"
+        },
+        "ZEUR": {
+            "symbol": "XETHZEUR",
+            "wsname": "ETH/EUR"
+        },
+        "ZGBP": {
+            "symbol": "XETHZGBP",
+            "wsname": "ETH/GBP"
+        },
+        "ZJPY": {
+            "symbol": "XETHZJPY",
+            "wsname": "ETH/JPY"
+        },
+        "ZUSD": {
+            "symbol": "XETHZUSD",
+            "wsname": "ETH/USD"
+        }
+    },
+    "ZEUR": {
+        "ZAUD": {
+            "symbol": "EURAUD",
+            "wsname": "EUR/AUD"
+        },
+        "ZCAD": {
+            "symbol": "EURCAD",
+            "wsname": "EUR/CAD"
+        },
+        "CHF": {
+            "symbol": "EURCHF",
+            "wsname": "EUR/CHF"
+        },
+        "ZGBP": {
+            "symbol": "EURGBP",
+            "wsname": "EUR/GBP"
+        },
+        "ZJPY": {
+            "symbol": "EURJPY",
+            "wsname": "EUR/JPY"
+        },
+        "ZUSD": {
+            "symbol": "ZEURZUSD",
+            "wsname": "EUR/USD"
+        }
+    },
+    "EWT": {
+        "ZEUR": {
+            "symbol": "EWTEUR",
+            "wsname": "EWT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "EWTGBP",
+            "wsname": "EWT/GBP"
+        },
+        "ZUSD": {
+            "symbol": "EWTUSD",
+            "wsname": "EWT/USD"
+        },
+        "XXBT": {
+            "symbol": "EWTXBT",
+            "wsname": "EWT/XBT"
+        }
+    },
+    "FARM": {
+        "ZEUR": {
+            "symbol": "FARMEUR",
+            "wsname": "FARM/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FARMUSD",
+            "wsname": "FARM/USD"
+        }
+    },
+    "FET": {
+        "ZEUR": {
+            "symbol": "FETEUR",
+            "wsname": "FET/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FETUSD",
+            "wsname": "FET/USD"
+        }
+    },
+    "FIDA": {
+        "ZEUR": {
+            "symbol": "FIDAEUR",
+            "wsname": "FIDA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FIDAUSD",
+            "wsname": "FIDA/USD"
+        }
+    },
+    "FIL": {
+        "ZAUD": {
+            "symbol": "FILAUD",
+            "wsname": "FIL/AUD"
+        },
+        "XETH": {
+            "symbol": "FILETH",
+            "wsname": "FIL/ETH"
+        },
+        "ZEUR": {
+            "symbol": "FILEUR",
+            "wsname": "FIL/EUR"
+        },
+        "ZGBP": {
+            "symbol": "FILGBP",
+            "wsname": "FIL/GBP"
+        },
+        "ZUSD": {
+            "symbol": "FILUSD",
+            "wsname": "FIL/USD"
+        },
+        "XXBT": {
+            "symbol": "FILXBT",
+            "wsname": "FIL/XBT"
+        }
+    },
+    "FIS": {
+        "ZEUR": {
+            "symbol": "FISEUR",
+            "wsname": "FIS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FISUSD",
+            "wsname": "FIS/USD"
+        }
+    },
+    "FLOW": {
+        "XETH": {
+            "symbol": "FLOWETH",
+            "wsname": "FLOW/ETH"
+        },
+        "ZEUR": {
+            "symbol": "FLOWEUR",
+            "wsname": "FLOW/EUR"
+        },
+        "ZGBP": {
+            "symbol": "FLOWGBP",
+            "wsname": "FLOW/GBP"
+        },
+        "ZUSD": {
+            "symbol": "FLOWUSD",
+            "wsname": "FLOW/USD"
+        },
+        "XXBT": {
+            "symbol": "FLOWXBT",
+            "wsname": "FLOW/XBT"
+        }
+    },
+    "FORTH": {
+        "ZEUR": {
+            "symbol": "FORTHEUR",
+            "wsname": "FORTH/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FORTHUSD",
+            "wsname": "FORTH/USD"
+        }
+    },
+    "FTM": {
+        "ZEUR": {
+            "symbol": "FTMEUR",
+            "wsname": "FTM/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FTMUSD",
+            "wsname": "FTM/USD"
+        }
+    },
+    "FXS": {
+        "ZEUR": {
+            "symbol": "FXSEUR",
+            "wsname": "FXS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "FXSUSD",
+            "wsname": "FXS/USD"
+        }
+    },
+    "GALA": {
+        "ZEUR": {
+            "symbol": "GALAEUR",
+            "wsname": "GALA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GALAUSD",
+            "wsname": "GALA/USD"
+        }
+    },
+    "GARI": {
+        "ZEUR": {
+            "symbol": "GARIEUR",
+            "wsname": "GARI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GARIUSD",
+            "wsname": "GARI/USD"
+        }
+    },
+    "GHST": {
+        "ZEUR": {
+            "symbol": "GHSTEUR",
+            "wsname": "GHST/EUR"
+        },
+        "ZGBP": {
+            "symbol": "GHSTGBP",
+            "wsname": "GHST/GBP"
+        },
+        "ZUSD": {
+            "symbol": "GHSTUSD",
+            "wsname": "GHST/USD"
+        },
+        "XXBT": {
+            "symbol": "GHSTXBT",
+            "wsname": "GHST/XBT"
+        }
+    },
+    "GLMR": {
+        "ZEUR": {
+            "symbol": "GLMREUR",
+            "wsname": "GLMR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GLMRUSD",
+            "wsname": "GLMR/USD"
+        }
+    },
+    "GMT": {
+        "ZEUR": {
+            "symbol": "GMTEUR",
+            "wsname": "GMT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GMTUSD",
+            "wsname": "GMT/USD"
+        }
+    },
+    "GNO": {
+        "XETH": {
+            "symbol": "GNOETH",
+            "wsname": "GNO/ETH"
+        },
+        "ZEUR": {
+            "symbol": "GNOEUR",
+            "wsname": "GNO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GNOUSD",
+            "wsname": "GNO/USD"
+        },
+        "XXBT": {
+            "symbol": "GNOXBT",
+            "wsname": "GNO/XBT"
+        }
+    },
+    "GRT": {
+        "ZAUD": {
+            "symbol": "GRTAUD",
+            "wsname": "GRT/AUD"
+        },
+        "XETH": {
+            "symbol": "GRTETH",
+            "wsname": "GRT/ETH"
+        },
+        "ZEUR": {
+            "symbol": "GRTEUR",
+            "wsname": "GRT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "GRTGBP",
+            "wsname": "GRT/GBP"
+        },
+        "ZUSD": {
+            "symbol": "GRTUSD",
+            "wsname": "GRT/USD"
+        },
+        "XXBT": {
+            "symbol": "GRTXBT",
+            "wsname": "GRT/XBT"
+        }
+    },
+    "GST": {
+        "ZEUR": {
+            "symbol": "GSTEUR",
+            "wsname": "GST/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GSTUSD",
+            "wsname": "GST/USD"
+        }
+    },
+    "GTC": {
+        "ZEUR": {
+            "symbol": "GTCEUR",
+            "wsname": "GTC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "GTCUSD",
+            "wsname": "GTC/USD"
+        }
+    },
+    "ICP": {
+        "ZEUR": {
+            "symbol": "ICPEUR",
+            "wsname": "ICP/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ICPUSD",
+            "wsname": "ICP/USD"
+        }
+    },
+    "ICX": {
+        "XETH": {
+            "symbol": "ICXETH",
+            "wsname": "ICX/ETH"
+        },
+        "ZEUR": {
+            "symbol": "ICXEUR",
+            "wsname": "ICX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ICXUSD",
+            "wsname": "ICX/USD"
+        },
+        "XXBT": {
+            "symbol": "ICXXBT",
+            "wsname": "ICX/XBT"
+        }
+    },
+    "IDEX": {
+        "ZEUR": {
+            "symbol": "IDEXEUR",
+            "wsname": "IDEX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "IDEXUSD",
+            "wsname": "IDEX/USD"
+        }
+    },
+    "IMX": {
+        "ZEUR": {
+            "symbol": "IMXEUR",
+            "wsname": "IMX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "IMXUSD",
+            "wsname": "IMX/USD"
+        }
+    },
+    "INJ": {
+        "ZEUR": {
+            "symbol": "INJEUR",
+            "wsname": "INJ/EUR"
+        },
+        "ZUSD": {
+            "symbol": "INJUSD",
+            "wsname": "INJ/USD"
+        }
+    },
+    "INTR": {
+        "ZEUR": {
+            "symbol": "INTREUR",
+            "wsname": "INTR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "INTRUSD",
+            "wsname": "INTR/USD"
+        }
+    },
+    "JASMY": {
+        "ZEUR": {
+            "symbol": "JASMYEUR",
+            "wsname": "JASMY/EUR"
+        },
+        "ZUSD": {
+            "symbol": "JASMYUSD",
+            "wsname": "JASMY/USD"
+        }
+    },
+    "KAR": {
+        "ZEUR": {
+            "symbol": "KAREUR",
+            "wsname": "KAR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KARUSD",
+            "wsname": "KAR/USD"
+        }
+    },
+    "KAVA": {
+        "XETH": {
+            "symbol": "KAVAETH",
+            "wsname": "KAVA/ETH"
+        },
+        "ZEUR": {
+            "symbol": "KAVAEUR",
+            "wsname": "KAVA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KAVAUSD",
+            "wsname": "KAVA/USD"
+        },
+        "XXBT": {
+            "symbol": "KAVAXBT",
+            "wsname": "KAVA/XBT"
+        }
+    },
+    "KEEP": {
+        "XETH": {
+            "symbol": "KEEPETH",
+            "wsname": "KEEP/ETH"
+        },
+        "ZEUR": {
+            "symbol": "KEEPEUR",
+            "wsname": "KEEP/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KEEPUSD",
+            "wsname": "KEEP/USD"
+        },
+        "XXBT": {
+            "symbol": "KEEPXBT",
+            "wsname": "KEEP/XBT"
+        }
+    },
+    "KEY": {
+        "ZEUR": {
+            "symbol": "KEYEUR",
+            "wsname": "KEY/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KEYUSD",
+            "wsname": "KEY/USD"
+        }
+    },
+    "KILT": {
+        "ZEUR": {
+            "symbol": "KILTEUR",
+            "wsname": "KILT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KILTUSD",
+            "wsname": "KILT/USD"
+        }
+    },
+    "KIN": {
+        "ZEUR": {
+            "symbol": "KINEUR",
+            "wsname": "KIN/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KINUSD",
+            "wsname": "KIN/USD"
+        }
+    },
+    "KINT": {
+        "ZEUR": {
+            "symbol": "KINTEUR",
+            "wsname": "KINT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KINTUSD",
+            "wsname": "KINT/USD"
+        }
+    },
+    "KNC": {
+        "XETH": {
+            "symbol": "KNCETH",
+            "wsname": "KNC/ETH"
+        },
+        "ZEUR": {
+            "symbol": "KNCEUR",
+            "wsname": "KNC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KNCUSD",
+            "wsname": "KNC/USD"
+        },
+        "XXBT": {
+            "symbol": "KNCXBT",
+            "wsname": "KNC/XBT"
+        }
+    },
+    "KP3R": {
+        "ZEUR": {
+            "symbol": "KP3REUR",
+            "wsname": "KP3R/EUR"
+        },
+        "ZUSD": {
+            "symbol": "KP3RUSD",
+            "wsname": "KP3R/USD"
+        }
+    },
+    "KSM": {
+        "ZAUD": {
+            "symbol": "KSMAUD",
+            "wsname": "KSM/AUD"
+        },
+        "DOT": {
+            "symbol": "KSMDOT",
+            "wsname": "KSM/DOT"
+        },
+        "XETH": {
+            "symbol": "KSMETH",
+            "wsname": "KSM/ETH"
+        },
+        "ZEUR": {
+            "symbol": "KSMEUR",
+            "wsname": "KSM/EUR"
+        },
+        "ZGBP": {
+            "symbol": "KSMGBP",
+            "wsname": "KSM/GBP"
+        },
+        "ZUSD": {
+            "symbol": "KSMUSD",
+            "wsname": "KSM/USD"
+        },
+        "XXBT": {
+            "symbol": "KSMXBT",
+            "wsname": "KSM/XBT"
+        }
+    },
+    "LCX": {
+        "ZEUR": {
+            "symbol": "LCXEUR",
+            "wsname": "LCX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "LCXUSD",
+            "wsname": "LCX/USD"
+        }
+    },
+    "LDO": {
+        "ZEUR": {
+            "symbol": "LDOEUR",
+            "wsname": "LDO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "LDOUSD",
+            "wsname": "LDO/USD"
+        }
+    },
+    "LINK": {
+        "ZAUD": {
+            "symbol": "LINKAUD",
+            "wsname": "LINK/AUD"
+        },
+        "XETH": {
+            "symbol": "LINKETH",
+            "wsname": "LINK/ETH"
+        },
+        "ZEUR": {
+            "symbol": "LINKEUR",
+            "wsname": "LINK/EUR"
+        },
+        "ZGBP": {
+            "symbol": "LINKGBP",
+            "wsname": "LINK/GBP"
+        },
+        "ZJPY": {
+            "symbol": "LINKJPY",
+            "wsname": "LINK/JPY"
+        },
+        "ZUSD": {
+            "symbol": "LINKUSD",
+            "wsname": "LINK/USD"
+        },
+        "USDT": {
+            "symbol": "LINKUSDT",
+            "wsname": "LINK/USDT"
+        },
+        "XXBT": {
+            "symbol": "LINKXBT",
+            "wsname": "LINK/XBT"
+        }
+    },
+    "LPT": {
+        "ZEUR": {
+            "symbol": "LPTEUR",
+            "wsname": "LPT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "LPTGBP",
+            "wsname": "LPT/GBP"
+        },
+        "ZUSD": {
+            "symbol": "LPTUSD",
+            "wsname": "LPT/USD"
+        },
+        "XXBT": {
+            "symbol": "LPTXBT",
+            "wsname": "LPT/XBT"
+        }
+    },
+    "LRC": {
+        "ZEUR": {
+            "symbol": "LRCEUR",
+            "wsname": "LRC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "LRCUSD",
+            "wsname": "LRC/USD"
+        }
+    },
+    "LSK": {
+        "XETH": {
+            "symbol": "LSKETH",
+            "wsname": "LSK/ETH"
+        },
+        "ZEUR": {
+            "symbol": "LSKEUR",
+            "wsname": "LSK/EUR"
+        },
+        "ZUSD": {
+            "symbol": "LSKUSD",
+            "wsname": "LSK/USD"
+        },
+        "XXBT": {
+            "symbol": "LSKXBT",
+            "wsname": "LSK/XBT"
+        }
+    },
+    "XLTC": {
+        "ZAUD": {
+            "symbol": "LTCAUD",
+            "wsname": "LTC/AUD"
+        },
+        "XETH": {
+            "symbol": "LTCETH",
+            "wsname": "LTC/ETH"
+        },
+        "ZGBP": {
+            "symbol": "LTCGBP",
+            "wsname": "LTC/GBP"
+        },
+        "USDT": {
+            "symbol": "LTCUSDT",
+            "wsname": "LTC/USDT"
+        },
+        "XXBT": {
+            "symbol": "XLTCXXBT",
+            "wsname": "LTC/XBT"
+        },
+        "ZEUR": {
+            "symbol": "XLTCZEUR",
+            "wsname": "LTC/EUR"
+        },
+        "ZJPY": {
+            "symbol": "XLTCZJPY",
+            "wsname": "LTC/JPY"
+        },
+        "ZUSD": {
+            "symbol": "XLTCZUSD",
+            "wsname": "LTC/USD"
+        }
+    },
+    "LUNA2": {
+        "ZEUR": {
+            "symbol": "LUNA2EUR",
+            "wsname": "LUNA2/EUR"
+        },
+        "ZUSD": {
+            "symbol": "LUNA2USD",
+            "wsname": "LUNA2/USD"
+        }
+    },
+    "LUNA": {
+        "ZEUR": {
+            "symbol": "LUNAEUR",
+            "wsname": "LUNA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "LUNAUSD",
+            "wsname": "LUNA/USD"
+        }
+    },
+    "MANA": {
+        "XETH": {
+            "symbol": "MANAETH",
+            "wsname": "MANA/ETH"
+        },
+        "ZEUR": {
+            "symbol": "MANAEUR",
+            "wsname": "MANA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MANAUSD",
+            "wsname": "MANA/USD"
+        },
+        "XXBT": {
+            "symbol": "MANAXBT",
+            "wsname": "MANA/XBT"
+        }
+    },
+    "MASK": {
+        "ZEUR": {
+            "symbol": "MASKEUR",
+            "wsname": "MASK/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MASKUSD",
+            "wsname": "MASK/USD"
+        }
+    },
+    "MATIC": {
+        "ZEUR": {
+            "symbol": "MATICEUR",
+            "wsname": "MATIC/EUR"
+        },
+        "ZGBP": {
+            "symbol": "MATICGBP",
+            "wsname": "MATIC/GBP"
+        },
+        "ZUSD": {
+            "symbol": "MATICUSD",
+            "wsname": "MATIC/USD"
+        },
+        "XXBT": {
+            "symbol": "MATICXBT",
+            "wsname": "MATIC/XBT"
+        }
+    },
+    "MC": {
+        "ZEUR": {
+            "symbol": "MCEUR",
+            "wsname": "MC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MCUSD",
+            "wsname": "MC/USD"
+        }
+    },
+    "MINA": {
+        "ZEUR": {
+            "symbol": "MINAEUR",
+            "wsname": "MINA/EUR"
+        },
+        "ZGBP": {
+            "symbol": "MINAGBP",
+            "wsname": "MINA/GBP"
+        },
+        "ZUSD": {
+            "symbol": "MINAUSD",
+            "wsname": "MINA/USD"
+        },
+        "XXBT": {
+            "symbol": "MINAXBT",
+            "wsname": "MINA/XBT"
+        }
+    },
+    "MIR": {
+        "ZEUR": {
+            "symbol": "MIREUR",
+            "wsname": "MIR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MIRUSD",
+            "wsname": "MIR/USD"
+        }
+    },
+    "MKR": {
+        "ZEUR": {
+            "symbol": "MKREUR",
+            "wsname": "MKR/EUR"
+        },
+        "ZGBP": {
+            "symbol": "MKRGBP",
+            "wsname": "MKR/GBP"
+        },
+        "ZUSD": {
+            "symbol": "MKRUSD",
+            "wsname": "MKR/USD"
+        },
+        "XXBT": {
+            "symbol": "MKRXBT",
+            "wsname": "MKR/XBT"
+        }
+    },
+    "MNGO": {
+        "ZEUR": {
+            "symbol": "MNGOEUR",
+            "wsname": "MNGO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MNGOUSD",
+            "wsname": "MNGO/USD"
+        }
+    },
+    "MOVR": {
+        "ZEUR": {
+            "symbol": "MOVREUR",
+            "wsname": "MOVR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MOVRUSD",
+            "wsname": "MOVR/USD"
+        }
+    },
+    "MSOL": {
+        "ZEUR": {
+            "symbol": "MSOLEUR",
+            "wsname": "MSOL/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MSOLUSD",
+            "wsname": "MSOL/USD"
+        }
+    },
+    "MULTI": {
+        "ZEUR": {
+            "symbol": "MULTIEUR",
+            "wsname": "MULTI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MULTIUSD",
+            "wsname": "MULTI/USD"
+        }
+    },
+    "MV": {
+        "ZEUR": {
+            "symbol": "MVEUR",
+            "wsname": "MV/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MVUSD",
+            "wsname": "MV/USD"
+        }
+    },
+    "MXC": {
+        "ZEUR": {
+            "symbol": "MXCEUR",
+            "wsname": "MXC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "MXCUSD",
+            "wsname": "MXC/USD"
+        }
+    },
+    "NANO": {
+        "XETH": {
+            "symbol": "NANOETH",
+            "wsname": "NANO/ETH"
+        },
+        "ZEUR": {
+            "symbol": "NANOEUR",
+            "wsname": "NANO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "NANOUSD",
+            "wsname": "NANO/USD"
+        },
+        "XXBT": {
+            "symbol": "NANOXBT",
+            "wsname": "NANO/XBT"
+        }
+    },
+    "NEAR": {
+        "ZEUR": {
+            "symbol": "NEAREUR",
+            "wsname": "NEAR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "NEARUSD",
+            "wsname": "NEAR/USD"
+        }
+    },
+    "NMR": {
+        "ZEUR": {
+            "symbol": "NMREUR",
+            "wsname": "NMR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "NMRUSD",
+            "wsname": "NMR/USD"
+        }
+    },
+    "NYM": {
+        "ZEUR": {
+            "symbol": "NYMEUR",
+            "wsname": "NYM/EUR"
+        },
+        "ZUSD": {
+            "symbol": "NYMUSD",
+            "wsname": "NYM/USD"
+        }
+    },
+    "OCEAN": {
+        "ZEUR": {
+            "symbol": "OCEANEUR",
+            "wsname": "OCEAN/EUR"
+        },
+        "ZGBP": {
+            "symbol": "OCEANGBP",
+            "wsname": "OCEAN/GBP"
+        },
+        "ZUSD": {
+            "symbol": "OCEANUSD",
+            "wsname": "OCEAN/USD"
+        },
+        "XXBT": {
+            "symbol": "OCEANXBT",
+            "wsname": "OCEAN/XBT"
+        }
+    },
+    "OGN": {
+        "ZEUR": {
+            "symbol": "OGNEUR",
+            "wsname": "OGN/EUR"
+        },
+        "ZUSD": {
+            "symbol": "OGNUSD",
+            "wsname": "OGN/USD"
+        }
+    },
+    "OMG": {
+        "XETH": {
+            "symbol": "OMGETH",
+            "wsname": "OMG/ETH"
+        },
+        "ZEUR": {
+            "symbol": "OMGEUR",
+            "wsname": "OMG/EUR"
+        },
+        "ZJPY": {
+            "symbol": "OMGJPY",
+            "wsname": "OMG/JPY"
+        },
+        "ZUSD": {
+            "symbol": "OMGUSD",
+            "wsname": "OMG/USD"
+        },
+        "XXBT": {
+            "symbol": "OMGXBT",
+            "wsname": "OMG/XBT"
+        }
+    },
+    "ORCA": {
+        "ZEUR": {
+            "symbol": "ORCAEUR",
+            "wsname": "ORCA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ORCAUSD",
+            "wsname": "ORCA/USD"
+        }
+    },
+    "OXT": {
+        "XETH": {
+            "symbol": "OXTETH",
+            "wsname": "OXT/ETH"
+        },
+        "ZEUR": {
+            "symbol": "OXTEUR",
+            "wsname": "OXT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "OXTUSD",
+            "wsname": "OXT/USD"
+        },
+        "XXBT": {
+            "symbol": "OXTXBT",
+            "wsname": "OXT/XBT"
+        }
+    },
+    "OXY": {
+        "ZEUR": {
+            "symbol": "OXYEUR",
+            "wsname": "OXY/EUR"
+        },
+        "ZUSD": {
+            "symbol": "OXYUSD",
+            "wsname": "OXY/USD"
+        }
+    },
+    "PAXG": {
+        "XETH": {
+            "symbol": "PAXGETH",
+            "wsname": "PAXG/ETH"
+        },
+        "ZEUR": {
+            "symbol": "PAXGEUR",
+            "wsname": "PAXG/EUR"
+        },
+        "ZUSD": {
+            "symbol": "PAXGUSD",
+            "wsname": "PAXG/USD"
+        },
+        "XXBT": {
+            "symbol": "PAXGXBT",
+            "wsname": "PAXG/XBT"
+        }
+    },
+    "PERP": {
+        "ZEUR": {
+            "symbol": "PERPEUR",
+            "wsname": "PERP/EUR"
+        },
+        "ZUSD": {
+            "symbol": "PERPUSD",
+            "wsname": "PERP/USD"
+        }
+    },
+    "PHA": {
+        "ZEUR": {
+            "symbol": "PHAEUR",
+            "wsname": "PHA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "PHAUSD",
+            "wsname": "PHA/USD"
+        }
+    },
+    "PLA": {
+        "ZEUR": {
+            "symbol": "PLAEUR",
+            "wsname": "PLA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "PLAUSD",
+            "wsname": "PLA/USD"
+        }
+    },
+    "POLIS": {
+        "ZEUR": {
+            "symbol": "POLISEUR",
+            "wsname": "POLIS/EUR"
+        },
+        "ZUSD": {
+            "symbol": "POLISUSD",
+            "wsname": "POLIS/USD"
+        }
+    },
+    "POWR": {
+        "ZEUR": {
+            "symbol": "POWREUR",
+            "wsname": "POWR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "POWRUSD",
+            "wsname": "POWR/USD"
+        }
+    },
+    "PSTAKE": {
+        "ZEUR": {
+            "symbol": "PSTAKEEUR",
+            "wsname": "PSTAKE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "PSTAKEUSD",
+            "wsname": "PSTAKE/USD"
+        }
+    },
+    "QNT": {
+        "ZEUR": {
+            "symbol": "QNTEUR",
+            "wsname": "QNT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "QNTUSD",
+            "wsname": "QNT/USD"
+        }
+    },
+    "QTUM": {
+        "XETH": {
+            "symbol": "QTUMETH",
+            "wsname": "QTUM/ETH"
+        },
+        "ZEUR": {
+            "symbol": "QTUMEUR",
+            "wsname": "QTUM/EUR"
+        },
+        "ZUSD": {
+            "symbol": "QTUMUSD",
+            "wsname": "QTUM/USD"
+        },
+        "XXBT": {
+            "symbol": "QTUMXBT",
+            "wsname": "QTUM/XBT"
+        }
+    },
+    "RAD": {
+        "ZEUR": {
+            "symbol": "RADEUR",
+            "wsname": "RAD/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RADUSD",
+            "wsname": "RAD/USD"
+        }
+    },
+    "RARE": {
+        "ZEUR": {
+            "symbol": "RAREEUR",
+            "wsname": "RARE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RAREUSD",
+            "wsname": "RARE/USD"
+        }
+    },
+    "RARI": {
+        "ZEUR": {
+            "symbol": "RARIEUR",
+            "wsname": "RARI/EUR"
+        },
+        "ZGBP": {
+            "symbol": "RARIGBP",
+            "wsname": "RARI/GBP"
+        },
+        "ZUSD": {
+            "symbol": "RARIUSD",
+            "wsname": "RARI/USD"
+        },
+        "XXBT": {
+            "symbol": "RARIXBT",
+            "wsname": "RARI/XBT"
+        }
+    },
+    "RAY": {
+        "ZEUR": {
+            "symbol": "RAYEUR",
+            "wsname": "RAY/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RAYUSD",
+            "wsname": "RAY/USD"
+        }
+    },
+    "RBC": {
+        "ZEUR": {
+            "symbol": "RBCEUR",
+            "wsname": "RBC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RBCUSD",
+            "wsname": "RBC/USD"
+        }
+    },
+    "REN": {
+        "ZEUR": {
+            "symbol": "RENEUR",
+            "wsname": "REN/EUR"
+        },
+        "ZGBP": {
+            "symbol": "RENGBP",
+            "wsname": "REN/GBP"
+        },
+        "ZUSD": {
+            "symbol": "RENUSD",
+            "wsname": "REN/USD"
+        },
+        "XXBT": {
+            "symbol": "RENXBT",
+            "wsname": "REN/XBT"
+        }
+    },
+    "REPV2": {
+        "XETH": {
+            "symbol": "REPV2ETH",
+            "wsname": "REPV2/ETH"
+        },
+        "ZEUR": {
+            "symbol": "REPV2EUR",
+            "wsname": "REPV2/EUR"
+        },
+        "ZUSD": {
+            "symbol": "REPV2USD",
+            "wsname": "REPV2/USD"
+        },
+        "XXBT": {
+            "symbol": "REPV2XBT",
+            "wsname": "REPV2/XBT"
+        }
+    },
+    "REQ": {
+        "ZEUR": {
+            "symbol": "REQEUR",
+            "wsname": "REQ/EUR"
+        },
+        "ZUSD": {
+            "symbol": "REQUSD",
+            "wsname": "REQ/USD"
+        }
+    },
+    "RLC": {
+        "ZEUR": {
+            "symbol": "RLCEUR",
+            "wsname": "RLC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RLCUSD",
+            "wsname": "RLC/USD"
+        }
+    },
+    "RNDR": {
+        "ZEUR": {
+            "symbol": "RNDREUR",
+            "wsname": "RNDR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RNDRUSD",
+            "wsname": "RNDR/USD"
+        }
+    },
+    "ROOK": {
+        "ZEUR": {
+            "symbol": "ROOKEUR",
+            "wsname": "ROOK/EUR"
+        },
+        "ZUSD": {
+            "symbol": "ROOKUSD",
+            "wsname": "ROOK/USD"
+        }
+    },
+    "RUNE": {
+        "ZEUR": {
+            "symbol": "RUNEEUR",
+            "wsname": "RUNE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "RUNEUSD",
+            "wsname": "RUNE/USD"
+        }
+    },
+    "SAMO": {
+        "ZEUR": {
+            "symbol": "SAMOEUR",
+            "wsname": "SAMO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SAMOUSD",
+            "wsname": "SAMO/USD"
+        }
+    },
+    "SAND": {
+        "ZEUR": {
+            "symbol": "SANDEUR",
+            "wsname": "SAND/EUR"
+        },
+        "ZGBP": {
+            "symbol": "SANDGBP",
+            "wsname": "SAND/GBP"
+        },
+        "ZUSD": {
+            "symbol": "SANDUSD",
+            "wsname": "SAND/USD"
+        },
+        "XXBT": {
+            "symbol": "SANDXBT",
+            "wsname": "SAND/XBT"
+        }
+    },
+    "SBR": {
+        "ZEUR": {
+            "symbol": "SBREUR",
+            "wsname": "SBR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SBRUSD",
+            "wsname": "SBR/USD"
+        }
+    },
+    "SC": {
+        "XETH": {
+            "symbol": "SCETH",
+            "wsname": "SC/ETH"
+        },
+        "ZEUR": {
+            "symbol": "SCEUR",
+            "wsname": "SC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SCUSD",
+            "wsname": "SC/USD"
+        },
+        "XXBT": {
+            "symbol": "SCXBT",
+            "wsname": "SC/XBT"
+        }
+    },
+    "SCRT": {
+        "ZEUR": {
+            "symbol": "SCRTEUR",
+            "wsname": "SCRT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SCRTUSD",
+            "wsname": "SCRT/USD"
+        }
+    },
+    "SDN": {
+        "ZEUR": {
+            "symbol": "SDNEUR",
+            "wsname": "SDN/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SDNUSD",
+            "wsname": "SDN/USD"
+        }
+    },
+    "SGB": {
+        "ZEUR": {
+            "symbol": "SGBEUR",
+            "wsname": "SGB/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SGBUSD",
+            "wsname": "SGB/USD"
+        }
+    },
+    "SHIB": {
+        "ZEUR": {
+            "symbol": "SHIBEUR",
+            "wsname": "SHIB/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SHIBUSD",
+            "wsname": "SHIB/USD"
+        }
+    },
+    "SNX": {
+        "ZAUD": {
+            "symbol": "SNXAUD",
+            "wsname": "SNX/AUD"
+        },
+        "XETH": {
+            "symbol": "SNXETH",
+            "wsname": "SNX/ETH"
+        },
+        "ZEUR": {
+            "symbol": "SNXEUR",
+            "wsname": "SNX/EUR"
+        },
+        "ZGBP": {
+            "symbol": "SNXGBP",
+            "wsname": "SNX/GBP"
+        },
+        "ZUSD": {
+            "symbol": "SNXUSD",
+            "wsname": "SNX/USD"
+        },
+        "XXBT": {
+            "symbol": "SNXXBT",
+            "wsname": "SNX/XBT"
+        }
+    },
+    "SOL": {
+        "ZEUR": {
+            "symbol": "SOLEUR",
+            "wsname": "SOL/EUR"
+        },
+        "ZGBP": {
+            "symbol": "SOLGBP",
+            "wsname": "SOL/GBP"
+        },
+        "ZUSD": {
+            "symbol": "SOLUSD",
+            "wsname": "SOL/USD"
+        },
+        "XXBT": {
+            "symbol": "SOLXBT",
+            "wsname": "SOL/XBT"
+        }
+    },
+    "SPELL": {
+        "ZEUR": {
+            "symbol": "SPELLEUR",
+            "wsname": "SPELL/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SPELLUSD",
+            "wsname": "SPELL/USD"
+        }
+    },
+    "SRM": {
+        "ZEUR": {
+            "symbol": "SRMEUR",
+            "wsname": "SRM/EUR"
+        },
+        "ZGBP": {
+            "symbol": "SRMGBP",
+            "wsname": "SRM/GBP"
+        },
+        "ZUSD": {
+            "symbol": "SRMUSD",
+            "wsname": "SRM/USD"
+        },
+        "XXBT": {
+            "symbol": "SRMXBT",
+            "wsname": "SRM/XBT"
+        }
+    },
+    "STEP": {
+        "ZEUR": {
+            "symbol": "STEPEUR",
+            "wsname": "STEP/EUR"
+        },
+        "ZUSD": {
+            "symbol": "STEPUSD",
+            "wsname": "STEP/USD"
+        }
+    },
+    "STORJ": {
+        "XETH": {
+            "symbol": "STORJETH",
+            "wsname": "STORJ/ETH"
+        },
+        "ZEUR": {
+            "symbol": "STORJEUR",
+            "wsname": "STORJ/EUR"
+        },
+        "ZUSD": {
+            "symbol": "STORJUSD",
+            "wsname": "STORJ/USD"
+        },
+        "XXBT": {
+            "symbol": "STORJXBT",
+            "wsname": "STORJ/XBT"
+        }
+    },
+    "SUPER": {
+        "ZEUR": {
+            "symbol": "SUPEREUR",
+            "wsname": "SUPER/EUR"
+        },
+        "ZUSD": {
+            "symbol": "SUPERUSD",
+            "wsname": "SUPER/USD"
+        }
+    },
+    "SUSHI": {
+        "ZEUR": {
+            "symbol": "SUSHIEUR",
+            "wsname": "SUSHI/EUR"
+        },
+        "ZGBP": {
+            "symbol": "SUSHIGBP",
+            "wsname": "SUSHI/GBP"
+        },
+        "ZUSD": {
+            "symbol": "SUSHIUSD",
+            "wsname": "SUSHI/USD"
+        },
+        "XXBT": {
+            "symbol": "SUSHIXBT",
+            "wsname": "SUSHI/XBT"
+        }
+    },
+    "TBTC": {
+        "XETH": {
+            "symbol": "TBTCETH",
+            "wsname": "TBTC/ETH"
+        },
+        "ZEUR": {
+            "symbol": "TBTCEUR",
+            "wsname": "TBTC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TBTCUSD",
+            "wsname": "TBTC/USD"
+        },
+        "XXBT": {
+            "symbol": "TBTCXBT",
+            "wsname": "TBTC/XBT"
+        }
+    },
+    "TEER": {
+        "ZEUR": {
+            "symbol": "TEEREUR",
+            "wsname": "TEER/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TEERUSD",
+            "wsname": "TEER/USD"
+        }
+    },
+    "T": {
+        "ZEUR": {
+            "symbol": "TEUR",
+            "wsname": "T/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TUSD",
+            "wsname": "T/USD"
+        }
+    },
+    "TLM": {
+        "ZEUR": {
+            "symbol": "TLMEUR",
+            "wsname": "TLM/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TLMUSD",
+            "wsname": "TLM/USD"
+        }
+    },
+    "TOKE": {
+        "ZEUR": {
+            "symbol": "TOKEEUR",
+            "wsname": "TOKE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TOKEUSD",
+            "wsname": "TOKE/USD"
+        }
+    },
+    "TRIBE": {
+        "ZEUR": {
+            "symbol": "TRIBEEUR",
+            "wsname": "TRIBE/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TRIBEUSD",
+            "wsname": "TRIBE/USD"
+        }
+    },
+    "TRX": {
+        "XETH": {
+            "symbol": "TRXETH",
+            "wsname": "TRX/ETH"
+        },
+        "ZEUR": {
+            "symbol": "TRXEUR",
+            "wsname": "TRX/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TRXUSD",
+            "wsname": "TRX/USD"
+        },
+        "XXBT": {
+            "symbol": "TRXXBT",
+            "wsname": "TRX/XBT"
+        }
+    },
+    "TVK": {
+        "ZEUR": {
+            "symbol": "TVKEUR",
+            "wsname": "TVK/EUR"
+        },
+        "ZUSD": {
+            "symbol": "TVKUSD",
+            "wsname": "TVK/USD"
+        }
+    },
+    "UMA": {
+        "ZEUR": {
+            "symbol": "UMAEUR",
+            "wsname": "UMA/EUR"
+        },
+        "ZUSD": {
+            "symbol": "UMAUSD",
+            "wsname": "UMA/USD"
+        }
+    },
+    "UNFI": {
+        "ZEUR": {
+            "symbol": "UNFIEUR",
+            "wsname": "UNFI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "UNFIUSD",
+            "wsname": "UNFI/USD"
+        }
+    },
+    "UNI": {
+        "XETH": {
+            "symbol": "UNIETH",
+            "wsname": "UNI/ETH"
+        },
+        "ZEUR": {
+            "symbol": "UNIEUR",
+            "wsname": "UNI/EUR"
+        },
+        "ZUSD": {
+            "symbol": "UNIUSD",
+            "wsname": "UNI/USD"
+        },
+        "XXBT": {
+            "symbol": "UNIXBT",
+            "wsname": "UNI/XBT"
+        }
+    },
+    "USDC": {
+        "ZAUD": {
+            "symbol": "USDCAUD",
+            "wsname": "USDC/AUD"
+        },
+        "ZEUR": {
+            "symbol": "USDCEUR",
+            "wsname": "USDC/EUR"
+        },
+        "ZGBP": {
+            "symbol": "USDCGBP",
+            "wsname": "USDC/GBP"
+        },
+        "ZUSD": {
+            "symbol": "USDCUSD",
+            "wsname": "USDC/USD"
+        },
+        "USDT": {
+            "symbol": "USDCUSDT",
+            "wsname": "USDC/USDT"
+        }
+    },
+    "ZUSD": {
+        "CHF": {
+            "symbol": "USDCHF",
+            "wsname": "USD/CHF"
+        },
+        "ZCAD": {
+            "symbol": "ZUSDZCAD",
+            "wsname": "USD/CAD"
+        },
+        "ZJPY": {
+            "symbol": "ZUSDZJPY",
+            "wsname": "USD/JPY"
+        }
+    },
+    "USDT": {
+        "ZAUD": {
+            "symbol": "USDTAUD",
+            "wsname": "USDT/AUD"
+        },
+        "ZCAD": {
+            "symbol": "USDTCAD",
+            "wsname": "USDT/CAD"
+        },
+        "CHF": {
+            "symbol": "USDTCHF",
+            "wsname": "USDT/CHF"
+        },
+        "ZEUR": {
+            "symbol": "USDTEUR",
+            "wsname": "USDT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "USDTGBP",
+            "wsname": "USDT/GBP"
+        },
+        "ZJPY": {
+            "symbol": "USDTJPY",
+            "wsname": "USDT/JPY"
+        },
+        "ZUSD": {
+            "symbol": "USDTZUSD",
+            "wsname": "USDT/USD"
+        }
+    },
+    "UST": {
+        "ZEUR": {
+            "symbol": "USTEUR",
+            "wsname": "UST/EUR"
+        },
+        "ZUSD": {
+            "symbol": "USTUSD",
+            "wsname": "UST/USD"
+        },
+        "USDC": {
+            "symbol": "USTUSDC",
+            "wsname": "UST/USDC"
+        },
+        "USDT": {
+            "symbol": "USTUSDT",
+            "wsname": "UST/USDT"
+        }
+    },
+    "WAVES": {
+        "XETH": {
+            "symbol": "WAVESETH",
+            "wsname": "WAVES/ETH"
+        },
+        "ZEUR": {
+            "symbol": "WAVESEUR",
+            "wsname": "WAVES/EUR"
+        },
+        "ZUSD": {
+            "symbol": "WAVESUSD",
+            "wsname": "WAVES/USD"
+        },
+        "XXBT": {
+            "symbol": "WAVESXBT",
+            "wsname": "WAVES/XBT"
+        }
+    },
+    "WBTC": {
+        "ZEUR": {
+            "symbol": "WBTCEUR",
+            "wsname": "WBTC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "WBTCUSD",
+            "wsname": "WBTC/USD"
+        },
+        "XXBT": {
+            "symbol": "WBTCXBT",
+            "wsname": "WBTC/XBT"
+        }
+    },
+    "WOO": {
+        "ZEUR": {
+            "symbol": "WOOEUR",
+            "wsname": "WOO/EUR"
+        },
+        "ZUSD": {
+            "symbol": "WOOUSD",
+            "wsname": "WOO/USD"
+        }
+    },
+    "XXBT": {
+        "ZAUD": {
+            "symbol": "XBTAUD",
+            "wsname": "XBT/AUD"
+        },
+        "CHF": {
+            "symbol": "XBTCHF",
+            "wsname": "XBT/CHF"
+        },
+        "DAI": {
+            "symbol": "XBTDAI",
+            "wsname": "XBT/DAI"
+        },
+        "USDC": {
+            "symbol": "XBTUSDC",
+            "wsname": "XBT/USDC"
+        },
+        "USDT": {
+            "symbol": "XBTUSDT",
+            "wsname": "XBT/USDT"
+        },
+        "ZCAD": {
+            "symbol": "XXBTZCAD",
+            "wsname": "XBT/CAD"
+        },
+        "ZEUR": {
+            "symbol": "XXBTZEUR",
+            "wsname": "XBT/EUR"
+        },
+        "ZGBP": {
+            "symbol": "XXBTZGBP",
+            "wsname": "XBT/GBP"
+        },
+        "ZJPY": {
+            "symbol": "XXBTZJPY",
+            "wsname": "XBT/JPY"
+        },
+        "ZUSD": {
+            "symbol": "XXBTZUSD",
+            "wsname": "XBT/USD"
+        }
+    },
+    "XXDG": {
+        "ZEUR": {
+            "symbol": "XDGEUR",
+            "wsname": "XDG/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XDGUSD",
+            "wsname": "XDG/USD"
+        },
+        "USDT": {
+            "symbol": "XDGUSDT",
+            "wsname": "XDG/USDT"
+        },
+        "XXBT": {
+            "symbol": "XXDGXXBT",
+            "wsname": "XDG/XBT"
+        }
+    },
+    "XETC": {
+        "XETH": {
+            "symbol": "XETCXETH",
+            "wsname": "ETC/ETH"
+        },
+        "XXBT": {
+            "symbol": "XETCXXBT",
+            "wsname": "ETC/XBT"
+        },
+        "ZEUR": {
+            "symbol": "XETCZEUR",
+            "wsname": "ETC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XETCZUSD",
+            "wsname": "ETC/USD"
+        }
+    },
+    "XMLN": {
+        "XETH": {
+            "symbol": "XMLNXETH",
+            "wsname": "MLN/ETH"
+        },
+        "XXBT": {
+            "symbol": "XMLNXXBT",
+            "wsname": "MLN/XBT"
+        },
+        "ZEUR": {
+            "symbol": "XMLNZEUR",
+            "wsname": "MLN/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XMLNZUSD",
+            "wsname": "MLN/USD"
+        }
+    },
+    "XREP": {
+        "XETH": {
+            "symbol": "XREPXETH",
+            "wsname": "REP/ETH"
+        },
+        "XXBT": {
+            "symbol": "XREPXXBT",
+            "wsname": "REP/XBT"
+        },
+        "ZEUR": {
+            "symbol": "XREPZEUR",
+            "wsname": "REP/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XREPZUSD",
+            "wsname": "REP/USD"
+        }
+    },
+    "XXRP": {
+        "ZAUD": {
+            "symbol": "XRPAUD",
+            "wsname": "XRP/AUD"
+        },
+        "XETH": {
+            "symbol": "XRPETH",
+            "wsname": "XRP/ETH"
+        },
+        "ZGBP": {
+            "symbol": "XRPGBP",
+            "wsname": "XRP/GBP"
+        },
+        "USDT": {
+            "symbol": "XRPUSDT",
+            "wsname": "XRP/USDT"
+        },
+        "XXBT": {
+            "symbol": "XXRPXXBT",
+            "wsname": "XRP/XBT"
+        },
+        "ZCAD": {
+            "symbol": "XXRPZCAD",
+            "wsname": "XRP/CAD"
+        },
+        "ZEUR": {
+            "symbol": "XXRPZEUR",
+            "wsname": "XRP/EUR"
+        },
+        "ZJPY": {
+            "symbol": "XXRPZJPY",
+            "wsname": "XRP/JPY"
+        },
+        "ZUSD": {
+            "symbol": "XXRPZUSD",
+            "wsname": "XRP/USD"
+        }
+    },
+    "XRT": {
+        "ZEUR": {
+            "symbol": "XRTEUR",
+            "wsname": "XRT/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XRTUSD",
+            "wsname": "XRT/USD"
+        }
+    },
+    "XTZ": {
+        "ZAUD": {
+            "symbol": "XTZAUD",
+            "wsname": "XTZ/AUD"
+        },
+        "XETH": {
+            "symbol": "XTZETH",
+            "wsname": "XTZ/ETH"
+        },
+        "ZEUR": {
+            "symbol": "XTZEUR",
+            "wsname": "XTZ/EUR"
+        },
+        "ZGBP": {
+            "symbol": "XTZGBP",
+            "wsname": "XTZ/GBP"
+        },
+        "ZUSD": {
+            "symbol": "XTZUSD",
+            "wsname": "XTZ/USD"
+        },
+        "XXBT": {
+            "symbol": "XTZXBT",
+            "wsname": "XTZ/XBT"
+        }
+    },
+    "XXLM": {
+        "XXBT": {
+            "symbol": "XXLMXXBT",
+            "wsname": "XLM/XBT"
+        },
+        "ZAUD": {
+            "symbol": "XXLMZAUD",
+            "wsname": "XLM/AUD"
+        },
+        "ZEUR": {
+            "symbol": "XXLMZEUR",
+            "wsname": "XLM/EUR"
+        },
+        "ZGBP": {
+            "symbol": "XXLMZGBP",
+            "wsname": "XLM/GBP"
+        },
+        "ZUSD": {
+            "symbol": "XXLMZUSD",
+            "wsname": "XLM/USD"
+        }
+    },
+    "XXMR": {
+        "XXBT": {
+            "symbol": "XXMRXXBT",
+            "wsname": "XMR/XBT"
+        },
+        "ZEUR": {
+            "symbol": "XXMRZEUR",
+            "wsname": "XMR/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XXMRZUSD",
+            "wsname": "XMR/USD"
+        }
+    },
+    "XZEC": {
+        "XXBT": {
+            "symbol": "XZECXXBT",
+            "wsname": "ZEC/XBT"
+        },
+        "ZEUR": {
+            "symbol": "XZECZEUR",
+            "wsname": "ZEC/EUR"
+        },
+        "ZUSD": {
+            "symbol": "XZECZUSD",
+            "wsname": "ZEC/USD"
+        }
+    },
+    "YFI": {
+        "ZAUD": {
+            "symbol": "YFIAUD",
+            "wsname": "YFI/AUD"
+        },
+        "XETH": {
+            "symbol": "YFIETH",
+            "wsname": "YFI/ETH"
+        },
+        "ZEUR": {
+            "symbol": "YFIEUR",
+            "wsname": "YFI/EUR"
+        },
+        "ZGBP": {
+            "symbol": "YFIGBP",
+            "wsname": "YFI/GBP"
+        },
+        "ZUSD": {
+            "symbol": "YFIUSD",
+            "wsname": "YFI/USD"
+        },
+        "XXBT": {
+            "symbol": "YFIXBT",
+            "wsname": "YFI/XBT"
+        }
+    },
+    "YGG": {
+        "ZEUR": {
+            "symbol": "YGGEUR",
+            "wsname": "YGG/EUR"
+        },
+        "ZUSD": {
+            "symbol": "YGGUSD",
+            "wsname": "YGG/USD"
+        }
+    },
+    "ZGBP": {
+        "ZUSD": {
+            "symbol": "ZGBPZUSD",
+            "wsname": "GBP/USD"
+        }
+    },
+    "ZRX": {
+        "ZEUR": {
+            "symbol": "ZRXEUR",
+            "wsname": "ZRX/EUR"
+        },
+        "ZGBP": {
+            "symbol": "ZRXGBP",
+            "wsname": "ZRX/GBP"
+        },
+        "ZUSD": {
+            "symbol": "ZRXUSD",
+            "wsname": "ZRX/USD"
+        },
+        "XXBT": {
+            "symbol": "ZRXXBT",
+            "wsname": "ZRX/XBT"
+        }
+    }
+}

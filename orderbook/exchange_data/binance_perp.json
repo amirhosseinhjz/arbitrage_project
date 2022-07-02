@@ -1,0 +1,466 @@
+{
+    "BTC": {
+        "USDT": "BTCUSDT",
+        "BUSD": "BTCBUSD",
+        "USDT1": "BTCUSDT_220930"
+    },
+    "ETH": {
+        "USDT": "ETHUSDT",
+        "BUSD": "ETHBUSD",
+        "USDT1": "ETHUSDT_220930"
+    },
+    "BCH": {
+        "USDT": "BCHUSDT"
+    },
+    "XRP": {
+        "USDT": "XRPUSDT",
+        "BUSD": "XRPBUSD"
+    },
+    "EOS": {
+        "USDT": "EOSUSDT"
+    },
+    "LTC": {
+        "USDT": "LTCUSDT"
+    },
+    "TRX": {
+        "USDT": "TRXUSDT",
+        "BUSD": "TRXBUSD"
+    },
+    "ETC": {
+        "USDT": "ETCUSDT"
+    },
+    "LINK": {
+        "USDT": "LINKUSDT",
+        "BUSD": "LINKBUSD"
+    },
+    "XLM": {
+        "USDT": "XLMUSDT"
+    },
+    "ADA": {
+        "USDT": "ADAUSDT",
+        "BUSD": "ADABUSD"
+    },
+    "XMR": {
+        "USDT": "XMRUSDT"
+    },
+    "DASH": {
+        "USDT": "DASHUSDT"
+    },
+    "ZEC": {
+        "USDT": "ZECUSDT"
+    },
+    "XTZ": {
+        "USDT": "XTZUSDT"
+    },
+    "BNB": {
+        "USDT": "BNBUSDT",
+        "BUSD": "BNBBUSD"
+    },
+    "ATOM": {
+        "USDT": "ATOMUSDT"
+    },
+    "ONT": {
+        "USDT": "ONTUSDT"
+    },
+    "IOTA": {
+        "USDT": "IOTAUSDT"
+    },
+    "BAT": {
+        "USDT": "BATUSDT"
+    },
+    "VET": {
+        "USDT": "VETUSDT"
+    },
+    "NEO": {
+        "USDT": "NEOUSDT"
+    },
+    "QTUM": {
+        "USDT": "QTUMUSDT"
+    },
+    "IOST": {
+        "USDT": "IOSTUSDT"
+    },
+    "THETA": {
+        "USDT": "THETAUSDT"
+    },
+    "ALGO": {
+        "USDT": "ALGOUSDT"
+    },
+    "ZIL": {
+        "USDT": "ZILUSDT"
+    },
+    "KNC": {
+        "USDT": "KNCUSDT"
+    },
+    "ZRX": {
+        "USDT": "ZRXUSDT"
+    },
+    "COMP": {
+        "USDT": "COMPUSDT"
+    },
+    "OMG": {
+        "USDT": "OMGUSDT"
+    },
+    "DOGE": {
+        "USDT": "DOGEUSDT",
+        "BUSD": "DOGEBUSD"
+    },
+    "SXP": {
+        "USDT": "SXPUSDT"
+    },
+    "KAVA": {
+        "USDT": "KAVAUSDT"
+    },
+    "BAND": {
+        "USDT": "BANDUSDT"
+    },
+    "RLC": {
+        "USDT": "RLCUSDT"
+    },
+    "WAVES": {
+        "USDT": "WAVESUSDT",
+        "BUSD": "WAVESBUSD"
+    },
+    "MKR": {
+        "USDT": "MKRUSDT"
+    },
+    "SNX": {
+        "USDT": "SNXUSDT"
+    },
+    "DOT": {
+        "USDT": "DOTUSDT",
+        "BUSD": "DOTBUSD"
+    },
+    "DEFI": {
+        "USDT": "DEFIUSDT"
+    },
+    "YFI": {
+        "USDT": "YFIUSDT"
+    },
+    "BAL": {
+        "USDT": "BALUSDT"
+    },
+    "CRV": {
+        "USDT": "CRVUSDT"
+    },
+    "TRB": {
+        "USDT": "TRBUSDT"
+    },
+    "RUNE": {
+        "USDT": "RUNEUSDT"
+    },
+    "SUSHI": {
+        "USDT": "SUSHIUSDT"
+    },
+    "SRM": {
+        "USDT": "SRMUSDT"
+    },
+    "EGLD": {
+        "USDT": "EGLDUSDT"
+    },
+    "SOL": {
+        "USDT": "SOLUSDT",
+        "BUSD": "SOLBUSD"
+    },
+    "ICX": {
+        "USDT": "ICXUSDT"
+    },
+    "STORJ": {
+        "USDT": "STORJUSDT"
+    },
+    "BLZ": {
+        "USDT": "BLZUSDT"
+    },
+    "UNI": {
+        "USDT": "UNIUSDT"
+    },
+    "AVAX": {
+        "USDT": "AVAXUSDT",
+        "BUSD": "AVAXBUSD"
+    },
+    "FTM": {
+        "USDT": "FTMUSDT",
+        "BUSD": "FTMBUSD"
+    },
+    "HNT": {
+        "USDT": "HNTUSDT"
+    },
+    "ENJ": {
+        "USDT": "ENJUSDT"
+    },
+    "FLM": {
+        "USDT": "FLMUSDT"
+    },
+    "TOMO": {
+        "USDT": "TOMOUSDT"
+    },
+    "REN": {
+        "USDT": "RENUSDT"
+    },
+    "KSM": {
+        "USDT": "KSMUSDT"
+    },
+    "NEAR": {
+        "USDT": "NEARUSDT",
+        "BUSD": "NEARBUSD"
+    },
+    "AAVE": {
+        "USDT": "AAVEUSDT"
+    },
+    "FIL": {
+        "USDT": "FILUSDT"
+    },
+    "RSR": {
+        "USDT": "RSRUSDT"
+    },
+    "LRC": {
+        "USDT": "LRCUSDT"
+    },
+    "MATIC": {
+        "USDT": "MATICUSDT"
+    },
+    "OCEAN": {
+        "USDT": "OCEANUSDT"
+    },
+    "CVC": {
+        "USDT": "CVCUSDT"
+    },
+    "BEL": {
+        "USDT": "BELUSDT"
+    },
+    "CTK": {
+        "USDT": "CTKUSDT"
+    },
+    "AXS": {
+        "USDT": "AXSUSDT"
+    },
+    "ALPHA": {
+        "USDT": "ALPHAUSDT"
+    },
+    "ZEN": {
+        "USDT": "ZENUSDT"
+    },
+    "SKL": {
+        "USDT": "SKLUSDT"
+    },
+    "GRT": {
+        "USDT": "GRTUSDT"
+    },
+    "1INCH": {
+        "USDT": "1INCHUSDT"
+    },
+    "CHZ": {
+        "USDT": "CHZUSDT"
+    },
+    "SAND": {
+        "USDT": "SANDUSDT"
+    },
+    "ANKR": {
+        "USDT": "ANKRUSDT"
+    },
+    "BTS": {
+        "USDT": "BTSUSDT"
+    },
+    "LIT": {
+        "USDT": "LITUSDT"
+    },
+    "UNFI": {
+        "USDT": "UNFIUSDT"
+    },
+    "REEF": {
+        "USDT": "REEFUSDT"
+    },
+    "RVN": {
+        "USDT": "RVNUSDT"
+    },
+    "SFP": {
+        "USDT": "SFPUSDT"
+    },
+    "XEM": {
+        "USDT": "XEMUSDT"
+    },
+    "BTCST": {
+        "USDT": "BTCSTUSDT"
+    },
+    "COTI": {
+        "USDT": "COTIUSDT"
+    },
+    "CHR": {
+        "USDT": "CHRUSDT"
+    },
+    "MANA": {
+        "USDT": "MANAUSDT"
+    },
+    "ALICE": {
+        "USDT": "ALICEUSDT"
+    },
+    "HBAR": {
+        "USDT": "HBARUSDT"
+    },
+    "ONE": {
+        "USDT": "ONEUSDT"
+    },
+    "LINA": {
+        "USDT": "LINAUSDT"
+    },
+    "STMX": {
+        "USDT": "STMXUSDT"
+    },
+    "DENT": {
+        "USDT": "DENTUSDT"
+    },
+    "CELR": {
+        "USDT": "CELRUSDT"
+    },
+    "HOT": {
+        "USDT": "HOTUSDT"
+    },
+    "MTL": {
+        "USDT": "MTLUSDT"
+    },
+    "OGN": {
+        "USDT": "OGNUSDT"
+    },
+    "NKN": {
+        "USDT": "NKNUSDT"
+    },
+    "SC": {
+        "USDT": "SCUSDT"
+    },
+    "DGB": {
+        "USDT": "DGBUSDT"
+    },
+    "1000SHIB": {
+        "USDT": "1000SHIBUSDT"
+    },
+    "ICP": {
+        "USDT": "ICPUSDT",
+        "BUSD": "ICPBUSD"
+    },
+    "BAKE": {
+        "USDT": "BAKEUSDT"
+    },
+    "GTC": {
+        "USDT": "GTCUSDT"
+    },
+    "BTCDOM": {
+        "USDT": "BTCDOMUSDT"
+    },
+    "TLM": {
+        "USDT": "TLMUSDT",
+        "BUSD": "TLMBUSD"
+    },
+    "IOTX": {
+        "USDT": "IOTXUSDT"
+    },
+    "AUDIO": {
+        "USDT": "AUDIOUSDT"
+    },
+    "RAY": {
+        "USDT": "RAYUSDT"
+    },
+    "C98": {
+        "USDT": "C98USDT"
+    },
+    "MASK": {
+        "USDT": "MASKUSDT"
+    },
+    "ATA": {
+        "USDT": "ATAUSDT"
+    },
+    "FTT": {
+        "BUSD": "FTTBUSD",
+        "USDT": "FTTUSDT"
+    },
+    "DYDX": {
+        "USDT": "DYDXUSDT"
+    },
+    "1000XEC": {
+        "USDT": "1000XECUSDT"
+    },
+    "GALA": {
+        "USDT": "GALAUSDT",
+        "BUSD": "GALABUSD"
+    },
+    "CELO": {
+        "USDT": "CELOUSDT"
+    },
+    "AR": {
+        "USDT": "ARUSDT"
+    },
+    "KLAY": {
+        "USDT": "KLAYUSDT"
+    },
+    "ARPA": {
+        "USDT": "ARPAUSDT"
+    },
+    "CTSI": {
+        "USDT": "CTSIUSDT"
+    },
+    "LPT": {
+        "USDT": "LPTUSDT"
+    },
+    "ENS": {
+        "USDT": "ENSUSDT"
+    },
+    "PEOPLE": {
+        "USDT": "PEOPLEUSDT"
+    },
+    "ANT": {
+        "USDT": "ANTUSDT"
+    },
+    "ROSE": {
+        "USDT": "ROSEUSDT"
+    },
+    "DUSK": {
+        "USDT": "DUSKUSDT"
+    },
+    "FLOW": {
+        "USDT": "FLOWUSDT"
+    },
+    "IMX": {
+        "USDT": "IMXUSDT"
+    },
+    "API3": {
+        "USDT": "API3USDT"
+    },
+    "GMT": {
+        "USDT": "GMTUSDT",
+        "BUSD": "GMTBUSD"
+    },
+    "APE": {
+        "USDT": "APEUSDT",
+        "BUSD": "APEBUSD"
+    },
+    "BNX": {
+        "USDT": "BNXUSDT"
+    },
+    "WOO": {
+        "USDT": "WOOUSDT"
+    },
+    "JASMY": {
+        "USDT": "JASMYUSDT"
+    },
+    "DAR": {
+        "USDT": "DARUSDT"
+    },
+    "GAL": {
+        "USDT": "GALUSDT",
+        "BUSD": "GALBUSD"
+    },
+    "DODO": {
+        "BUSD": "DODOBUSD"
+    },
+    "ANC": {
+        "BUSD": "ANCBUSD"
+    },
+    "1000LUNC": {
+        "BUSD": "1000LUNCBUSD"
+    },
+    "LUNA2": {
+        "BUSD": "LUNA2BUSD"
+    },
+    "OP": {
+        "USDT": "OPUSDT"
+    }
+}
