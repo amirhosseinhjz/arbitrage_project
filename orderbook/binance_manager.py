@@ -9,14 +9,13 @@ from .socketmanager import WebsocketManager
 
 
 class SpotExchange(Exchange):
-    def __init__(self, pairs, private, credentials=None) -> None:
+    def __init__(self, pairs, private, **credentials) -> None:
         super().__init__('binance', 'spot')
         self.symbols = self.translate_pairs(pairs)
         self.orderbookmanager = spot.SpotOrderbookManager(self.symbols)
         self.streams = self.get_streams()
-        self.account = None
+        self.account = spot.SpotAccount(exchange=self, paper= not private, credentials=credentials)
         if private:
-            self.account = spot.SpotAccount(credentials)
             listenkey = self.account.get_listenkey()
             self.streams.append(listenkey)
 
@@ -61,9 +60,8 @@ class PerpExchange(Exchange):
         self.symbols = self.translate_pairs(pairs)
         self.orderbookmanager = perp.PerpOrderbookManager(self.symbols)
         self.streams = self.get_streams()
-        self.account = None
+        self.account = perp.PerpAccount(exchange=self, paper= not private, credentials=credentials)
         if private:
-            self.account = perp.PerpAccount(**credentials)
             listenkey = self.account.get_listenkey()
             self.streams.append(listenkey)
 

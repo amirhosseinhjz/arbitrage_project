@@ -7,6 +7,7 @@ import base64
 import hmac
 import hashlib
 
+
 class PerpOrderbooks(Orderbooks):
     def __init__(self, symbol, depth):
         super().__init__(symbol, depth)
@@ -18,7 +19,7 @@ class PerpOrderbooks(Orderbooks):
 
     def callback(self, msg):
         self.reset_orderbooks()
-        event_time = msg['timestamp']#//1000000
+        event_time = msg['timestamp']  # //1000000
         for ask in msg['asks']:
             self.create_orderbook(
                 event_time, float(ask[0]), float(ask[1]), ASK)
@@ -78,13 +79,27 @@ class PerpOrderbookManager(BaseOrderbookManager):
 class PerpAccount(AccountManager):
     BASEL_URL = 'https://api-futures.kucoin.com'
 
-    def __init__(self, api_key, api_secret, api_passphrase) -> None:
-        self.api_key = api_key
-        self.api_secret = api_secret
-        self.api_passphrase = api_passphrase
+    def __init__(self, exchange, paper, credentials={}) -> None:
+        super().__init__()
+        self.exchange = exchange
+        self.paper = paper
+        self.api_key = None
+        self.api_secret = None
+        self.api_passphrase = None
+        self.api_key = None
+        self.api_secret = None
+        self.position = None
+        self.commision = 0.0002
+        if not paper:
+            self.api_key = credentials['api_key']
+            self.api_secret = credentials['api_secret']
+            self.api_passphrase = credentials['api_passphrase']
+        else:
+            self.init_paper_mode()
 
     def get_socket_token(self):
-        headers = self.get_headers(self.api_key, self.api_secret, self.api_passphrase, 'POST', '/api/v1/bullet-private')
+        headers = self.get_headers(
+            self.api_key, self.api_secret, self.api_passphrase, 'POST', '/api/v1/bullet-private')
         return requests.post(
             self.BASEL_URL+'/api/v1/bullet-private',
             headers=headers,

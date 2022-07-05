@@ -1,4 +1,5 @@
 from ...orderbookmanager import *
+from ...models import *
 import time
 from binance import ThreadedWebsocketManager
 import threading
@@ -97,15 +98,32 @@ class SpotOrderbookManager(BaseOrderbookManager):
 class SpotAccount(AccountManager):
     BASEL_URL = 'https://api.binance.com'
 
-    def __init__(self, api_key, api_secret) -> None:
-        self.api_key = api_key
-        self.api_secret = api_secret
+    def __init__(self, exchange, paper, credentials={}) -> None:
+        super().__init__()
+        self.exchange = exchange
+        self.paper = paper
+        self.api_key = None
+        self.api_secret = None
+        self.position = None
+        self.commision = 0.001
+        if not paper:
+            self.api_key = credentials['api_key']
+            self.api_secret = credentials['api_secret']
+        else:
+            self.init_paper_mode()
 
     def get_listenkey(self):
         url = self.BASEL_URL + '/api/v3/userDataStream'
         headers = {'X-MBX-APIKEY': self.api_key}
         response = requests.post(url, headers=headers)
         return response.json()['listenKey']
+
+    def calc_entry_commission(self, price, qty):
+        # TODO: entry commision is decreased from the qty not the usdt
+        return price * qty * 0.001
+
+    def calc_exit_commission(self, price, qty):
+        return price * qty * 0.001
 
     def keep_listenkey(self, listenkey):
         url = self.BASEL_URL + '/api/v3/userDataStream'
@@ -116,4 +134,3 @@ class SpotAccount(AccountManager):
     def account_data_callback(self, msg):
         if msg['e'] != 'ACCOUNT_UPDATE':
             return
-        pass

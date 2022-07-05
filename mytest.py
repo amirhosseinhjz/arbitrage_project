@@ -10,6 +10,7 @@ class Mytest(strategy.ArbitrageStrategy):
         binance_spot = binance_manager.PerpExchange(pairs, private=False)
         kucoin_spot = kucoin_manager.PerpExchange(pairs, private=False)
         self.exchanges = [binance_spot, kucoin_spot]
+
         self.df_data = {pair:[] for pair in pairs}
 
     def conditions(self, exchange1, exchange2, pair):

@@ -93,9 +93,18 @@ class PerpOrderbookManager(BaseOrderbookManager):
 class PerpAccount(AccountManager):
     BASEL_URL = 'https://fapi.binance.com'
 
-    def __init__(self, api_key, api_secret) -> None:
-        self.api_key = api_key
-        self.api_secret = api_secret
+    def __init__(self, exchange, paper, credentials={}) -> None:
+        super().__init__()
+        self.exchange = exchange
+        self.paper = paper
+        self.api_key = None
+        self.api_secret = None
+        self.commision = 0.0002
+        if not paper:
+            self.api_key = credentials['api_key']
+            self.api_secret = credentials['api_secret']
+        else:
+            self.init_paper_mode()
 
     def get_listenkey(self):
         url = self.BASEL_URL + '/fapi/v3/userDataStream'

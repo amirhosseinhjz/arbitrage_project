@@ -83,10 +83,23 @@ class SpotOrderbookManager(BaseOrderbookManager):
 class SpotAccount(AccountManager):
     BASEL_URL = 'https://api.kucoin.com'
 
-    def __init__(self, api_key, api_secret, api_passphrase) -> None:
-        self.api_key = api_key
-        self.api_secret = api_secret
-        self.api_passphrase = api_passphrase
+    def __init__(self, exchange, paper, credentials={}) -> None:
+        super().__init__()
+        self.exchange = exchange
+        self.paper = paper
+        self.api_key = None
+        self.api_secret = None
+        self.api_passphrase = None
+        self.api_key = None
+        self.api_secret = None
+        self.position = None
+        self.commision = 0.001
+        if not paper:
+            self.api_key = credentials['api_key']
+            self.api_secret = credentials['api_secret']
+            self.api_passphrase = credentials['api_passphrase']
+        else:
+            self.init_paper_mode()
 
     def get_socket_token(self):
         headers = self.get_headers(self.api_key, self.api_secret, self.api_passphrase, 'POST', '/api/v1/bullet-private')
