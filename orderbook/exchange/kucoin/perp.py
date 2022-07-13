@@ -6,6 +6,8 @@ import requests
 import base64
 import hmac
 import hashlib
+import json
+import random
 
 
 class PerpOrderbooks(Orderbooks):
@@ -76,26 +78,109 @@ class PerpOrderbookManager(BaseOrderbookManager):
         return self.orderbooks[symbol]
 
 
-class PerpAccount(AccountManager):
-    BASEL_URL = 'https://api-futures.kucoin.com'
 
-    def __init__(self, exchange, paper, credentials={}) -> None:
-        super().__init__()
-        self.exchange = exchange
-        self.paper = paper
+
+class PerpExchange(Exchange):
+    API_URL = 'https://api-futures.kucoin.com'
+
+    def __init__(self, pairs, private=False, credentials={}, testnet=False) -> None:
+        super().__init__('binance', 'perp', pairs, private, credentials, testnet)
+        self.BASEL_URL = self.TESTNET_API_URL if testnet else self.API_URL
         self.api_key = None
         self.api_secret = None
         self.api_passphrase = None
-        self.api_key = None
-        self.api_secret = None
-        self.position = None
         self.commision = 0.0002
-        if not paper:
+        if private:
             self.api_key = credentials['api_key']
             self.api_secret = credentials['api_secret']
             self.api_passphrase = credentials['api_passphrase']
         else:
             self.init_paper_mode()
+
+    def get_orderbook_sbscription_message(self, symbols):
+        topic = '/contractMarket/level2Depth50:' + ','.join(symbols)
+        msg = {
+            'type': 'subscribe',
+            'topic': topic,
+            'response': True,
+            'id': str(int(time.time() * 1000)),
+            'privateChannel': self.private
+        }
+        return json.dumps(msg)
+
+    def socket_callback(self, msg):
+        # print(msg)
+        if not 'subject' in msg:
+            return
+        if msg['subject'] == 'level2':
+            self.call_symbol_orderbooks(msg)
+
+    def account_data_callback(self, msg):
+        print(msg)
+        pass
+
+    def call_symbol_orderbooks(self, msg):
+        if msg['subject'] != 'level2':
+            return
+        symbol = msg['topic'].split(':')[1]
+        msg = msg['data']
+        orderbooks = self.orderbooks[symbol]
+        orderbooks.callback(msg)
+
+    def start_socket(self):
+        messages = [self.get_orderbook_sbscription_message(self.symbols)]
+        kwargs = {
+            'exchange': 'kucoin',
+            'type': 'perp',
+            'messages': messages,
+            'callback': self.socket_callback,
+            'token': None,
+            'connectId': None,
+        }
+        if self.private:
+            self.connectId = random.randint(10000, 1000000)
+            kwargs['connectId'] = self.connectId
+            kwargs['token'] = self.get_socket_token()
+        socket = WebsocketManager.create(**kwargs)
+        socket.start(multithread=False)
+
+    def _start(self):
+        print('Starting binance perp exchange')
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        self._init_orderbooks(PerpOrderbooks)
+        self.start_socket()
+
+    def start(self):
+        import nest_asyncio
+        nest_asyncio.apply()
+        self.thread = threading.Thread(target=self._start)
+        self.thread.start()
+        return self.thread
+
+    def stop(self):
+        pass
+
+    # Manage orders:
+    def _update_order(self, msg):
+        pass
+
+    def buy_wallet(self, symbol, price, qty):
+        return self._send_order(symbol, 'BUY', qty, price)
+
+    def sell_wallet(self, symbol, price, qty):
+        return self._send_order(symbol, 'SELL', qty, price)
+
+    def _send_order(self, symbol, side, qty, price=None):
+        pass
+
+    def cancel_order(self, order_id, symbol=None):
+        pass
+
+    def _add_order(self, order):
+        pass
+
+
 
     def get_socket_token(self):
         headers = self.get_headers(

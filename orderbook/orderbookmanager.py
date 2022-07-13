@@ -2,6 +2,8 @@ import abc
 from dataclasses import dataclass
 from .symbol_translator import symboltranslator
 from .models import *
+import random
+import threading
 ASK = 'ASK'
 BID = 'BID'
 
@@ -24,7 +26,7 @@ class OrderBook:
         return [self.update_time, self.price, self.qty]
 
     def __repr__(self) -> str:
-        pass
+        return self.__str__()
 
     # overroide subtraction method
     def __sub__(self, other):
@@ -64,21 +66,33 @@ class Orderbooks:
         pass
 
     def asks(self, len):
-        asks = [self.ASK[price] for price in sorted(list(self.ASK.keys()))[:len]]
+        asks = [self.ASK[price]
+                for price in sorted(list(self.ASK.keys()))[:len]]
+        if not asks:
+            return None
         if len == 1:
             return asks[0]
         return asks
 
     def bids(self, len):
-        bids = [self.BID[price] for price in sorted(list(self.BID.keys()))[-len:][::-1]]
+        bids = [self.BID[price]
+                for price in sorted(list(self.BID.keys()))[-len:][::-1]]
+        if not bids:
+            return None
         if len == 1:
             return bids[0]
         return bids
 
 
 class BaseOrderbookManager:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, depth=10) -> None:
+        self.orderbooks = dict()
+        self.depth = depth
+        self.orderbook_lock = threading.Lock()
+
+    def get_orderbooks(self, symbol) -> Orderbooks:
+        with self.orderbook_lock:
+            return self.orderbooks[symbol]
 
 
 class AccountManager:
@@ -86,7 +100,10 @@ class AccountManager:
         self.position = None
         self.commision = 0.0
         self.paper = True
+        self.REQUEST_TIMEOUT = 5
         self.trades = []
+        self.orders = {}
+        self.account_lock = threading.Lock()
 
     @abc.abstractmethod
     def buy_wallet(self, symbol, price, qty):
@@ -96,15 +113,17 @@ class AccountManager:
     def sell_wallet(self, symbol, price, qty):
         pass
 
-    def buy(self, symbol, price, quantity=None):
-        if self.paper:
+    def _buy(self, symbol, price=None, quantity=None):
+        with self.account_lock:
+            if self.private:
+                return self.buy_wallet(symbol, price, quantity)
             return self._buy_papertrade(symbol, price, quantity)
-        return self.buy_wallet(symbol, price, quantity)
 
-    def sell(self, symbol, price, quantity=None):
-        if self.paper:
+    def _sell(self, symbol, price=None, quantity=None):
+        with self.account_lock:
+            if self.private:
+                return self.sell_wallet(symbol, price, quantity)
             return self._sell_papertrade(symbol, price, quantity)
-        return self.sell_wallet(symbol, price, quantity)
 
     @abc.abstractmethod
     def cancel_order(self, symbol, order_id):
@@ -117,6 +136,10 @@ class AccountManager:
     def init_paper_mode(self):
         self._start_cash = 10000
         self._cash = 10000
+
+    def get_order(self, order_id):
+        with self.account_lock:
+            return self.orders.get(order_id, None)
 
     def _buy_papertrade(self, symbol, price, quantity=None):
         if self.position is None:
@@ -149,10 +172,13 @@ class AccountManager:
         position.exit_price = price
         commision = self._calc_commision(price, position.qty)
         position.exit_commission = commision
-        position.profit_amount = position.qty * (price - position.entry_price) - (position.entry_commission + commision)
+        position.profit_amount = position.qty * \
+            (price - position.entry_price) - \
+            (position.entry_commission + commision)
         position.profit_amount *= (-1 if position.side == 'short' else 1)
         position.profit_percent = position.profit_amount / position.entry_price
-        self._update_cash('close', position.qty, position.exit_price, commision)
+        self._update_cash('close', position.qty,
+                          position.exit_price, commision)
         return position
 
     def _update_cash(self, type, qty, price, commision=0.0):
@@ -169,36 +195,63 @@ class AccountManager:
     def in_position(self):
         return self.position is not None
 
-class Exchange:
-    def __init__(self, exchange, market_type) -> None:
+
+class Exchange(AccountManager, BaseOrderbookManager):
+    def __init__(self, exchange, market_type, pairs, private, credentials, testnet) -> None:
+        AccountManager.__init__(self)
+        BaseOrderbookManager.__init__(self)
         self.exchange = exchange
         self.market_type = market_type
         self.name = exchange + '_' + market_type
+        self.pairs = pairs
+        self.symbols = self.translate_pairs(pairs)
+        self.private = private
+        self.credentials = credentials
+        self.testnet = testnet
+        self.REQUEST_TIMEOUT = 5
 
     def translate_pairs(self, pairs):
         return [symboltranslator(self, pair[0], pair[1]) for pair in pairs]
 
-    def get(self, pair):
+    def _init_orderbooks(self, OrderbookOject):
+        with self.orderbook_lock:
+            for symbol in self.symbols:
+                self.orderbooks[symbol] = OrderbookOject(
+                    symbol, self.depth)
+
+    def asks(self, pair, len=1):
         symbol = symboltranslator(self, pair[0], pair[1])
-        return self.orderbookmanager(symbol)
+        return self.get_orderbooks(symbol).asks(len)
+
+    def bids(self, pair, len=1):
+        symbol = symboltranslator(self, pair[0], pair[1])
+        return self.get_orderbooks(symbol).bids(len)
 
     def buy(self, **kwargs):
         symbol = symboltranslator(self, kwargs['pair'][0], kwargs['pair'][1])
-        price = kwargs['price']
+        price = kwargs.get('price', None)
         qty = kwargs.get('qty', None)
-        return self.account.buy(symbol, price, qty)
+        return self._buy(symbol, price, qty)
 
     def sell(self, **kwargs):
         symbol = symboltranslator(self, kwargs['pair'][0], kwargs['pair'][1])
         price = kwargs['price']
         qty = kwargs.get('qty', None)
-        return self.account.sell(symbol, price, qty)
+        return self._sell(symbol, price, qty)
 
-    def __getattribute__(self, __name: str):
-        try:
-            return super().__getattribute__(__name)
-        except AttributeError:
-            try:
-                return self.account.__getattribute__(__name)
-            except AttributeError:
-                raise AttributeError(__name)
+    def generate_order_id(self):
+        while (id := random.randint(10000, 1000000)) in self.orders:
+            pass
+        return id
+
+    def __str__(self) -> str:
+        return self.name
+
+    # def __getattribute__(self, __name: str):
+    #     try:
+    #         return super().__getattribute__(__name)
+    #     except AttributeError:
+    #         try:
+    #             return self.account.__getattribute__(__name)
+    #         except AttributeError:
+    #             raise AttributeError(__name)

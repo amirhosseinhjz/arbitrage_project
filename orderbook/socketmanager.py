@@ -7,6 +7,7 @@ import random
 
 class Socket:
     def __init__(self, url, callback, messages=[]):
+        print(url)
         self.url = url
         self.callback = callback
         self.messages_on_start = messages
@@ -14,18 +15,25 @@ class Socket:
 
     async def start_socket(self):
         try:
-            async with websockets.connect(self.url) as websocket:
+            async with websockets.connect(self.url, close_timeout=0.1) as websocket:
                 self._socket = websocket
                 while True:
                     while self.messages:
                         await self._send_msg(self.messages.pop(0))
                     message = await websocket.recv()
-                    self.callback(json.loads(message))
+                    self._callback(json.loads(message))
         except Exception as e:
             print("Error: ", e)
             self.start()
 
+    def _callback(self, message):
+        self.callback(message)
+
     def _start(self):
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        # import nest_asyncio
+        # nest_asyncio.apply()
         self.messages = self.messages_on_start.copy()
         asyncio.get_event_loop().run_until_complete(self.start_socket())
 
@@ -53,6 +61,7 @@ class RestApiUrl:
 class WebsocketManager:
     BINANCE_SPOT_BASE_URL = 'wss://stream.binance.com:9443'
     BINANCE_PERP_BASE_URL = 'wss://fstream.binance.com'
+    BINANCE_PERP_BASE_URL_TESTNET = 'wss://stream.binancefuture.com'
     KUCOIN_SPOT_BASE_URL = 'wss://ws-api.kucoin.com/endpoint'
     KUCOIN_PERP_BASE_URL = 'wss://ws-api.kucoin.com/endpoint'
     # BITFINEX_BASE_URL = 'wss://api-pub.bitfinex.com/ws/'
@@ -77,8 +86,19 @@ class WebsocketManager:
 
     @staticmethod
     def binance_perp_url(**kwargs):
-        streams = kwargs['streams']
-        return WebsocketManager.BINANCE_PERP_BASE_URL + '/stream?streams=' + '/'.join(streams)
+        streams = kwargs.get('streams', None)
+        testnet = kwargs.get('testnet', False)
+        listenkey = kwargs.get('listenkey', None)
+        url = WebsocketManager.BINANCE_PERP_BASE_URL if not testnet else WebsocketManager.BINANCE_PERP_BASE_URL_TESTNET 
+        # url += '/ws/'
+        if streams:
+            url += '/stream?streams=' + '/'.join(streams)
+            if listenkey:
+                url += '/' + listenkey #'&listenKey='
+            return url
+        if listenkey:
+            url += '/ws/'+listenkey
+        return url
 
     @staticmethod
     def kucoin_spot_url(**kwargs):

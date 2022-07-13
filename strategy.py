@@ -1,4 +1,6 @@
 import asyncio
+
+from importlib_metadata import entry_points
 import orderbook
 from orderbook.orderbookmanager import OrderBook
 import threading
@@ -6,19 +8,38 @@ import time
 import abc
 import time
 from itertools import combinations, permutations
+import itertools
 from orderbook.symbol_translator import symboltranslator
 from orderbook.models import *
 import pandas as pd
+from exchange_pair_dict import ExchangePairDict
+# permutations = itertools.chain(
+# itertools.product(long_ent_type, long_close_type, short_ent_type, short_close_type, hl_len, hi_ma_len, sl_input,
+#                   hma_len, hma2_len, min_profit, constant_stop_loss, src_hma_len,hl_lookback_len,hmac_len))
+
 
 class ArbitrageStrategy:
 
     @abc.abstractmethod
     def __init__(self, pairs):
-        self.running = False
+        self._running = False
         self.pairs = pairs
         self.exchanges = []
         self._open_positions = {}
         self._closed_positions = []
+
+    def _init_before_start(self):
+        self.lock = threading.Lock()
+        self.neutral_pairs = ExchangePairDict()
+        self.entry_orders = ExchangePairDict()
+        self.positions = ExchangePairDict()
+        self.exit_orders = ExchangePairDict()
+        exchange_permutations = self.calc_permutations(self.exchanges)
+        pairs = self.validate_pairs(self.exchanges, self.pairs)
+        exchanges_pairs = list(itertools.chain(
+            itertools.product(pairs, exchange_permutations)))
+        for (exchange1, exchange2), pair in exchanges_pairs:
+            self.neutral_pairs.add(exchange1, exchange2, pair)
 
     def validate_pairs(self, exchanges, pairs):
         """
@@ -33,27 +54,76 @@ class ArbitrageStrategy:
         return validated_pairs
 
     @abc.abstractmethod
-    def entry_condition(self, exchange1, exchange2, pair):
+    def entry_condition(self, pair, exchange1, exchange2):
         """"
         write this function to implement your arbitrage strategy
 
-        if no position opened False should be returned
-        if a position is opened the data below should be retourned in the shown order:
+        if no change made, return False
+        if an order is sent the data below should be returned in the shown order:
             [
-            buy_exchange: exchange in which the long position is opened,
-            buy_position: the opsition object which exchange 1 returned,
-            sell_exchange: exchange in which the short position is opened,
-            sell_position: the opsition object which exchange 2 returned,
+            buy_exchange: exchange in which the long order is sent,
+            buy_order_id: order id of the long position,
+            sell_exchange: exchange in which the short order is sent,
+            sell_order_id: order id of the short position
+            ]
+        """
+        return False
+
+    def entry_order_check_condition(self, pair, buy_order_exchange, sell_order_exchange, buy_order_id, sell_order_id):
+        """
+        write this function to manage orders to be filled or killed
+        if no change made, False should be returned
+        if filled, the data below should be returned in the shown order:
+            [
+            "filled",
+            buy_exchange: exchange in which the long order is filled,
+            buy_position: position object of the long position,
+            sell_exchange: exchange in which the short order is filled,
+            sell_position: position object of the short position.
+            ]
+        if orders are cancelled, the data below should be returned in the shown order:
+            [
+            "cancelled",
+            exchnge1: exchange in which the long order is cancelled,
+            exchange2: exchange in which the short order is cancelled,
             ]
         """
         return False
 
     @abc.abstractmethod
-    def exit_condition(self, buy_exchange, sell_exchange, pair):
-        """"
+    def exit_condition(self, pair, buy_exchange, sell_exchange):
+        """
         write this function to implement your arbitrage strategy
         if no position closed False should be returned,
-        if a position is closed True should be returned.
+        if a position is closed the data below should be returned in the shown order:
+            [
+            buy_exchange: exchange in which the long position is closed,
+            sell_order_id: order id of the long close order,
+            sell_exchange: exchange in which the short position is closed,
+            buy_order_id: order id of the short close order,
+            ]
+        """
+        return False
+
+    @abc.abstractmethod
+    def exit_order_check_condition(self, pair, buy_exchange, sell_exchange, buy_order_id, sell_order_id):
+        """
+        write this function to manage orders to be filled or killed
+        if no change made, False should be returned
+        if filled, the data below should be returned in the shown order:
+            [
+            "filled",
+            buy_exchange: exchange in which the long order is filled,
+            buy_position: position object of the long position,
+            sell_exchange: exchange in which the short order is filled,
+            sell_position: position object of the short position.
+            ]
+        if orders are cancelled, the data below should be returned in the shown order:
+            [
+            "cancelled": True,
+            exchnge1: exchange in which the long order is cancelled,
+            exchange2: exchange in which the short order is cancelled,
+            ]
         """
         return False
 
@@ -85,48 +155,124 @@ class ArbitrageStrategy:
             [orderbook.price * orderbook.qty for orderbook in orderbooks]) / qty
         return qty, avg_price
 
-    def condition_thread(self, exchange1, exchange2, pairs):
+    def entry_cond_execution(self):
+        """
+        Execute the entry condition for all pairs
+        """
         while True:
-            for pair in pairs:
+            with self.lock:
+                exchange_pairs = self.neutral_pairs.copy()
+            for key, data in exchange_pairs.items():
+                pair, exchange1, exchange2 = data
+                if exchange1.account.in_position or exchange2.account.in_position:
+                    continue
+                result = self.entry_condition(*data)
+                if result:
+                    result = [pair, *result]
+                    with self.lock:
+                        del self.neutral_pairs[key]
+                        self.ordered_pairs.add(*result)
 
-                key = ArbitrageStrategy._hash(exchange1, exchange2, pair)
-                positionpair = self._open_positions.get(key, None)
-                if positionpair:
-                    result = self.exit_condition(positionpair.buy_exchange, positionpair.sell_exchange, pair)
-                    if result:
-                        positionpair.calc_profit()
-                        self._closed_positions.append(positionpair)
-                        del self._open_positions[key]
-                else:
-                    if exchange1.account.in_position or exchange2.account.in_position:
-                        continue
-                    result = self.entry_condition(exchange1, exchange2, pair)
-                    if result:
-                        self._open_positions[key] = PositionPair(*result)
+    def entry_order_check_execution(self):
+        """
+        Execute the ordercheck condition for all pairs
+        """
+        while True:
+            with self.lock:
+                exchange_pairs = self.entry_orders.copy()
+            for key, data in exchange_pairs.items():
+                pair, buy_order_exchange, sell_order_exchange, buy_order_id, sell_order_id = data
+                result = self.entry_order_check_condition(*data)
+                if result:
+                    if result[0] == "filled":
+                        result = [pair, result[1], result[3]]
+                        with self.lock:
+                            del self.entry_orders[key]
+                            self.positions.add(*result)
+                    elif result[0] == "cancelled":
+                        result = [pair, result[1], result[2]]
+                        with self.lock:
+                            del self.entry_orders[key]
+                            self.neutral_pairs.add(*result)
             time.sleep(1)
+
+    def exit_cond_execution(self):
+        """
+        Execute the exit condition for all pairs
+        """
+        while True:
+            with self.lock:
+                exchange_pairs = self.positions.copy()
+            for key, data in exchange_pairs.items():
+                pair, buy_exchange, sell_exchange = data
+                result = self.exit_condition(*data)
+                if result:
+                    result = [pair, *result]
+                    with self.lock:
+                        del self.positions[key]
+                        self.exit_orders.add(*result)
+            time.sleep(1)
+
+    def exit_order_check_execution(self):
+        """
+        Execute the ordercheck condition for all pairs
+        """
+        while True:
+            with self.lock:
+                exchange_pairs = self.exit_orders.copy()
+            for key, data in exchange_pairs.items():
+                pair, buy_order_exchange, sell_order_exchange, buy_order_id, sell_order_id = data
+                result = self.exit_order_check_condition(*data)
+                if result:
+                    if result[0] == "filled":
+                        with self.lock:
+                            del self.exit_orders[key]
+                            self._add_successful_position(result[2], result[4])
+                            self.neutral_pairs.add(
+                                pair, buy_order_exchange, sell_order_exchange)
+                    elif result[0] == "cancelled":
+                        result = [pair, result[1], result[2]]
+                        with self.lock:
+                            del self.exit_orders[key]
+                            self.positions.add(
+                                pair, buy_order_exchange, sell_order_exchange)
+            time.sleep(1)
+
+    def _add_successful_position(self, buy_position, sell_position):
+        """
+        Add a successful position to the positions list
+        """
+        pass
+        # self._closed_positions.add(buy_position, sell_position)
 
     @staticmethod
     def _hash(exchange1, exchange2, pair):
         return exchange1.name + exchange2.name + str(pair)
 
     def start(self, wait_time=15):
-        if self.running:
+        if self._running:
             print('Strategy already running!!!')
             return
-        self.running = True
+        self._start_exchanges()
+        self._running = True
+        print(f'Sleep for {wait_time} seconds...')
+        time.sleep(wait_time)
+        print('\nStarting strategy...')
+        entry_thread = threading.Thread(target=self.entry_cond_execution)
+        entry_order_thread = threading.Thread(
+            target=self.entry_order_check_execution)
+        exit_thread = threading.Thread(target=self.exit_cond_execution)
+        exit_order_thread = threading.Thread(
+            target=self.exit_order_check_execution)
+        self.threads = [entry_thread, entry_order_thread,
+                        exit_thread, exit_order_thread]
+        for thrd in self.threads:
+            thrd.start()
+
+    def _start_exchanges(self):
         print('Waiting for exchanges sockets to start...')
         for exchange in self.exchanges:
             exchange.start()
-        print(f'Sleep for {wait_time} seconds...')
-        time.sleep(wait_time)
-        self.threads = []
-        exchange_pair_permutations = self.calc_permutations(self.exchanges)
-        print('\nStarting strategy...')
-        for exchange1, exchange2 in exchange_pair_permutations:
-            thread = threading.Thread(target=self.condition_thread, args=(
-                exchange1, exchange2, self.pairs))
-            thread.start()
-            self.threads.append(thread)
 
     @property
     def open_positions(self):
@@ -145,39 +291,16 @@ class ArbitrageStrategy:
         result = {}
         closed_positions = self._closed_positions.copy()
         result['number_of_trades'] = len(closed_positions)
-        result['number_of_winning_trades'] = len([position for position in closed_positions if position.profit_amount > 0])
-        result['number_of_losing_trades'] = len([position for position in closed_positions if position.profit_amount < 0])
-        result['profit_amount'] = sum([position.profit_amount for position in closed_positions])
-        result['profit_percentage'] = result['profit_amount'] / sum([exchange.account._start_cash for exchange in self.exchanges]) * 100
+        result['number_of_winning_trades'] = len(
+            [position for position in closed_positions if position.profit_amount > 0])
+        result['number_of_losing_trades'] = len(
+            [position for position in closed_positions if position.profit_amount < 0])
+        result['profit_amount'] = sum(
+            [position.profit_amount for position in closed_positions])
+        result['profit_percentage'] = result['profit_amount'] / \
+            sum([exchange.account._start_cash for exchange in self.exchanges]) * 100
         result['number_of_open_positions'] = len(self._open_positions)
         return result
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     # async def _enter(self, pair, exchange1, exchange2, asks1, bids2):
     #     """
@@ -194,7 +317,7 @@ class ArbitrageStrategy:
 
     # def entry(self, pair, exchange1, exchange2, asks1, bids2):
     #     """
-    #     Execute arbitrage order 
+    #     Execute arbitrage order
     #     """
     #     positionpair = asyncio.run(self._enter(pair, exchange1, exchange2, asks1, bids2))
     #     if positionpair is not None:
@@ -221,3 +344,22 @@ class ArbitrageStrategy:
     #     asyncio.run(self._exit(positionpair))
     #     return positionpair
 
+    # def condition_thread(self, exchange1, exchange2, pairs):
+    #     while True:
+    #         for pair in pairs:
+
+    #             key = ArbitrageStrategy._hash(exchange1, exchange2, pair)
+    #             positionpair = self._open_positions.get(key, None)
+    #             if positionpair:
+    #                 result = self.exit_condition(positionpair.buy_exchange, positionpair.sell_exchange, pair)
+    #                 if result:
+    #                     positionpair.calc_profit()
+    #                     self._closed_positions.append(positionpair)
+    #                     del self._open_positions[key]
+    #             else:
+    #                 if exchange1.account.in_position or exchange2.account.in_position:
+    #                     continue
+    #                 result = self.entry_condition(exchange1, exchange2, pair)
+    #                 if result:
+    #                     self._open_positions[key] = PositionPair(*result)
+    #         time.sleep(1)

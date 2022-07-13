@@ -24,7 +24,7 @@ class Mytest(strategy.ArbitrageStrategy):
             self.save_df(pair)
         # print(pair, exchange1.name, exchange2.name, ': ', bid1-ask2)
         # print(pair, exchange2.name, exchange1.name, ': ', bid2-ask1)
-
+        
 
     def save_df(self, pair):
         data, self.df_data[pair] = self.df_data[pair], []

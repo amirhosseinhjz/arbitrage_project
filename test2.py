@@ -11,15 +11,15 @@ class Mytest(strategy.ArbitrageStrategy):
         binance_perp = binance_manager.PerpExchange(pairs, private=False)
         # binance_spot = binance_manager.SpotExchange(pairs, private=False)
         kucoin_perp = kucoin_manager.PerpExchange(pairs, private=False)
-        self.min_open_diff_percent = 0.1
-        self.min_close_diff_percent = 0.01
         self.exchanges = [kucoin_perp, binance_perp]
+        self.min_open_diff_percent = 0.10
+        self.min_close_diff_percent = 0.01
 
     def entry_condition(self, exchange1, exchange2, pair):
-        ask1 = exchange1.get(pair).asks(1)
-        ask2 = exchange2.get(pair).asks(1)
-        bid1 = exchange1.get(pair).bids(1)
-        bid2 = exchange2.get(pair).bids(1)
+        ask1 = exchange1.asks(pair)
+        ask2 = exchange2.asks(pair)
+        bid1 = exchange1.bids(pair)
+        bid2 = exchange2.bids(pair)
 
         diff1 = (bid2.price - ask1.price) / ask1.price * 100
         diff2 = (bid1.price - ask2.price) / ask2.price * 100
@@ -33,7 +33,9 @@ class Mytest(strategy.ArbitrageStrategy):
             print(f'open: {pair}, {exchange1.name} buy {ask1.price}')
             pos2 = exchange2.sell(pair=pair, price=price1, qty=qty)
             print(f'open: {pair}, {exchange2.name} sell {bid1.price}')
-            return exchange1, pos1, exchange2, pos2
+            # time.sleep(4)
+
+            # return exchange1, pos1, exchange2, pos2
 
         if diff2 > diff1:
             qty, price1, price2 = self.calc_qty(exchange1, exchange2, bid1, ask2)
@@ -47,8 +49,8 @@ class Mytest(strategy.ArbitrageStrategy):
 
 
     def exit_condition(self, bought_exchange, sold_exchange, pair):
-        ask1 = bought_exchange.get(pair).asks(1)
-        bid1 = sold_exchange.get(pair).bids(1)
+        ask1 = bought_exchange.asks(pair)
+        bid1 = sold_exchange.bids(pair)
         diff = (bid1.price - ask1.price) / ask1.price * 100
         if diff < self.min_close_diff_percent:
             bought_exchange.sell(pair=pair, price=ask1.price)

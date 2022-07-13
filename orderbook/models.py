@@ -36,3 +36,19 @@ class PositionPair:
     def calc_profit(self):
         self.profit_amount = self.sell_position.profit_amount + \
             self.buy_position.profit_amount
+
+
+@dataclass
+class Order:
+    updatetime: int
+    id: int
+    symbol: str
+    price: float
+    quantity: float
+    side: str
+    status: str
+    executed_quantity: float = 0
+    avg_price: float = 0
+
+    def __str__(self):
+        return f'{self.side}: {self.quantity} @ {self.price}'
