@@ -15,6 +15,7 @@ class Socket:
 
     async def start_socket(self):
         try:
+        # if True:
             async with websockets.connect(self.url, close_timeout=0.1) as websocket:
                 self._socket = websocket
                 while True:
@@ -30,7 +31,7 @@ class Socket:
         self.callback(message)
 
     def _start(self):
-        loop = asyncio.new_event_loop()
+        loop = asyncio.get_event_loop()
         asyncio.set_event_loop(loop)
         # import nest_asyncio
         # nest_asyncio.apply()
@@ -51,7 +52,7 @@ class Socket:
     def send_msg(self, message):
         asyncio.get_event_loop().run_until_complete(self._send_msg(message))
 
-    def stop(self):
+    def join(self):
         self.thread.join()
 
 class RestApiUrl:
@@ -122,4 +123,4 @@ class WebsocketManager:
             token = requests.post(RestApiUrl.KUCOIN_PERP_URL + '/api/v1/bullet-public').json()['data']['token']
         if connectId is None:
             connectId = str(random.randint(1, 1000000))
-        return WebsocketManager.KUCOIN_PERP_BASE_URL + '?token=' + token + '&connectId=' + connectId
+        return WebsocketManager.KUCOIN_PERP_BASE_URL + '?token=' + str(token) + '&connectId=' + str(connectId)

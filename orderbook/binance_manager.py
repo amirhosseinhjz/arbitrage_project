@@ -60,19 +60,22 @@ from urllib.parse import urlencode
 
 class PerpOrderbooks(Orderbooks):
     ORDERBOOK_URL = 'https://fapi.binance.com/fapi/v1/depth'
+    TESTNET_ORDERBOOK_URL = 'https://testnet.binancefuture.com/fapi/v1/depth'
 
-    def __init__(self, symbol, depth):
+    def __init__(self, symbol, depth, testnet=False):
         super().__init__(symbol, depth)
         self.u = 0
         self.initialed = False
         self.in_snapshot_process = False
         self.first_socket_done = False
+        self.testnet = testnet
         self.tries = 0
 
     def _get_snapshot(self, depth):
         self.tries += 1
+        url = self.TESTNET_ORDERBOOK_URL if self.testnet else self.ORDERBOOK_URL
         orderbooks = requests.get(
-            self.ORDERBOOK_URL,
+            url,
             params={'symbol': self.symbol, 'limit': depth}
         ).json()
         self.lastUpdateId = orderbooks['lastUpdateId']
@@ -150,6 +153,13 @@ class PerpExchange(Exchange):
         data = {'listenKey': listenkey}
         requests.put(url, headers=headers, data=data)
 
+    def _set_balance(self):
+        balances = self.get_account_balance()
+        for balance in balances:
+            if balance['asset'] == 'USDT':
+                self._cash = float(balance['availableBalance'])
+                return
+
     def socket_callback(self, msg):
         # TODO: manage errors from websocket
         # print(msg)
@@ -163,7 +173,7 @@ class PerpExchange(Exchange):
     def account_data_callback(self, msg):
         # print(msg)
         if msg['e'] == 'ACCOUNT_UPDATE':
-            pass
+            self._update_account(msg)
         elif msg['e'] == 'ORDER_TRADE_UPDATE':
             self._update_order(msg)
 
@@ -192,6 +202,7 @@ class PerpExchange(Exchange):
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
         self._init_orderbooks(PerpOrderbooks)
+        self._set_balance()
         self.start_socket()
 
     def start(self):
@@ -204,9 +215,92 @@ class PerpExchange(Exchange):
     def stop(self):
         pass
 
+    # api
+
+    def exchange_info(self):
+        url = self.BASEL_URL + '/fapi/v1/exchangeInfo'
+        response = requests.get(url)
+        return response.json()
+
+    def get_account_balance(self):
+        url = self.BASEL_URL + '/fapi/v2/balance'
+        headers = {'X-MBX-APIKEY': self.api_key}
+        params = {'timestamp': int(time.time() * 1000)}
+        params['signature'] = self._sign_message(params, self.api_secret)
+        response = requests.get(url, headers=headers, params=params)
+        return response.json()
+
+    def _update_account(self, msg):
+        """{
+            "e": "ACCOUNT_UPDATE",                // Event Type
+            "E": 1564745798939,                   // Event Time
+            "T": 1564745798938 ,                  // Transaction
+            "a":                                  // Update Data
+                {
+                "m":"ORDER",                      // Event reason type
+                "B":[                             // Balances
+                    {
+                    "a":"USDT",                   // Asset
+                    "wb":"122624.12345678",       // Wallet Balance
+                    "cw":"100.12345678",          // Cross Wallet Balance
+                    "bc":"50.12345678"            // Balance Change except PnL and Commission
+                    },
+                    {
+                    "a":"BUSD",           
+                    "wb":"1.00000000",
+                    "cw":"0.00000000",         
+                    "bc":"-49.12345678"
+                    }
+                ],
+                "P":[
+                    {
+                    "s":"BTCUSDT",            // Symbol
+                    "pa":"0",                 // Position Amount
+                    "ep":"0.00000",            // Entry Price
+                    "cr":"200",               // (Pre-fee) Accumulated Realized
+                    "up":"0",                     // Unrealized PnL
+                    "mt":"isolated",              // Margin Type
+                    "iw":"0.00000000",            // Isolated Wallet (if isolated position)
+                    "ps":"BOTH"                   // Position Side
+                    },
+                    {
+                        "s":"BTCUSDT",
+                        "pa":"20",
+                        "ep":"6563.66500",
+                        "cr":"0",
+                        "up":"2850.21200",
+                        "mt":"isolated",
+                        "iw":"13200.70726908",
+                        "ps":"LONG"
+                    },
+                    {
+                        "s":"BTCUSDT",
+                        "pa":"-10",
+                        "ep":"6563.86000",
+                        "cr":"-45.04000000",
+                        "up":"-1423.15600",
+                        "mt":"isolated",
+                        "iw":"6570.42511771",
+                        "ps":"SHORT"
+                    }
+                ]
+                }
+            }"""
+
+        if msg['a']['m'] == 'ORDER':
+            self._update_order2(msg)
+        pass
+    
+    def _update_order2(self, msg):
+        # TODO: handle other type of messages
+        for asset in msg['a']['B']:
+            if asset['a'] == 'USDT':
+                self._cash = float(asset['cw'])
+                return
+
     # Manage orders:
     def _update_order(self, msg):
-        print(msg)
+        # print(msg)
         """{
             "e":"ORDER_TRADE_UPDATE",     // Event Type
             "E":1568879465651,            // Event Time
@@ -255,11 +349,13 @@ class PerpExchange(Exchange):
         # TODO: accquire lock
         updatetime = msg['E']
         order_update = msg['o']
-        order = self.orders[order_update['i']]
-        order.updatetime = updatetime
-        order.status = order_update['X']
-        order.avg_price = float(order_update['ap'])
-        order.executed_quantity = float(order_update['z'])
+        id = str(order_update['i'])
+        order = self.orders[id]
+        updatetime = updatetime
+        status = order_update['X']
+        avg_price = float(order_update['ap'])
+        executed_quantity = float(order_update['z'])
+        order.update(updatetime=updatetime, status=status, avg_price=avg_price, executed_quantity=executed_quantity)
 
     def buy_wallet(self, symbol, price, qty):
         return self._send_order(symbol, 'BUY', qty, price)
@@ -270,14 +366,17 @@ class PerpExchange(Exchange):
     def _send_order(self, symbol, side, qty, price=None):
         url = self.BASEL_URL + '/fapi/v1/order'
         headers = {'X-MBX-APIKEY': self.api_key}
-        # print(symbol)
         params = self._create_order_data(
             symbol=symbol, side=side, qty=qty, price=price)
         response = requests.post(url, headers=headers, params=params).json()
         # print(response)
         # TODO: manage errors
-        self._add_order(response)
-        return response['orderId']
+        try:
+            self._add_order(response)
+            return str(response['orderId'])
+        except KeyError:
+            print(response)
+            raise Exception('Error creating order')
 
     def cancel_order(self, order_id, symbol=None):
         if symbol is None:
@@ -355,3 +454,12 @@ class PerpExchange(Exchange):
         signature = hmac.new(api_secret.encode(
             'utf-8'), query_string.encode('utf-8'), hashlib.sha256).hexdigest()
         return signature
+
+    def get_valid_qty(self, pair, qty):
+        symbol = symboltranslator(self, *pair)
+        contract_size = self.qty_to_contract_size(symbol, qty)
+        contract_size = int(contract_size)
+        qty = self.contract_size_to_qty(symbol, contract_size)
+        if self.is_valid_qty(symbol, qty):
+                return qty
+        return 0

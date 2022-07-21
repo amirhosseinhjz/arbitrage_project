@@ -4,6 +4,9 @@
         "USD": "XBTUSDM",
         "USD1": "XBTMU22"
     },
+    "BTC": {
+        "USDT": "XBTUSDTM"
+    },
     "ETH": {
         "USDT": "ETHUSDTM",
         "USD": "ETHUSDM"

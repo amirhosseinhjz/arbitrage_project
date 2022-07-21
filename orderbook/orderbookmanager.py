@@ -4,11 +4,13 @@ from .symbol_translator import symboltranslator
 from .models import *
 import random
 import threading
+import json
 ASK = 'ASK'
 BID = 'BID'
 
 
 class OrderBook:
+    __slots__ = ['update_time', 'price', 'qty']
 
     def __init__(self, update_time, price, qty):
         self.update_time = update_time
@@ -33,9 +35,34 @@ class OrderBook:
         return OrderBook.create(self.update_time-other.update_time, 100*(self.price - other.price)/self.price, self.qty - other.qty)
         # return f'TimeDiff: {self.update_time - other.update_time}, PriceDiff%: {100*(self.price - other.price)/self.price}, QtyDiff: {self.qty - other.qty}'
 
+class ExchangeDataManager:
+    def __init__(self, name) -> None:
+        self.name = name
+        self.CONTRACT_SIZES = json.load(open(f'contract_size/{self.name}.json'))
+    
+    def contract_size_to_qty(self, symbol, contract_size):
+        return contract_size * self.CONTRACT_SIZES['contractSize'].get(symbol, 1)
 
-class Orderbooks:
-    def __init__(self, symbol, depth=5):
+    def qty_to_contract_size(self, symbol, qty):
+        return qty / self.CONTRACT_SIZES['contractSize'].get(symbol, 1)
+
+    def is_valid_size(self, symbol, size):
+        minQty = self.CONTRACT_SIZES['minQty'].get(symbol, 0)
+        stepSize = self.CONTRACT_SIZES['stepSize'].get(symbol, 1)
+        maxQty = self.CONTRACT_SIZES['maxQty'].get(symbol, 0)
+        return size >= minQty and size <= maxQty and size % stepSize == 0
+
+    def is_valid_qty(self, symbol, qty):
+        if not isinstance(symbol, str):
+            symbol = symboltranslator(self, *symbol)
+        size = self.qty_to_contract_size(symbol, qty)
+        return self.is_valid_size(symbol, size)
+
+
+class Orderbooks(ExchangeDataManager):
+    def __init__(self, exchange_name, symbol, depth=5):
+        ExchangeDataManager.__init__(self, exchange_name)
+        self.lock = threading.Lock()
         self.symbol = symbol
         self.depth = depth
         self.ASK = dict()
@@ -45,17 +72,21 @@ class Orderbooks:
         orderbook_dict = getattr(self, type)
         if qty == 0:
             if price in orderbook_dict.keys():
-                del orderbook_dict[price]
+                with self.lock:
+                    del orderbook_dict[price]
             return
         if price in orderbook_dict:
-            orderbook_dict[price].update_time = update_time
-            orderbook_dict[price].qty = qty
+            with self.lock:
+                orderbook_dict[price].update_time = update_time
+                orderbook_dict[price].qty = qty
             return
-        orderbook_dict[price] = OrderBook(update_time, price, qty)
+        with self.lock:
+            orderbook_dict[price] = OrderBook(update_time, price, qty)
 
     def reset_orderbooks(self):
-        self.ASK.clear()
-        self.BID.clear()
+        with self.lock:
+            self.ASK.clear()
+            self.BID.clear()
 
     @abc.abstractmethod
     def get_snapshot(self):
@@ -66,8 +97,9 @@ class Orderbooks:
         pass
 
     def asks(self, len):
-        asks = [self.ASK[price]
-                for price in sorted(list(self.ASK.keys()))[:len]]
+        with self.lock:
+            asks = [self.ASK[price]
+                    for price in sorted(list(self.ASK.keys()))[:len]]
         if not asks:
             return None
         if len == 1:
@@ -75,8 +107,9 @@ class Orderbooks:
         return asks
 
     def bids(self, len):
-        bids = [self.BID[price]
-                for price in sorted(list(self.BID.keys()))[-len:][::-1]]
+        with self.lock:
+            bids = [self.BID[price]
+                    for price in sorted(list(self.BID.keys()))[-len:][::-1]]
         if not bids:
             return None
         if len == 1:
@@ -196,10 +229,12 @@ class AccountManager:
         return self.position is not None
 
 
-class Exchange(AccountManager, BaseOrderbookManager):
+
+class Exchange(AccountManager, BaseOrderbookManager, ExchangeDataManager):
     def __init__(self, exchange, market_type, pairs, private, credentials, testnet) -> None:
         AccountManager.__init__(self)
         BaseOrderbookManager.__init__(self)
+        ExchangeDataManager.__init__(self, exchange+'_'+market_type)
         self.exchange = exchange
         self.market_type = market_type
         self.name = exchange + '_' + market_type
@@ -208,16 +243,17 @@ class Exchange(AccountManager, BaseOrderbookManager):
         self.private = private
         self.credentials = credentials
         self.testnet = testnet
-        self.REQUEST_TIMEOUT = 5
+        self.REQUEST_TIMEOUT = 5 * 4
 
     def translate_pairs(self, pairs):
         return [symboltranslator(self, pair[0], pair[1]) for pair in pairs]
 
+
     def _init_orderbooks(self, OrderbookOject):
         with self.orderbook_lock:
             for symbol in self.symbols:
-                self.orderbooks[symbol] = OrderbookOject(
-                    symbol, self.depth)
+                self.orderbooks[symbol] = OrderbookOject(self.name,
+                    symbol, self.depth, self.testnet)
 
     def asks(self, pair, len=1):
         symbol = symboltranslator(self, pair[0], pair[1])
@@ -235,7 +271,7 @@ class Exchange(AccountManager, BaseOrderbookManager):
 
     def sell(self, **kwargs):
         symbol = symboltranslator(self, kwargs['pair'][0], kwargs['pair'][1])
-        price = kwargs['price']
+        price = kwargs.get('price', None)
         qty = kwargs.get('qty', None)
         return self._sell(symbol, price, qty)
 
@@ -243,6 +279,9 @@ class Exchange(AccountManager, BaseOrderbookManager):
         while (id := random.randint(10000, 1000000)) in self.orders:
             pass
         return id
+
+    def get_valid_qty(self, qty):
+        pass
 
     def __str__(self) -> str:
         return self.name
